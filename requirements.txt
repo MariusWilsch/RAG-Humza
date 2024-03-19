@@ -1,3 +1,5 @@
 PyMuPDF
 langchain
 pypdf
+pix2tex[api]
+pdf2image

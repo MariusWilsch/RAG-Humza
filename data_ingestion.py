@@ -1,6 +1,14 @@
-import os
+import os, json
 from typing import List
-from langchain_community.document_loaders import PyMuPDFLoader, PyPDFLoader
+from langchain_community.document_loaders import (
+    PyMuPDFLoader,
+    PyPDFLoader,
+    MathpixPDFLoader,
+)
+from PIL import Image
+from pix2tex.cli import LatexOCR
+from pdf2image import convert_from_path
+
 
 # Terminologies in Real Esate Appraisal - Comments
 # Header cou
@@ -24,13 +32,18 @@ class DataIngestion:
     # For testing purposes
     def load_one_document(self, file_path: str) -> List:
         try:
-            # file_path = os.path.join(self.folder_path, file_path)
-            # print(file_path)
             extracted_doc = PyMuPDFLoader(file_path).load()
             # extracted_doc = PyPDFLoader(file_path).load_and_split()
+            # extracted_doc_math = MathpixPDFLoader(file_path).load()
             print(extracted_doc)
+
+            documents_dict = [doc.__dict__ for doc in extracted_doc]
+
+            with open("output.json", "w") as f:
+                json.dump(documents_dict, f, indent=2)
+
             # self.documents.append(extracted_doc)
-            self.store_extracted_text(extracted_doc, file_path)
+            # self.store_extracted_text(extracted_doc_math, file_path, "mathpix_text")
         except Exception as e:
             print(f"Error reading {file_path} with Error: {e}")
         return self.documents
@@ -46,18 +59,14 @@ class DataIngestion:
                 extracted_doc = PyMuPDFLoader(filepath).load()
                 # print(extracted_doc[:100])
                 self.documents.append(extracted_doc)
-                self.store_extracted_text(extracted_doc, filepath)
+                self.store_extracted_text(extracted_doc, filepath, "extracted_text")
                 docs_cnt += 1
             except Exception as e:
                 print(f"Error reading {file} with Error: {e}")
         print("Number of loaded documents:", docs_cnt)
         return self.documents
 
-    def store_extracted_text(
-        self,
-        extracted_text,
-        filepath: str,
-    ) -> None:
+    def store_extracted_text(self, extracted_text, filepath: str, folder: str) -> None:
         """
         Store the extracted text to a file.
         Parameters:
@@ -65,7 +74,7 @@ class DataIngestion:
         Returns:
           None
         """
-        output_dir = os.path.join(self.folder_path, "extracted_text")
+        output_dir = os.path.join(self.folder_path, folder)
         os.makedirs(output_dir, exist_ok=True)
         # Create a unique filename for each extracted text
         base_name = os.path.basename(filepath)
@@ -75,10 +84,26 @@ class DataIngestion:
         with open(output_filename, "w", encoding="utf-8") as file:
             file.write("\n".join(text_to_write))
 
+    def get_latex_predictions_from_pdf(self) -> list:
+        # Convert the PDF to a list of images
+        images = convert_from_path("data/6_Formula_Real Estate Appraisal Formulas.pdf")
+        model = LatexOCR()
+
+        # Initialize an empty list to store the LaTeX predictions
+        latex_predictions = []
+
+        # Loop over each image
+        for image in images:
+            # Convert the image to a string
+            latex_predictions.append(model.model(image))
+
+        print(latex_predictions)
+
 
 # Example usage:
 ingestion = DataIngestion("./data")
-ingestion.load_one_document("data/4_SQUARE FOOTAGE - ANSI Z765 2021.pdf")
+ingestion.load_one_document("data/6_Formula_Real Estate Appraisal Formulas.pdf")
+# ingestion.get_latex_predictions_from_pdf()
 # ingestion.load_all_documents()
 
 
