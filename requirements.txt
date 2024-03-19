@@ -1,5 +1,12 @@
 PyMuPDF
 langchain
-pypdf
-pix2tex[api]
-pdf2image
+langchain-pinecone
+langchain-openai
+chromadb
+# pypdf
+# camelot
+# nougat-ocr[api]
+# unstructured-client
+# unstructured
+# unstructured_inference
+# unstructured[all-docs]
