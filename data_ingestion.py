@@ -2,8 +2,8 @@ import os, json
 from typing import List
 from langchain_community.document_loaders import PyMuPDFLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
-from langchain.embeddings.openai import OpenAIEmbeddings
-from langchain.vectorstores import chroma
+from langchain_openai import OpenAIEmbeddings
+from langchain_community.vectorstores import chroma
 
 # Gloabls - Later convert that in to app.config.yaml
 chunk_size = 500
@@ -33,62 +33,48 @@ class DataIngestion:
         self.folder_path = folder_path
         self.documents = []
 
-    def chunk_documents(self, documents: List, chunk_size: int) -> List:
+    def chunk_documents(self, documents) -> List:
         """
         Chunk the documents into smaller pieces.
 
         Parameters:
-            documents (List): The documents to chunk.
-            chunk_size (int): The size of the chunks.
+          documents: The documents to chunk.
 
         Returns:
-            List: The chunked documents.
+          List: The chunked documents.
         """
         print("Chunking documents...")
-        chunked_docs = self.text_splitter.split(documents)
-        print("Num of chunks:", len(chunked_docs), "\n")
+        chunked_docs = self.text_splitter.split_documents(documents)
+        print("Number of chunks:", len(chunked_docs), "\n\n")
+        return chunked_docs
 
-    def prep_and_save_vectordb(self, jsonDirectory, pdfDirectory) -> None:
+    def prep_and_save_vectordb(self) -> None:
         """
-        Embed the documents and save the VectorDB.
+        Embeds and saves the documents to the VectorDB.
 
         Parameters:
-            documents (List): The chunked documents to embed.
+          documents (List): The chunked documents to embed.
 
         Returns:
-          Chroma: The created VectorDB.
+          Chroma: The created VectorDB in a persist directory.
         """
-        docs = self.load_docs_from_json()
-        docs.append(self.BasicTextStrategy())
+        docs = []
+        docs = self.BasicTextStrategy()
         chunked_docs = self.chunk_documents(docs)
-        print("Embedding documents...")
+        print("Embedding and saving docs to vectorDB...")
         chromaCli = chroma.Chroma()
-        vectordb = chromaCli.from_documents(
-            documents=chunked_docs,
-            embedding=self.embedding_engine,
-            persist_directory="data/vectordb",
-        )
+        try:
+            vectordb = chromaCli.from_documents(
+                documents=chunked_docs,
+                embedding=self.embedding_engine,
+                persist_directory="data/vectordb",
+            )
+        except Exception as e:
+            print(f"An error occurred while creating the VectorDB: {e}")
+            return None
         print("VectorDB created and saved.")
         print("Num of vectors:", vectordb._collection.count(), "\n")
         return vectordb
-
-    # For testing purposes
-    def load_one_document(self, file_path: str) -> List:
-        try:
-            extracted_doc = PyMuPDFLoader(file_path).load()
-            print(extracted_doc)
-
-            # Save the extracted text to a JSON file for viewing
-            documents_dict = [doc.__dict__ for doc in extracted_doc]
-
-            with open("output.json", "w") as f:
-                json.dump(documents_dict, f, indent=2)
-
-            self.documents.append(extracted_doc)
-            self.store_extracted_text(extracted_doc, file_path, "extracted_text")
-        except Exception as e:
-            print(f"Error reading {file_path} with Error: {e}")
-        return self.documents
 
     def BasicTextStrategy(self) -> List:
         """
@@ -98,27 +84,25 @@ class DataIngestion:
         Returns:
           List[Doucment]: A list of loaded documents with metadata.
         """
+        docs = []
         docs_cnt = 0
         for file in os.listdir(self.folder_path):
+            filepath = os.path.join(self.folder_path, file)
+            # if file.endswith(".json"):
+            #     docs.extend(self.load_docs_from_json(filepath))
+            #     docs_cnt += 1
+            #     continue
             if not file.endswith(".pdf"):
                 continue
-            filepath = os.path.join(self.folder_path, file)
             try:
-                # for testing purposes - use this in the final version # self.documents.append(PyMuPDFLoader(filepath).load())
-                extracted_doc = PyMuPDFLoader(filepath).load()
-
-                self.documents.append(extracted_doc)
-                # Save the extracted text (page_content=[...]) into a txt file for viewing
-                self.store_extracted_text(
-                    extracted_doc, filepath, "extracted_text_for_viewing"
-                )
-                # Save the extracted text to a JSON file for viewing
-                # Not implemented yet
+                docs.extend(PyMuPDFLoader(filepath).load())
                 docs_cnt += 1
             except Exception as e:
                 print(f"Error reading {file} with Error: {e}")
+                return
         print("Number of loaded documents:", docs_cnt)
-        return self.documents
+        print("Number of docs in list:", len(docs))
+        return docs
 
     def TableExtractionStrategy(self, filepath) -> List:
         """
@@ -228,12 +212,28 @@ class DataIngestion:
             }
             documents.append(document)
         print("Documents loaded from JSON.")
-        print(documents)
+        # print(documents)
         return documents
+
+    # For testing purposes
+    def load_one_document(self, file_path: str) -> List:
+        try:
+            extracted_doc = PyMuPDFLoader(file_path).load()
+            print(extracted_doc)
+
+            # Save the extracted text to a JSON file for viewing
+            documents_dict = [doc.__dict__ for doc in extracted_doc]
+
+            with open("output.json", "w") as f:
+                json.dump(documents_dict, f, indent=2)
+
+            self.documents.append(extracted_doc)
+            self.store_extracted_text(extracted_doc, file_path, "extracted_text")
+        except Exception as e:
+            print(f"Error reading {file_path} with Error: {e}")
+        return self.documents
 
 
 # Example usage:
-ingestion = DataIngestion("./data")
-ingestion.load_docs_from_json(
-    "data/processed/5_Formula_The Mathematics of Real Estate.pdf.json"
-)
+ingestion = DataIngestion("./data/simple_pdfs-json_for_trial_1")
+ingestion.prep_and_save_vectordb()
