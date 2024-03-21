@@ -3,6 +3,11 @@ langchain
 langchain-pinecone
 langchain-openai
 chromadb
+streamlit
+unstructured-client
+python-dotenv
+anthropic
+pdf2image
 # pypdf
 # camelot
 # nougat-ocr[api]

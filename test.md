@@ -1,0 +1,13 @@
+---
+runme:
+  id: 01HSGM6FSAQ5PXV600TJ318D1Y
+  version: v3
+---
+
+```sh {"id":"01HSGM6GKAQCM55DG809TZWD4C"}
+<table> <tr> <td>Monthly rent of unaffected property</td> <td>$ 850</td> </tr> <tr> <td colspan="2">Monthly rent of affected property - 700</td> </tr> <tr> <td>Estimated monthly rent loss</td> <td>$ 150</td> </tr> <tr> <td>GRM 120 x $150 (rent loss)</td> <td>$18,000</td> </tr> <tr> <td>Ratio of land-to-building</td> <td>1:4</td> </tr> <tr> <td colspan="2">(Land = 20%, building = 80%)</td> </tr> <tr> <td>Rent loss $18,000 x 80%</td> <td>$14,400</td> </tr> </table>
+```
+
+<table> <tr> <td>Monthly rent of unaffected property</td> <td>$ 850</td> </tr> <tr> <td colspan="2">Monthly rent of affected property - 700</td> </tr> <tr> <td>Estimated monthly rent loss</td> <td>$ 150</td> </tr> <tr> <td>GRM 120 x $150 (rent loss)</td> <td>$18,000</td> </tr> <tr> <td>Ratio of land-to-building</td> <td>1:4</td> </tr> <tr> <td colspan="2">(Land = 20%, building = 80%)</td> </tr> <tr> <td>Rent loss $18,000 x 80%</td> <td>$14,400</td> </tr> </table>
+
+<table><thead><th>Features</th><th>Subject</th><th>Sale1</th><th>Sale 2</th></thead><tr><td>Sale Price</td><td></td><td>$1,475,700</td><td>$1,714,500</td></tr><tr><td>No. of units</td><td>45</td><td>40</td><td>45</td></tr><tr><td>Unit size (average)</td><td>288 sq. ft.</td><td>263 sq. ft.</td><td>295 sq. ft.</td></tr><tr><td>Quality</td><td>Average</td><td>Average</td><td>Average</td></tr><tr><td>Furnishings and equip. (est. value per unit)</td><td>$2,000</td><td>$1,980</td><td>$2,050</td></tr><tr><td>Estimated land value</td><td>$252,500</td><td>$220,500</td><td>$ 252,000</td></tr><tr><td colspan="4">Unit of comparison extraction</td></tr><tr><td>Sale Price</td><td></td><td>$1,475,700</td><td>$1,714,500</td></tr><tr><td>Less land value</td><td></td><td>\u2014 220,500</td><td>\u2014252,000</td></tr><tr><td>Less furnishings</td><td></td><td>\u201479.200</td><td>\u201492.250</td></tr><tr><td>Improvement value</td><td></td><td>$1,176,000</td><td>$1,370,250</td></tr><tr><td>Per unit value</td><td></td><td>$ 29,400</td><td>$30,450</td></tr><tr><td colspan="4">Application to subject</td></tr><tr><td colspan="4">Two sales support a per unit value of $30,000.</td></tr><tr><td colspan="4">Improvements ($30,000 x 45 units) $1,350,000</td></tr><tr><td colspan="4">Plus furnishings and equipment</td></tr><tr><td>($2,000 x 45 units)</td><td>$ 90,000</td><td></td><td></td></tr><tr><td>Plus land value</td><td>+ 252,500</td><td></td><td></td></tr><tr><td>Total subject value:</td><td>$1,692,500</td><td></td><td></td></tr></table>
