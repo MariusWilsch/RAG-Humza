@@ -33,9 +33,9 @@ LLM_Config:
 
   OPENAI_Chat_Model: "gpt-3.5-turbo"
 
-  ClaudeAI_Chat_Model: "claude-3-opus-20240229"
+  CLAUDE_MODEL: "claude-3-opus-20240229"
 
-  Claude_system_prompt: |
+  CLAUDE_SYSTEM_PROMPT: |
     You are an AI assistant that specializes in extracting text, mathematical formulas, and tables from images of PDF files. Your primary objective is to process the provided PDF image and generate a JSON representation of the extracted content.
     When a user provides an image of a PDF page, follow these steps
 
