@@ -26,9 +26,6 @@ class LLM_Config:
     system_prompt2: str
     system_prompt3: str
     OPENAI_Chat_Model: str
-    ClaudeAI_Chat_Model: str
-    Claude_system_prompt: str
-    OPENAI_Embedding_Model: str
     Chunk_Size: int
     Chunk_Overlap: int
 
@@ -181,6 +178,7 @@ class DataIngestion:
             pdf_infer_table_structure=True,
             split_pdf_page=True,
             languages=["eng"],
+            chunking_strategy="by_title",
         )
         try:
             response = unstucturedCli.general.partition(request)
@@ -215,104 +213,6 @@ class DataIngestion:
           To be determined
         """
         pass
-
-    def ClaudeUtility(self, response_obj: Message):  # To be determined
-        """
-        Utility function to use the Claude AI Vision Strategy.
-        """
-        # Extract the text from the response object
-        message_text = response_obj.content[0].text
-
-        # Unescape Latex Formulas - For JSON it appraenlty needs it
-        # message_text = message_text.replace("\\\\", "\\")
-
-        # Parse the unescaped string as JSON
-        json_data = json.loads(message_text)
-
-        # Extract the text from the JSON data
-        extracted_text = json_data["page_content"]
-        page = json_data["page"]
-        source = json_data["source"]
-
-        # Create a new dict
-        extracted_text_dict = {
-            "page_content": extracted_text,
-            "page": page,
-            "source": source,
-        }
-
-        # Return the extracted text
-        filename = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S") + ".json"
-        with open(f"data/claude_output/formatted_page/{filename}", "w") as f:
-            json.dump(extracted_text_dict, f, indent=2)
-
-        print("JSON data extracted and dumped successfully.")
-
-    def ClaudeAIVisionStrategy(self, file_path: str):
-        """
-        Load the documents using the Claude AI Vision API. This strategy is used for documents that contain text and mathematical formulas like LaTex.
-        I'm unsure if this strategy also works with tables.
-
-        Note
-          Works well with text and math formulas. Need to try it with tables (21.03.2024)
-
-        Returns:
-          Formatted JSON that can be loaded into a json file
-        """
-        client = anthropic.Anthropic()
-        try:
-            pages = convert_from_path(
-                file_path, first_page=1, last_page=1, thread_count=2
-            )
-            page = pages[0]
-            page.save("out.jpg", "JPEG")
-            buffered = BytesIO()
-            page.save(buffered, format="JPEG")
-            image_data = base64.b64encode(buffered.getvalue()).decode("utf-8")
-        except Exception as e:
-            print(f"An error occurred while converting the PDF to an image: {e}")
-
-        try:
-            # API Call - Question: How many pages at once. At what point do I need to do multiple calls?
-            message = client.messages.create(
-                model=config.LLM_Config.ClaudeAI_Chat_Model,
-                max_tokens=1024,
-                temperature=0.2,
-                system=config.LLM_Config.Claude_system_prompt,
-                messages=[
-                    {
-                        "role": "user",
-                        "content": [
-                            {
-                                "type": "image",
-                                "source": {
-                                    "type": "base64",
-                                    "media_type": "image/jpeg",
-                                    "data": image_data,
-                                },
-                            },
-                            {
-                                "type": "text",
-                                "text": "Please extract the text, mathematical formulas, and tables from this image.",
-                            },
-                        ],
-                    }
-                ],
-            )
-
-            self.ClaudeUtility(message)
-            filename = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S") + ".json"
-            print("Usage: ", message.usage)
-            with open(f"data/claude_output/{filename}", "w") as f:
-                json.dump(message.model_dump(), f, indent=2)
-        except APIError as e:
-            print(f"An API error occurred while using the Claude AI Vision API: {e}")
-        except Exception as e:
-            print(
-                f"An general error occurred while using the Claude AI Vision API: {e}"
-            )
-
-        # Load the pdf and convert to base64 img
 
     def nougatCloudStrategy(self, file_path: str):
         """
@@ -390,7 +290,7 @@ class DataIngestion:
 
 # Example usage: that's fine
 ingestion = DataIngestion("./data/simple_pdfs-json_for_trial_1")
-# ingestion.UnstructuredStrategy("data/raw_pdfs/2_Appraisal Methods.pdf")
-ingestion.ClaudeAIVisionStrategy(
-    "data/raw_pdfs/6_Formula_Real Estate Appraisal Formulas.pdf"
-)
+ingestion.UnstructuredStrategy("data/raw_pdfs/2_Appraisal Methods.pdf")
+# ingestion.ClaudeAIVisionStrategy(
+#     "data/raw_pdfs/6_Formula_Real Estate Appraisal Formulas.pdf"
+# )

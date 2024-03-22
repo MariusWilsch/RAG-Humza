@@ -8,6 +8,8 @@ unstructured-client
 python-dotenv
 anthropic
 pdf2image
+fix-busted-json
+# pdfplumber
 # pypdf
 # camelot
 # nougat-ocr[api]
