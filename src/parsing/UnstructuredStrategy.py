@@ -36,6 +36,7 @@ def UnstructuredStrategy(file_path: str):
     #     split_pdf_page=True,
     # )
     # Hi_res strategy is for complex documents with tables
+    # model names, "chipper" and "yolox"
     request = shared.PartitionParameters(
         files=files,
         strategy="hi_res",
@@ -44,6 +45,7 @@ def UnstructuredStrategy(file_path: str):
         languages=["eng"],
         chunking_strategy="by_title",
         combine_under_n_chars=500,
+        hi_res_model_name="chipper",
     )
     try:
         response = unstucturedCli.general.partition(request)
@@ -70,4 +72,8 @@ def call_strategy_on_folder(folder_path: str):
         else:
             print(f"{file} is not a pdf file")
 
-call_strategy_on_folder("data/vectordb/try2/pdf_for_try_2")
+
+# call_strategy_on_folder("data/vectordb/try2/pdf_for_try_2")
+UnstructuredStrategy(
+    "/Users/verdant/RAG-Humza/data/raw_pdfs/6_Formula_Real Estate Appraisal Formulas.pdf"
+)

@@ -9,6 +9,7 @@ python-dotenv
 anthropic
 pdf2image
 fix-busted-json
+jq
 # pdfplumber
 # pypdf
 # camelot
