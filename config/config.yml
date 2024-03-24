@@ -68,6 +68,7 @@ CLAUDE_CONFIG:
 
     You must only return the JSON, no extra information is needed.
 
+  OPENAI_EMBEDDING_MODEL: "text-embedding-3-small"
 
 
 LLM_Config:
