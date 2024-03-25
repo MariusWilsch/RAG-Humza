@@ -1,0 +1,2 @@
+def pdfPlumberStrategy(pdf):
+    pass
