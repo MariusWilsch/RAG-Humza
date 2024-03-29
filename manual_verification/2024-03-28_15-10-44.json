@@ -1,0 +1,4 @@
+{
+  "prompt": "Retrieved context:\n\n\n\nNew user question: tell me about the discounted cash flow formulas\n\n",
+  "llm_response": "The discounted cash flow (DCF) formula is a common method used in real estate appraisal to estimate the value of a property based on its future cash flows. The formula for DCF is:\n\n$DCF = \\frac{CF_1}{(1+r)^1} + \\frac{CF_2}{(1+r)^2} + \\ldots + \\frac{CF_n}{(1+r)^n}$\n\nWhere:\n- $DCF$ = Discounted Cash Flow\n- $CF_1, CF_2, \\ldots, CF_n$ = Cash flows in each period\n- $r$ = Discount rate\n- $n$ = Number of periods\n\nThis formula takes into account the projected cash flows of the property and discounts them back to their present value using a discount rate to determine the property's current worth."
+}

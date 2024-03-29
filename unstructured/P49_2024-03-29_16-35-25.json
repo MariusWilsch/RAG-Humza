@@ -1,0 +1,856 @@
+[
+  {
+    "type": "CompositeElement",
+    "element_id": "624f61e4a92d7c8c8a0b2a9d3d920d52",
+    "text": "SCRUM: An extension pattern language for hyperproductive software development\n\nMike Beedle beedlem@fti-consulting.com Martine Devos mdevos@argo.be Yonat Sharon yonat@usa.net Ken Schwaber virman@aol.com Jeff Sutherland jeff.sutherland@idx.com\n\nAbstract The patterns of the SCRUM development method are presented as an extension pattern language to the existing organizational pattern languages. In the last few years, the SCRUM development method has rapidly gained recognition as an effective tool to hyper-productive software development. However, when SCRUM patterns are combined with other existing organizational patterns, they lead to highly adaptive, yet well-structured software development organizations. Also, decomposing SCRUM into patterns can guide adoption of only those parts of SCRUM that are applicable to a specific situation.",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng, deu"
+      ],
+      "page_number": 1,
+      "orig_elements": "eJy1VN9v4zYM/lcIP6eGf8h2dE/ptofdhg6HpXsYikMgS5StzbEMSW6aHfa/j3KaW+8a9IBD+xSTIcWPHz/y7lOCA+5xDDujkneQCFXLWutCS67UmmnG66JuOFZSVeu2UskKkj0GoUQQFP8pkdY6ZUYR0C/2II52DrseTdcH8hRFllHOo/tgVOjJmzeLd7JmDDHv7q7kPF2voMh4yj6u4GyX5Tptop2zjKXZBccpgzyJP/qA+9jFB/OAw3YSEpN/6Q+FAWUwdtzJQXi/m5xtKSxLGa+KhgK0GTAcJ1xyP9wkC+Cxm0W3dHWX4NitQOGcxDoTuXfjvG/RxVZihYAPsdlk++Pvf9y8g+sRyIGjp5owiRDQjXB+EbR10FM1RzjUTMDuEbzV4SAcUpF7HOwURxJhnFHdmjAszXw9MCzbTDJW8LWWucwZF7rVTK45r3XLC/ZmA2sY8bcCVmRpEefxaNeMp3W0OX3kz+1T/IvjerVpPCXw/Z7iLhFYcNK8qjNdCsWrquVtI2vZ1KotUdRl+WYEVnUdCWvWVVpGgh5t3jQnO8/LOq7AM8cp4/sU35Scsdfk+Mb8jfADohoQ2uVnv9HBXEk7+nkIZuxSafdwIxx9I/yE99bDXsWfjXCdTVuEPy2xCdteOFqXYzQ2sxfpiAF+xRG2sj8IKg33xu3FuBF2WN78BbWG7Rx6dIRdwV9kp/6zvTHqIcY9VcFvwjkRF+42wr+ghkoxJVqel6zWqEqGFauxlWVW6qpUongzNbBsWZ88q1i6jtM+O1hZPo6f0enLL3pOSd+nCNJDxl9TEdetD07IALc9no+fB6uBBgPLgXx65IDY7K2CePsmh55cSJYH8eINDXZ5Dh+MjxoD6zoxmn9E7FAMz+J9Cu/HJYOaD6DxAEcUzq9eBtUTDicmo4YjdIL0q8ChtN1oYp0zSq3xdMSDtUNEthz3q29c9xR+tgcy3QoOfVT5AuIzXzGaxNsuRQ8m9GCjsL/V8amjIwwo1AKFZEjgSa9TRLKitgMccBiuaEiEbnb0/CV4X7xP9F0P3sbxE6bJ+gjgBJgEbP9HLYmPbjYKqaKdFpJo8HYkCESoj3pwYRHDKTv0tPixspimwUjRDstoBfgJpdFGgjdhXjCkL+zxx/8Ari7S/w==",
+      "filename": "P49.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "d21442255f0e3d2bdf77bb2d5e3321c9",
+    "text": "1. Introduction\n\nNOTE: Throughout this paper we assume the reader is familiar with the other org patterns [OrgPatt], [Coplien95]. Also, the written forms of all pattern names will be presented in bolded-italics types as in: DeveloperControlsProcess, while the things that the patterns are will be represented in italics as in: Backlog.\n\nCan a repeatable and defined process really exist for software development? Some think this is not only possible but necessary, for example those that favor the CMM (Capability Maturity Model) approach to software development [1]. The CMM defines five stages of process maturity initial, repeatable, defined, managed and optimizing, and asks its users to define the processes of 18 KPA (key process areas).",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng, deu"
+      ],
+      "page_number": 1,
+      "orig_elements": "eJy1VE2P2zYQ/SsDnRJAFfRpWXsJEreHothkgfhmLIyROLKJpUiBpNfrBv3vHVLrbdpuewgSwBDMR775eHzD3ZeEFE2k/V6K5AaSphR50VQoin7sRTViUeKqZKhfD+NqhUkKyUQeBXrk81+SwRgrpEZPLq4VXszJ748kD0fPSFnmOXOe4bMU/sho0UZ0NlL7wNvtyrrLqhSKJq+z/D6Fv4B6vQBNWWbtq0CkMJK4i/M0hT7u5BOpzzMOlPzBG4I8DV4avR8UOrefren5WJ6tm7ou+MAoFfnLTJF7d5vEkvXhhIfY1y4hfUhB0CkJeWaG9/o09WRDMyGDp6fQblJk8Kv21ohTzBcCXeNupVexnH+Kvi7bvKZh3axEXom8EauqwroTq3WTV8XY/jjRmzyrg4JdlzVR9GegDeIHoKiL7j+QhfRtsndVXZXfU/aPn7a/3MD2aM3pcOSmwR+lgxlnsnAm4OSniRgksISCQd4dcZJKIh+Q/hj3DH8sGHtgpvdktYPdJ3u440VofWNmJUl3zX0G75UzaSSdreSzGkZjJwdmBFTqygeNEzlOwFBPMFtyfO0kQGrojRIkfpIelRwcBBkcF8pbN/AzPZIyXPzGBDMpd2fNQM6lcD6yZDEvd6gPzDuij+uXktHSS0ZLf8t5Tfac5gMOD8ocsq9d+hGtRS8faRukfcWtRSnKvK6bAvuW7dlXYyfqtm3EgF07VMUPfCJWcd7bLs/a5YlYgG6dLy9CUTdtfDT+jSykb3RrXdff1a0b1IDhbog16vk+UQvmjVLzNc3LVQejKnUBepLOB3OBM6M/h8sVizvCnbyDz2ZavPCweJ5/2ngwmrmzcU6G+D1PhKYQFu0ljdHoCac5Wsk4Wlw04iNvBC9tbm/hzQZn7HlC/AVu0Z9s/GMEqbeAM1eJA0+NebUsFp5nZPscaemMB45dBc4HucKcXBudrsGlll6iSr9SJr3KkvIxzUwRtTKzl5P8XQa9wxrdA3fuHZwcWReqWmjLYCx5lqTFGn67ew9vHujyUgAXj+7t/03B/Z/gqUm6",
+      "filename": "P49.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "da89e2247a931bbf5d542f14733dced9",
+    "text": "However, many of us doing work in the trenches have found over time that the \u201crepeatable or defined\u201d process approach makes many incorrect assumptions, such as:\n\n1) Repeatable/defined problem. A repeatable/defined process assumes that there is a step to capture requirements, but in most cases, it is not possible to define the requirements of an application, because they are either not well defined or they keep changing.\n\n2) Repeatable/defined solution. A repeatable/defined process assumes that an architecture can be fully specified, but in reality it is evolved, partly due to the fact of missing or changing requirements (as described above), and partly because of the creative process involved in creating it.",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng, deu"
+      ],
+      "page_number": 2,
+      "orig_elements": "eJy1lEtv00AQx7/KyicqRcaPtZ3tjRtIgCrgFqpovTuOV7V3zT6SRhXfnVk7qQqEA1V7y8zO6+/5ZTYPCQwwgvZbJZNrknTrmrYV6zjLGW0ZK6usrkspWA0dZVmVrEgygueSe47xD4kwxkqluQc32wM/muC3Pahd79FTFFmGOSf3QUnfozdvZu9klPYxb7Mp6DpFV1E2aXm7Ime7zOs0i3ZO8yxtLjiWDPQk7ug8jFHFjbqH4evEBSQ/8UGCB+GV0VsxcOe2kzUthmUpy7NsjQGdGsAfJ5hzbz4l88B6F/huVrVJQO9WREJIYp8J3VsdxhZslBI7eLiPYpP35gB7sCsycn0kpiPBEYkid+Rg7B1RmvgeiLegRQ+O9HwPpDNBS2IwjXg14mvP/Rz2PRRZLixMgB+7HYAYizN0SoOcnyRBIQKcI3zCX1z02PYOy87NlRbGWtRNUHIYp6jfrYgLGMbdddR4lvyZW8u92sO3KAP1/ElFIZqK0YJSJgvGcpFLAFbIYs2KHBpKX42KklZpiUuvimXpJxuhTJsFAkojJn85loxnUlE06/olqcivyJfHLb49rTAuD80xJe+Ivfi6rDYuD3d6psICUeglKGoi3hDBJx/QaeFHUHZeGm65DT7CNhrnMcIBupSPidp4MhnnVOQJ05d2M25PK0R0uY5cDUrw+JGwJgge3Bx7JBxbgorzzCUPMAxnNiOmc8wd4Iiix0+Gf4D0KXAflfMf4lYusEbrkgoh6rbOWFUVsu3wR103vKhbaEX7iqzlC1tsuUAnu67zxc5pVV50LBnPZW39sqwVF1lzZgix/f/AFvdvRa/i5JEwgY4Wz1UYhiNxEwjVKZCPrFngg/LHE2ewN8M+vk7ceoyXYcYtctZxvEnI16gQQ7yMiMsZkt8ZfMPxeIITVrU4I2/xRF6tcCx5LnomEovFwngq5yv2KEfpZYo43vKILZT/B4q3vwDC7UI1",
+      "filename": "P49.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "55ba36ca76e5a5255e03e50a51943c57",
+    "text": "3) Repeatable/defined developers. The capabilities of a software developer vary widely, so a process that works for one developer may not work for another one.\n\n4) Repeatable/defined organizational environment. The schedule pressure, priorities (e.g. quality vs. price), client behavior, and so on; are never repeatable or defined.\n\nThe problem with these assumptions is that they assume non-chaotic behavior. Even small unknowns can have a big influence on the result.\n\nIn actuality, the removal of uncertainties is impossible. Many of us have searched for answers beyond the repeatable/defined approach of software development, in a more \u201cadaptive approach\u201d.",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng, deu"
+      ],
+      "page_number": 2,
+      "orig_elements": "eJy1lU2PpDYQhv9KiVNWIgRj00ByzmGlbLRK9jZZtYxdNNaCTbDpXrLKf08ZmEmyM4qi0cwJXB+myu9T5u5LggOOaMPZ6OR7SIpC67asRK6YKHhXc8WFqlidl13JOTZJCsmIQWoZJMV/SZRzszZWBvTbepCrW8K5R3PpA1mKIs8p5zDfjA49WVm1WSdnbIh5d3dcsIyncDrR42MK9+uqElkV10yU1ZOGPYMsiV99wDF28d58xuHXSSpM/iSHxoAqGGfPapDen6fZtRSWZw0r65oCOjNgWCfcct+/S7aC7WWRl62ruwTtJQWNSxK/M5H5bJexxTm2Er8Q8HNsNuFv4BeckA6nHfA7jZ2xqCnxioObcPYZfOgRlJxkawYTDHpwHUjwrgs3OePfoXCV8wp0XjisKfkpiMpW6D2EXga4ufmTh87N4Ow/00a5gnW7f3NLWvW4hWWxsfs+fzI+vI3nRfV/TYFSUiNvCoGnhueyEZp34lQWtUQhdFW8IgXNLjK/p2Bb102R5ZvovM6z/AnDnvFMCoqciZekQDxJgZsv0po/ZCxBDoD2amZn46nvVHjVo14GJJ1J5WXGlN6Mm3dMvsHsksHviyRsVrgSSeRU+CYFNRjaA1rs5ZXCU1JcR2Cc/QEiUpbYmGF+KIgKgaOm/w1ExU9lc2p0qVjV1l3F6YVxzQrWFaLqXg+IQpyyKoWmqHe9jzXL83InhPHmFAF4bNlznolEXovqJZGIAsfd6VRpqENPQ4wegT66jFOswIM5Jps86+4g7Zz9VvXSBaMeBM7gxyta8KMcBljsJ+tulK2kBfLTltCaCxjbDQtaRWrbuCPp75ch/Evwn+U8E41X/BCLfEL1tuGMF2WTa6GVaKoCGWJRlExqprCtXk/1Ms9E1FSIQ/bDwE75MfeC5RsIjy170jN156ziL6n7WwtShX1q00OI0V1p/uneX0ifOUhqO0446W/GyXlviJIM3km7bkF+19WjnOMNcVzq/ka/E2JidTTt+76Pbhw5UWNS9XGbr/8wUeaUMCFeRkfm3xa6Benal1Mk4iF1M+v/wubjX+xemHA=",
+      "filename": "P49.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "a447a1a4658464f6041e31b8c7e16ec9",
+    "text": "SCRUM assumes up-front the existence of chaos discussed above as incorrect assumptions, and provides techniques to resolve these problems. These techniques are rooted in complexity management i.e. self-organization, management of empirical processes and knowledge creation.\n\nIn that sense, SCRUM is not only an \"iterative and incremental\" development method but also an \"adaptive\" software development method.\n\n2. How does SCRUM work?\n\nSCRUM\u2019s goal is to deliver as much quality software as possible within a series (3-8), of short time-boxes (fixed time intervals) called Sprints that typically last about a month.\n\nEach stage in the development cycle (Requirements, Analysis, Design, Evolution, and Delivery) is now mapped to a Sprint or series of Sprints. The traditional software development stages are retained for convenience primarily for tracking milestones. So, for example, the Requirements stage may use one Sprint, including the delivery of a prototype. The Analysis and Design stages may take one Sprint each. While the Evolution stage may take anywhere from 3 to 5 Sprints.",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng, deu"
+      ],
+      "page_number": 2,
+      "orig_elements": "eJy1Vk1v3DYQ/SuETjEgCxL13UtQNAHaQ4ogdtGDHRiUOFoRlkiZpHa9DfrfOyR3F4vYDRDDvu2OOMOZeW/e8OZbBBPMIO2d4NEvJGop9Gmd193QNnnW0aJrG8iKlg0tLbuSRjGJZrCMM8vw/LeoV0pzIZkF4/9PbK9WezeC2IwWLZSmKfoczDvB7YjWrPbWRQlpnd/NDS3TpIhJlrVFUn+NycmQlzRJnSErsjrJn7UEJzRFZm8szK6Sz+IRpquF9RD9ix84WOitUPKun5gxd4tWHR5LkzbPqgYPDGICu1/A+37+FPmk5WZlG1/ZTQRyExMOa+TuWdB8J9e5A+3KcTdYeHQFR1e/ffnrE8E71hkMWZfLQStpiR2BwKPA9GQPRA2kH5kyhAvTr8YAJ6xTW0A/ImSvtMZsQ5DFZW1iwiQnmPVWcAyLxYxSPKzupyIajJrQGe8w4A51CKpJyLX/f3aWaSBaKYvXCUl6NS8T5mT3ZGYSK3JEICKBhBiYhkulN0yKf5hLID4/gtnDvAgteja563rACozP8F6q3QR8A6TX4D0T18pjZ/9kWqN1C9euW9i27wkIBQw07RjlNVKHZgXPs7RoC2RjVWdQvh0BiyZJHbuaJrDraCiqMskD3crqfyzB6YUEzJq2ek0C/iGRCMwihtJATAIfhSFSIXJy2iNO5DYSFgISHjbknPYwsOk2wku2MKnFY43NHhUn3Yp0nIwKztj+xfniWaMGu3O8eur0c8jTFPFtmpxXPC+Krhpg4LSFoerLJu3gDaXnAHSZ1wHWk6HJgqEug848NXiXl+HelC2tXxN3mpDf1Y5whaMYQN8pff/+HIRrYSd4duzaKqdVzZqsoB1tGzYUGU2rBhjryq6u3rz5Ff1u7Oq0CosAhyxN6mctwemlY1e32avr/u1K06w1ZKNQGYUXZw4Tsl47ZZ/XfiQPK5uc5J4GBz8syhiBok12wo6ozAyHVwvE8V1+2VzETnDNqDRuETHDZace3acBK+XeguOL07zF+bwgKMmov+Rq0a7HQQmwPifVOPrYA+s2jZtmMuNeGn9uSLOSVXmVpg1URZ4iQYq2TfFxwKqM5ylP35AnrZ+4uiiPQxoMbZ0fxTinnjlPLcHphTzBIO1r8uQjQxIYiwfcDnbPgnPl7Pc90uDdF3hYRVBkXP2/SjbtjcBfH8CIDS7jj1s1rWEvO/n+EDi2vwg6v8NlvSyOHKjXByoQpY+kQjYd6OGfCMRqxoULhpx9Vs59tofXA4IrJIYeMF6v5Bak8C8aDDgzLZBj7guG7O+F3JAZ22askoB3XanYf4RH5h4esS/+vNJDW2a2Jys+XNDrkGjsFtS0chcxdCzU60ph7gVilcMmlHPs1qEzrmHHClxky+7PQxNAPBLy94iJ+tin1p5l432Y3O9GwB7gg24muWtueWrkD6bo638p+p7c",
+      "filename": "P49.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "d4735e3a265e16eee03f59718b9b5d03",
+    "text": "2",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng, deu"
+      ],
+      "page_number": 2,
+      "orig_elements": "eJxtj82KhDAQhF9F+iwSNRp3H2BvCwN7lEES06OBmIi27Mgw775J9ue0pyZfqrq6+gegxQUdDUbDawaN4C83rVvVCuQV46pmXChZ1w1nauwE5BksSFJLkkH/gNH7TRsnCff0tvL0Bw0zmmmmQKqKseD5wZ9G0xxoKRJdvXEUfX3f8bKo86xibVuU1zz7AyULM4GmK8R/4NsSCOznTrjEHhdzR/uxyhHhGT40Eo5kvBtGK/d9WDevgowVomQspMDNWKRzxeS9vEM62U2HnFKvHtBNeabxgJizBjy4Y1G4xTIxgfAe60IVrb+b3rynIHlevwBlqWg4",
+      "filename": "P49.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "9bacca4cab94451e60740c2a2f26c191",
+    "text": "As opposed to a repeatable and defined process approach, in SCRUM there is no predefined process within a Sprint. Instead, Scrum Meetings drive the completion of the allocated activities.\n\nEach Sprint operates on a number of work items called a Backlog. As a rule, no more items are externally added into the Backlog within a Sprint. Internal items resulting from the original pre-allocated Backlog can be added to it. The goal of a Sprint is to complete as much quality software as possible, but typically less software is delivered in practice (Worse Is Better pattern). The end result is that there are non-perfect NamedStableBases delivered every Sprint.",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng, deu"
+      ],
+      "page_number": 3,
+      "orig_elements": "eJy1U01v2zAM/SuETxuQGo4/4mS3ddihhxbF0mGHoAhoibaF2pInyU2DYv99lJ1sRVHsMGwnWyQfyUc+7p4j6qgn7fdKRh8gKtIq21TrMl1XWNOmpmItVusEEbMikWIdLSDqyaNEjxz/HAljrFQaPbnp3eHRjH7fkmpaz5Y0TRLGnMwHJX3L1mU5WQejtA+43S4tkjhfQJov4+x+Aed3VmTze5lneVy+YZgRbInc0XnqA4tb9UTddkBB0Q92SPIkvDJ6Lzp0bj9YU3FYEm+yrOQiUa068seBJuztdTQ1rJsRm4nVLiLdLEDSGIU6A5v3euwrsoFKqODpKZCNPjoww2AcSfAGECwNxJOqOgLUkjPUSrOPGxDkHODAfyjaBSgN209fvl6Db8kSKAfacBi9RhyUbzkWYTtYnl0MV5pJo1zAVtixh2sir3TjQFr1SCEbCNMPTI/pg6knC3adEbwxCchjeVRekYsD6fMMbtBaZA/dBV5M8LVMqqysKSs2tVytlqJYr8qSihzLQuYbkZer/y2TbMO7fyGTVZrO72VepHHyhmFG/KVMiqT4lyr5zCs/LZDlQjZMBUzY6hwf9nQw9gEUN+pA8L7CruASxUNnmhhYZqytsaNFkElvgmKmUOQ/LkJWM+YIKCUDuYyZ9n7CvyWiGXLKYsmNXZAR1Nb0E9RY1agQwZq8+K2fc0aBGio61eNqipPeMawxDGE251JB2Ow+SZIBDvqRh/F9xE75IzhT+0MgwQ4+I6eqwLEaPfDglZhIdeEOfgVyQkkdS9VOTLm/oGlB8O6bsY7gysEleaYHA4aPfj93RnyOM8+ppxb96fRCUm30Be+lZjnADfYkt9MNX6Kjl+WIP8fzEP9wP/c/AQ65wns=",
+      "filename": "P49.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "63329407b18327a85e2457e4977a0b94",
+    "text": "r -l o 1 [ ; \u00ae $ \\ o N 7 o ?\n\nFigure 1. A rugby team also uses Scrum Meetings (not shown here).\n\nDuring a Sprint, Scrum Meetings are held daily to determine on:\n\n1) what items were completed since the last Scrum Meeting. 2) what issues or blocks have been found that need to be resolved. (The ScrumMaster is a team leader role responsible for resolving the blocks.) 3) what new assignments make sense for the team to complete until the next Scrum Meeting.\n\nScrum Meetings allow the development team to \"socialize the team members knowledge\" and have a deep cultural transcendence.",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng, deu"
+      ],
+      "page_number": 3,
+      "orig_elements": "eJy1lVFv2zYQx7/KQdhDA2QCJUqU1D0Mw4YBe0hRIH2zC+MknmwiFCmIVNys2HffSY67LPMKrEteDOlP3Z/H+x3Pm88JWRrIxZ3RyVtIGlGrspKFLBDbTihVYNVmiqqyxbYpVXINyUARNUbk7z8nnfeTNg4jhfXd4oOf4+5AZn+IrOS5EBzzKB+NjgdWs2pVR29cXOI2m7wUaXENSok0/3gN5/dMViptFiGTpUyzS8ophpUkPIRIw3KO9+YT2dsRO0r+4IXeWIoPI61L72+SNSO3n3G/pr1JyO2vQdOcLDYjyzs3Dy1NS66LQaRPy2mSCb634CGDDfwA21kIJPgOtlvW3kHFvz8u3uetfhvYaUngeZkzhUrmVGmpdF61bZ03OdWiFTUJ3XTla5c5K6RM5dM6F1WeirWq7JSKy8oa9NVCa4rURePdrrMYwm6cfMufiVQJWVcvSeJXs58ngiyFn2Ca9+0DRMIB0AYPc6AAt900D3BDFI3bB3jjfIRw8EcHB5roKn0K6mT2M45L6peAVYSyx55LUVAvqc1RiLKV1MiiVFRWrwesaFLJtS9zlVYrsLOgikc8mfhXZQ36NmB1XpUvyeuXeWIOgHA78kO8fs4HGeaBrAaNxjJMD0tq02AcgXdvn9J6h9OE0dzTh8X7Ai2JXSf6um/Lnrq81lhoVSNqVbR9rrvu1WjJolhvihL5idZZqJriJGRSqVRdVE5B30irlFK9JK7sCo4HjGA4kQBHvjHQ+WFkd9IQjOsI4oGAs4h/J5lCfg4NYeZ76Cdore/uAhzwnqAlctD72Wk24K8csSHTbgkmCt7ek07hzQf2Xm1veAOa2Is7Z73gllCzMHm7BozeBdPyc8/7nAyWNltyO+2aXoF8TMjREbhqZu+WXgkw4B1BIBdO0UvMugVncz4rzC4auy45rsyzo/6nplRFnfXY6LoRnajLjv9eS10iYq0q2dIrzvyC+4r7q/4y8x+FZhkTawvyEFvb9J9K/T9mfiNUlb1kUz4fGdb648pG0z1ZPy7V/oJwmwTfGbTmd/oL7UCLb4A754+W9J62CSC34tqayD40QjfbOE/I1Cd0oSOnidv9a7A//gm6h9fR",
+      "filename": "P49.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "4e07408562bedb8b60ce05c1decfe3ad",
+    "text": "3",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng, deu"
+      ],
+      "page_number": 3,
+      "orig_elements": "eJxtkE2KhDAQha8itRZJ1I5hDjC7hoZZSiMxKTWgiWjJtDR990kyP6tZhXz1XlW9ap+AMy7oqLMG3jJomCkvQ6l5XUqDAxeS1brqq1ogSsMryDNYkJRRpIL+Cdr7zVinCPf0n9XpD+omtONEgZQlY8Hzgz+toSlQ3iS6euso+tpW1ryo8qxkQhT8nmd/gLPwJnCRRfMf+LYEAvu5Ey4xx80+cP5YlUZ4hYJBQk3Wu07Pat+7dfN9kLFCNEKGHjDYGelcMXlvV0gru/FQY8rVAroxzwweEOesAXfuWHrcYpg4gfAR40K60G+nd+8pSF73L6QFaHw=",
+      "filename": "P49.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "fd67263394cd38b310c3a1d12c6a98b0",
+    "text": "This \"knowledge socialization\" promotes to a self-organized team structure, where the development process is evolved on a daily basis.\n\nAt the end of each Sprint, there is a Demo to:\n\n1) show the customer what\u2019s going on (EngageCustomer) 2) give the developer a sense of accomplishment (CompensateSuccess) 3) integrate and test a reasonable portion of the software being developed (EngageQA) 4) ensure real progress \u2013 reduction of backlog, not just the production of more papers / hours spent (NamedStableBases)",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng, deu"
+      ],
+      "page_number": 4,
+      "orig_elements": "eJy1VNtq20AQ/ZVBTxG4qi62LnlL0z4U2pCSvDnBjFYjaRtpV2hXdpyQf++sHJdQQqElAYGYo53LmbNH60ePOupJ2Y2svFPw0qiOUgpXcbLCtCwEP0lcFWVdRCGmeeUtwOvJYoUW+fyjJ7QeK6nQkpnjDvd6spuWZNNaRuI4DDnnGd7JyraMRtmMDloq6/LW63iZBtkC4jAKktsF/I6z7BBHy2j5OjBnMOKZvbHUOxaX8p66qwEFeU/8oSJLwkqtNqJDYzbDqEs+FgZFlHMFr5Yd2f1Ac+rld2+eVzUTNjOptUeqWUBFk+faDAxv1NSXNDomroGle8fVu26lgRvvTuldR1VDYLSQ2MkHdN1vPODOveZVgdWAYKirP+ixQSUfqAJL2IOx4yTsNNICdi2NBLYlbr2lTg9OJ1dCkDHAnWiruy0nasXFKpTdHko00gSOwZHQBY4jt9/StRuSp/1TcoxjXKYRZhiGZVgWcV4keV1jEhZJWWX5O0peBMkCkig7Sn6IV6yri/M0DMJX4vn8/wmer6LkTRU/s7NApFiFGghFC1fDyBQXDmf5WCaEz9Rrlvz033TJxXJZ1ShKEquVyJIsEliXFLJWUYrlu+mSrMJgyXsu0iBye3+O05j3d3BemAfRK8Ah46/KvNniIx9Mq3fz9sVkrO5pZMegvZn4j1AYaJhQ46xx8kU1XOf8+ZAPsQ8N7/2lszjX2VEZcjKiELofOmna2XEn5xzxN17s1SSc+XxIfOB9UcMSEqBy5jWWa4yERissO4JBj+4KuoKuk9G13SHfiJLcYMfG1XG+H2c+LH2+SYbN7+p0zurN6Lw+c0oYrCZxrFmiuOs0L0tpCz+Z3NyFU16c6TWXGpDpGfgIrZ74bYaZ0wX2VF1ZN+knNGT8l3fzmzT2qxPw6fYXmrTtXw==",
+      "filename": "P49.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "a13e3bbcb47493ec9307476eb3d4b334",
+    "text": "After gathering and reprioritizing leftover and new tasks, a new Backlog is formed and a new Sprint starts. Potentially, many other org patterns (organization and process patterns) may be used in combination with the SCRUM patterns. While Coplien org patterns, are an obvious choice because of their breadth, other org patterns from other sources may also be very valuable [OrgPatt], [Coplien95].\n\n\u201cThe system requires it\u201d or the \u201cThe system does not allow it \u201c have become accepted (and often unavoidable) justifications for human behavior. What we fear is that current methods do not allow us to build soft enough software, because present methods and design paradigms seem to inhibit adaptability. Therefore the majority of software practitioners tend to become experts at what they can specify in advance, working with the unstated belief that there exists an optimal solution that can be planned a priori.",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng, deu"
+      ],
+      "page_number": 4,
+      "orig_elements": "eJy1lMGO20YMhl+F0CkBDMGWvLa3tzbntItuih62C4MaUdJkpRl1ZmSvEvTd+1P2LtIm6KFobxqKQ/4kP87D50x6GcSlo62z7yirTCnG1Kbe7mVdcFHuDnzY76Ss9tvNuqyyFWWDJK45Mfw/Z8b7UFvHSeJy7nn2Uzp2YtsuwVIU6zXuXM1nW6cO1s1+sY7euqT3Hh6K7SGHabfb5OXjil7Oh5siX+t5sy33efkNw+UGLFmcY5JBq7izz9Lfj2wk+wM/aklikvXuaHqO8TgGX8Ftnd+WN+UBDo3tJc2jLHfv3meLYNdO3C5VPWTi2hXVMmWaZ4T56KahkqClaIYkz1ps9n2TJFDLqZNgXUvsagoyBuuDTfaTmnppkj/BS/85OVPi+BRXxMvhBzZPvW/JRmp8GKRe3C7/7hHHJYqJQ4o53fmEuVnu+3lFA7uZvKYlH1oaOUGIi/QGJ3b2E2v5SywUbyTGV5e3uDtTJTRFZLOOjB8qHaheONvUEaLS/buff3n/eienXzu0jN75sbfi/pISlQRBJvLVyfopkum8NYIMhpGCfKMBbaAqCIOG1bdkN8EPV3v0U4DgRSX30atUtG+mE/cTV1Dx8FNo73BTqbgqur15zHWKL0P9kUNARSf5oIPCxP7Ovdk2pgT1h4IPzeZw4LUx2+p2A+53pqrN/8f9zTrfAuvbK9bX82ZTXBcBnJfK+deWy51/Sf622G//S/J/m4r1xnwAKhcxwP73yQYMzqblX40JLyh95Vl7eDmfMN7en+F/daGOTws3fgBQxsiYQOgbhdhjzxxNjk/e1grBW/o4xWQbaxZwl+2hbsJaIADiYAEVWk50FmqEg25Y0rOZQgAHhOl2vo5Q84UW4JtA3GT7GiA2icT5qe2W7zM4X71iPaLUL8OoylqibR2oDlzbdogUBeUioHWdrVAncBoTV7a3ac4JLQkC3bK0aeCP+mjMujAv6ZCFMU6tUAKkCZKovkuL5HkUvAykRWpliDKTQQfiKMY2sy431yd2BrrPPjzpc/S64ZPDw6INrgQb1FyaoxuogW3UuNjpMdmBewjqp+WBuLRw6TKNIMfpi0WXB++fNvDxT6KHKbA=",
+      "filename": "P49.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "5627f587677077cb626679d771db8d20",
+    "text": "Once technology is adopted by an organization, it often becomes a constraining structure that in part shapes the action space of the user. So we build software too much like we build hardware, as if it were difficult to change, as if it has to be difficult to change.\n\nIn contrast, SCRUM allows us to build softer software, so there is no need to write full requirements up front. The user does not know what is possible and will ask for the pre- tech-paper solution that he perceives to be possible. But not even the software developers know fully what can be built before it is. Therefore, the user has no concept of what is possible before he can feel it, or touch it [Blu96].",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng, deu"
+      ],
+      "page_number": 4,
+      "orig_elements": "eJy1k8lu2zAQhl9loLMiSLK8qMf01EPaoElPRmBQ5NAiQpMqlyhu0XfvkE7cLe2haG/Uz5l/Fn3cfi5Q4wFN2ClRvIKCtat+s+Cc1bId+hrbum6aeiFr2a27ddsVJRQHDEywwCj+c8GtdUIZFtDnb82ONobdiGo/BlJacqCcJ3lWIoykNuusTlaZkPK227brq0UJTbPcVOu7Es5Cu+5OQtP9VjklkVT4ow94SJNcq0fUNxPjWHyhC4EBeVDW7Lhm3u8mZwcKq6t+0W0aCpBKYzhOmHOvr4rctNlHts+TbQs0+xIExiLVmUjemXgY0KVxUoWAj2ng4p3hCFRsNFbb/RGUBybsFFDAcARmwLo9M+oTS92UoAJYGdDAgNwekIKBW+ODY8ooswc6RR6iI8+RBVAGJuYC+JFNFBxGBJbnAp9mJa+sRY+ughsLM8IQlRbgqcrMko21cIh8BK3u8dv9yJxI9yUwD0qmvmakcKGkVDzqQInAR1rJ9yEjnUgfXoyr0hKfd/qWOUcjP+Bt2hMt7Gf0xKrdrOp2wEXHRLfispE19nLTcWw2q0H+d/QWTfcjesu6q+oTaMu2ql9UTkl/i15fL/8lem9MYofQ8aGEm9fvP1wB09rOnnjIv+lMArozECWdEjP0rwlVY8EgoUrRs1MBQUatweHHqFz+W+Q1gXRUpoLbJ9JAWEypAe6NnWHOoHqYrPdq0ESoETAr8mH+HqR1GdHJ4UV+JxcToZz60TGDnDlPAeg4EjDPhD3bVXAZQ66GD2iy1xluQZK2lOlPraTuj6eGOEtvLO8g0IHawESw8nkOl4Xy/Hgy2bQM2ifHKb3RX8d6MqGM5C0RNRmWkOaz6YGR+/ZSx35196eXcPcVM5vKLQ==",
+      "filename": "P49.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "fd4fa2820e0c27a27e2f27230d1a75ef",
+    "text": "Clearly, we need a softer approach for building software. We should recognize that it is impossible to have full requirements specified up-front or to freeze the context and environment. Requirements are written in a context. Our system transforms that context. New problems arise in the system and the new context.\n\nThis issue is not solved through improved methods for identifying the user requirements. Instead it calls for a more complex process of generating fundamentally new operating alternatives. The empirical way of working in SCRUM is one of the possible alternatives.",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng, deu"
+      ],
+      "page_number": 4,
+      "orig_elements": "eJy1k01v2zAMhv8K4XNmOPFndu1ph3ZF22GHoAgUibaFyZInyUmzYv99pJMU7VDsMGyAL3rFlxTJx5vnBA0OaONWq+QjJKpo8l2blbJcKly11arAHJt2XZS4k3mlkgUkA0ahRBQU/5xI57zSVkQM89mIo5vitkfd9ZGU1SrLyHOWD1rFntRlPauj0zayb7NZlVlaLGBZFss0f1zAi1CtqzRjYVkUVVq/q5xMJCXhGCIO3MmtfkJzPwqJyU+6UBhRRu3sVhoRwnb0bkdhWbrO1+WSAlptMB5HnL2318n8aNtNops72yRouwUonBKuM5K8tdOwQ8/tcIWIT9xwcmVQeHNcwAHBIioQEFwb0YMYqaqQPbTOw27ShgbXzZcH4TGFrwihd5NR4FG6zuofCLEXETR9AfQwuhD0zpDqoBd7hHYyhoK/T9rPWwwQRpS61VR2Gj+03tkIVIziW48450OQpNJjQVgFaPeaoticwt3rTPQkOHgdI1rQlro421L4PHk4DRqiFzZQO0M4vfQl5gYPwDMmujiVDshJuPrZycX5aCnw4uKhX3ZwI7wXUe/xgedKA/4dVSnksq7yKitVUapalbIWRbtumtW6rtoG/x+qRZnmRF2dF2k9o3oWmqa5gFmu0uxd5WT6e1Srf4nqQ89YhTAh82VdJBjNHnkx3k1dz8h5xwINsncqzORqRUvQ7ZHh5Q1Ogdh+DWEKnyz1JhSDK4UxJ5+AwXmmbxgNPjEdEkMA10KHFnnZlLCdrBKchWzHGQ43Xu6Eob/IzlBQjQcqjcOovaYScBBHznRw/huHEmv3V3dfrrkvZ5Gv+KkvP9CbVH/A7vEX+lWuDQ==",
+      "filename": "P49.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "4b227777d4dd1fc61c6f884f48641d02",
+    "text": "4",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng, deu"
+      ],
+      "page_number": 4,
+      "orig_elements": "eJxtj8uKhDAQRX9Fai0SM74yH9C7gYZZSiMxKTWgiWjJtDT9752EHmYzy5zcW1WnfQDOuKClzmj4TID1rNe1klwq7KXmTTMgE0poUYpyyAdIE1iQpJYkff4ByrlNGysJ9/ie5ekO6iY040SecM6Y77zxj9E0eZrXka7OWAq9tm2KPPtIE86qKstvafIHhMjKCMomq/8FseIJ7OdOuASPq7nj/L16C3j6D42EioyznZrlvnfr5nofY1nV8KLwgcHMSOeKsXv9gniyHQ85Rq8W0I5povGAsGf1uLPH0uMWZMIGwnvQhSJUfyddnCMfed5eOWhpvg==",
+      "filename": "P49.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "854efa154c1c9be50c40491746931a07",
+    "text": "3. The SCRUM Pattern Language\n\nThe following diagram shows the relationships among the SCRUM patterns and other org patterns.\n\nEngageQA  NamedStableBases  Firewall  DeveloperControlsProcess  Demo AfterS  Sprint  ScrumMaster  ScrumTeam  Hyperlinked Org  Backlog  ScrumMeetings \n\nFigure 2. SCRUM Pattern Language Lattice\n\n4. The Patterns of SCRUM\n\nScrum Meeting\n\nContext (FROM: Scrum Team, Scrum Master)\n\nY are a software developer or a coach managing a software development team where there is a high percentage of discovery, creativity or testing involved. For example, a first time delivery where the problem has to be specified, or an object model has to be created, or new or changing technologies are being used.\n\nActivities such as scientific research, innovation, invention, architecture, engineering and a myriad of other business situations may also exhibit this behavior.",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng, deu"
+      ],
+      "page_number": 5,
+      "orig_elements": "eJy1V1tv2zYU/iuEnzbAEEiKIsW+td2CDVi6rMkehqAIKPLI4iqJhkTbDYr99x1KdpYtbtEZ9ostfjyHl/OdG+8/L6CFDvr44N3iFVnUqnQOuMu54s5ApV2lpKpzXlWO13m1WJJFB9E4Ew3Kf17YEAbnexNhnMateQyb+NCAXzUREc4pRZ09vPMuNogyNaHr4PuY9O7veUEzsSSciox/WJKnseCZTuOyUFl+ZDzJI7AYH8cIXbrDjf8E7e3aWFj8hRMOItjoQ/9gWzOOD+shVChGs1IVSqFA7VuIj2uYdG+uF9Nx+9XGrKY73S+gXy2Jg80i7bNG+KHfdBUM6SJphwif0lUXeUbuGiC3b9//fk1uTIww9OSX/VJp2cMudz620+H+a34GObU1VIzmldN1oXMmeGlyxQqqZKUvZ35RZghxLTM2mX8e51JneRozUcijwKxxGgGa6eKsBCTr16Ftw873K+K8WQ2mI2MTdiOJODdAa9JBxsavR2K6gFLxibH1zBhO9I4ExAcShtUTnD1n8J0ZBlxqC3dp6yNMOupEgcFTCasElE5QLU3JclCuAmPtBQNpJqoUGZ0DaRorLTK1Jy5PkfMCmDVOZBLj8KxM/tivcPK314S8Mx2422iqFt6YEUZCrvwAO9O2hPwAW2jDGoa3oY9DaMebIVgYxzTTBfK6RuJuCbldD2ge/LfDprs2eLlhP7gD9A/yE554aH3/ERz5FRknb4z92IbVQQMgoj+N5LkD/NylmD5CvBKyBmZsXRpRUqtAMlXUDpiojKKMXTCERSK6FHLm9TAuizliS00zdWQ8yZ9Gu+CS83PSfuVXmwEIz76QRPEjRm//lUxnnbdmnU54jBFdgaaWWwvopCXNC1Hw3OmqqARTGuCCjMhkYa34PhTnMaNMzoDKp8h7Acwap3GiaCnZOTkRc1W7OWTHUM/kfFNB006CFUB5ySkWN8VVUXFRGyfyGoRyFy1oRTKt3Lv7AWBsn/ew+Gf6GDCrnNhTME7lOa0/ZSCyT0HfZHJZM2we6hJbNkoFy4tcgixU7Zi2GK/lpVs4xrDi6Gc9HOO5yMrJvUs2+fsLYFb5qsnPZtFUK/CTfHf1/tfrV3OKJ6kQLPffc4X4/puMXQLHoq45y6XSmlWSOqNBUclsJUUhLp1bGFfikO5nAPvFOZcwQfkXkFnpxFKfa5Wfk48/iMGUb8gY6rhLn+5Q1bH9QtwGYxvSmd6sUlf3UjDRQWKq5Dvs2SB1dPjrsY8jDVqV4EoWRVL5wNzl/GjDFobHJbEDpB7Ox8e0EzKSYoz4fhvaLbiMXCEKn0y3bmGJi9V+GHEj36WdW5/W+GdHkgyErkEag71mIBWQcQ3W1x7ccrpIT0L1J9qUdAHVn8lNx9hL9bBLf7ZBU6bDIAlNH7AX8dj5pDtXkODNiOf7X/0o5JLWJRhaS+OYkKUxzKjKUi60wf7kgo6qpxAX8qkvmYECn3L7BvSLyKx0ek9antNRX9vJWRIT4wZdEgkcrUcTI8kW3xYjmME2S3SgPmynd0b63iaB9JkmfTorditLAolfgGFyaXxvGNI9Dt645KLz26PajCiBzezo42Z+tmAUPBLTjgHdsvGVR29s0M8raMzWh+FrHvHhbyag3g0=",
+      "filename": "P49.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "ce71c8c4719bba134a5b463cb4fa6e18",
+    "text": "You may also be a \"knowledge worker\", an engineer, a writer, a research scientist, or an artist, or a coach or manager who is overseeing the activities of a team in these environments.\n\n(Misfit variables: estimation, planning, tracking, human comfort)\n\nNOTE: Misfit variables are variables in the context that can be adjusted so the solution can solve the problem.\n\n5",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng, deu"
+      ],
+      "page_number": 5,
+      "orig_elements": "eJy1VMFu3CAQ/RXkUyutLDDYxrm3t6SRmku1iVYYD7s0NqyA3c0qyr938CZtlOaSKLkxj3nA483M8r6AESZwaWWH4owUoqeDaaqaG2WUgqqqagmNNkMzdNwwXSxIMUFSg0oK8+8L7X0YrFMJ4hyP6uh3abUBu94kRKqKUuQ8wgc7pA2irJ3RrbcuZd5yWYmu5AvCaslKfrMgf4GmE6XMABOiKttXkRMJoSIeY4IpK7m0dzD+3CoNxQNuDJBAJ+vdSo8qxtU2+B7TaNnxSjBMMHaEdNzCzL08L+ZHu/VOrWdlywLcekEG2BX5ni3CK7ebeghZTr4hwV0WXPzyOzKpI1Fj9KQHosh1cev8YYRhDeTgwy2EazxeOYJHWgcQMCCHYNNpFSCCCnpDorbojI1pQXzI+Sr8i4j2CnNwOSmHrwnksPHERuL3ECKAdWuSNng9qt7bZAF3DNISqIlYl/ci4Av2NniXKyCWWfPTF1yoEBQy4SrLQn0vK4V30gymkm0HjTGSNzUiQuq6YwJkTz+vUmpaCjS95aJs50p5Alp+Kh3Gqmaui1eQmfS+SpF1xeqPrJQv5zYam8heBav6EeIZgZjspPLtC7LFU53NZ6Wg9O282uzQbbR+Mj6kr28yrDPc9BwYbxvWayEUbdC2oeqNMaKrP9EwUc+dLBl9NOwJkLKkp0auaElfR2bSO1ubNpR/pGEXP66+nZGXrmFbwrPo1Fvokcs0XKtENJqWR8Hwe4ciBoKTIedEP+7yw+d9DPYww1kAWve2flSgBaXAoakHTbues5pxHJW97mTH++7T7JWCZTcr2jQly949AYw+jnJZy9x8/wMnyvvMbVrZyo80t37+3d+9x2lcPNz8AbK9LbY=",
+      "filename": "P49.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "7961982bfd282f3867da5f91c14d9d66",
+    "text": "Problem\n\nWhat is the best way to control an empirical and unpredictable process such as software development, scientific research, artistic projects or innovative designs where it is hard to define the artifacts to be produced and the processes to achieve them?\n\nForces (Analysis of Misfit Variables in the Context)\n\n[NOTE: MISFIT examples are referred by some as anti-patterns. I use here some Dilbert-like names to indicate their awry nature.]\n\nEstimation\n\n(+) Accurate estimation for activities involving discovery, creativity or testing is difficult because it typically involves large variances, and because small differences in circumstances may cause significant differences in results.\n\nThese uncertainties come in at least 4 flavors:\n\na) Requirements are not well understood.\n\nb) Architectural dependencies are not easy to understand and are constantly changing.\n\nc) There may be unforeseen challenges with the technology. Even if the challenges are known in advance, their solutions and related effort are not known.",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng, deu"
+      ],
+      "page_number": 6,
+      "orig_elements": "eJy1V9+P2zYM/leEPPWw1JBs/bD7MhRbCxywdkV72B4OxUGW6ESrY2eSnGtQ7H8fJSdde70BbZA8HHKkSZkm+X2kbj8toIcNDPHO2cUzsii5NZZJyZioWgVKcsGqjqpay07T1iyWZLGBqK2OGu0/Lcw4eusGHSFkudf7cYp3a3CrdURNWVKKPgf1vbNxjVqmsnY7uiEmv9vbkjdFtSQl5QV9vySfZX6QORWPytkeFYuwDxE26RveuI/Qv9tqA4t/8IGFCCa6cbgzvQ7hbuvHFs1oUYu6ZGjQuR7ifgvZ982rRQ53WE16lb/pdgHDakksTIv0ni2q74Zp04JPH5LeEOFjzM54MmYzHXA878bFPofxMNFcdsaWXaVBcgVCcCFrU8mqa5WWQjQXTLQsFCauVoWYE53lqqkLlWSGkRT0EcXscVqqm0oxfs5U/7nWkbhA4hpICyGSe70ncSRmHKIfe6IHAput887oJFgyDVsP1pmosUQEAzMQAgmTWRONv2MX77UHfPUO+nGbCrUkwTj8dZ0zxEMA7c16SbSPLkRU4Rl/4dcGMnrihmHc6eh26YTgVkMg92vA81yOcq29TdFZ6NwAOeh0TKeTO+rbHJGdDNgcbDI4hAjZQJu1w8jSg83PX/bXa+19fu9NSswjfWa4tVo3YLlhHHijGymUMg2FirEWysv1maAFlpyrppC5z2ZZlHQGMGNNmdrqG8XscSKkZcPqc/bZy9FjFciT54Pu9wFLOXbklQsd1vUP7V1qpoDVzxX7BXsP3a6+C/9KtRVTteooNbQSzJaybQQ1rcE0KMovTbRCfk20krOiymWo0pNHFLPHifhntTgr/m9f/37z4hl5df3u5fUNgY96s02VSBD20IFHrJN2j7jeQMK3Rhg/3eoYwQ+hINdkCkAyQLPFr67Hd8SnvfsAZNCbGXRuQL7AfKfiOk/0vd/jwzh5KN7/GAZL1XY4bGjVSCZNpZH4WQmMQS1aKuylMShrXrAvMKjYgdo5zbV/KM/2JyKQi/KsCHyBZLvR6VXfhSvQsu1arTUXtpKyKpVWKJVQSWVYdbkFpuJlmqPqSGcHua74cYxWmd6+Ucwep+JKNGfN9pOfrshzYyaf+h4+p550OORwWrmdiy4z3m7sd25YEeuCGXfg90tiPOhssU8jMSZvNEDOtK7DGTr1EQed0Ql6SJ8YbhrO/f5wGJ7aa78Csku8OiDrLvMsPLqEDRrnoxC26XGiXeO8mTYhZnuywR3gYIwjOM1txP1DF5zkGEkofgjBjHLa2rpmuB/jNBVQ8a6GhnUd/s85u1xXzYitlZi3tYPcMDo3USMzYh/Ks/2JCFaMynP21M0alydcwAxSrMYvSw1kEu1iNXCL60Hj/sZJ1+vd6MOzHyoMWGWQRFumbV1WFKlV1LZpjAQm6uqC95WK1wm8OLLnxB/lWh4KUc6FeShn+1OXG8rPel/RV+Qt/D05nzM6T89hxF0aEGnTYMGHOI72K6j8hsvvdQr8sZ2mLEvR8FZzW7Oa4p9q8dLYUtXY2rYXRwmj5WGpOSpQcyRbylL+H9HMTifyL5VMnLMkLdIvXjNceh+SMBIebAErMRgH/xUIEZNvO4caJZrMf/gYL0BJEZFXzRpDQAr+7vohfEphOtHRDklOVrLhgiuhhMQ7oLro7Mx3UIY1OQ7PWVEKdVhCOcuX0Ec0s9OJ9Str2pyzfuaK3OS9Ms2iNrEeTk6kPxhSOfoez8E63ru4zlcGDGs9jP242hfkxQ6NXJf1X9imon4Yxvsh06XdpVG3PKykYeyn9Fkhl99Dj5WwBDp8Z/zcLNn5f3rg/b+e5IxH",
+      "filename": "P49.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "4842a254911a571a3f010a3161a2979c",
+    "text": "d) There may be hard bugs to resolve in the software, and therefore, it is typical to see project estimates that are several orders of magnitude off. You can\u2019t \u201cplan bugs\u201d, you can only plan bug handling and provide appropriate prevention schemes based on the possibility of unexpected bugs.\n\nMISFIT example: YouGotTheWrongNumber In projects with new or changing requirements, a new architecture, new or changing technologies, and difficult bugs to weed out, it is typical to see project estimates that are off by several orders of magnitude.",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng, deu"
+      ],
+      "page_number": 6,
+      "orig_elements": "eJy1k29r2zAQxr/K4XeDYBz/iZ1+gI3AWgotjJGVcJbOtoYjeZKcxJR+953stdBSBhvbK1vP6bHuOf28f4yopyNpf1AyuoKI6oSqvCwxqYsCiyzdNFlVr4XARIhc5NEKoiN5lOiR9z9GwhgrlUZPbl73OJnRHzpSbedZSdMkYc8v+ayk71hdl7M6GKV98O33Wb6NsxWs020elw8reBHyvIqTIPBbEifvKouJpchNztMxJLlVF+rvBhQUPXFBkifhldEH0aNzh8Gamrcl8TbLkpQ3NKonPw00e2+vo7lp3Y7Yzsn2Eel2BZLGKJwzsHzQ47EmG+KEEzxdQuBIfoD7jizBESeoCTq0EuqxdeANWHKmPxEoDb4jcKbxZ7S0AtQyKJYaE5bKg2LDNCiBfTA6IuCev3MIIOfVMUycHeiB/Vw+keWdfBlkHZiGT2+18qMkXjQxfDUjCNTfxjRZbz3MTzFwwrm1eSlXMC27wOh+gucqJ9CyV7qdm+QmToq/igO/DVZxH6zx8TpMF5zomCcHNTqS/J055mCcU7XqlZ9Ca6Omy8BBaJlLHGb9PPrPyvlduEIe6Vs41yIt12ne1EWFmagQ00oWRblJMC83iOV/hHMTl4G8qoqrBc5F2GRlnC0opuu4eFdZTH8JZ1pssn8J5/Xu7uPuHuiCx6Gnq4DFJ+OZ1y/W6PZm9sBOP6Pm4Kx8B5rOTBYIBqENHFj6MSo7X41jdOc6WtGpEGMM/L51cKHTpjetIrfALlXTKDH2/uXfOFMgZvR/Tj8TDvX0u5/gFWM3aC16daL7MJWnh58v4p6m",
+      "filename": "P49.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "a1d8669b90f494742906a47b8f5a9102",
+    "text": "(-) Estimation is important. One must be able to determine what are the future tasks within some time horizon and prepare resources in advance.\n\nMISFIT example: SetMeUpForFailure Projects where no estimation is done are difficult to manage.\n\n6",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng, deu"
+      ],
+      "page_number": 6,
+      "orig_elements": "eJy1k0tv3CAQgP8K4tRKWwv8AJN7V8oh7UqbnlbRCpvxmtYGC+M8GuW/d9jNVm2VS6PkYpsPhpnxB7tHCgOM4OLeGnpBaFGUqquN1Hmdi1qVBeNSFFWHTLSqreiK0BGiNjpqXP9IW++DsU5HmI/jQT/4Je57sIc+IslzxjDmGd9ZE3ukXB7p5K2LKW63KyqWlSvChawzebMiv4GsiqxIgJdcZOxFcgpCROeHOcKYOtnYexi2k26BPuGEgQhttN7t20HP834KvsFlLFM8z2tc0NkB4sMEx9jNFT0W7Q6LPhw721FwhxUxsNCUZ0K8d8vYQEjtpAwR7lPD9MOnj+TzHO2oUzpiZ2LHyYeoXczIVwdkXOZIGiC6GYBET1JpYbQ4c9frSHRA2gPplrikTz3/mMmdjb11ZPYjEouP3gf7E7fXzpApwJSiAsx+CS1gRpwwt9q1kKVGzn190SFgVbdwnWrFov/Vr5VkZVk3oihEZZhCz3WlGtNUXIBq2fvpL+uTW/Xs9gxqge+T7KT9RXIKep3+WjIp31L/1eV2fXlN4F6P0wAXZAvxCr5Nax/W2g7J6Cb471gMSu0Bh84T+Ou4GI9HIfk0tutsuwwxnZJRO0z6fzpzVSilO1YWTdMxoaDtDNeNaTVA2fD3u811yZOZnAmR8eTqDDjjJ791hVf2JXAKeZ1MIaWs3lKm+PN3r73Hi0qfbn4BU+2WDw==",
+      "filename": "P49.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "b26d4cfdb7c275d48a3cfc63a94777d9",
+    "text": "Planning\n\n(+) Planning and reprioritizing tasks takes time. Using the knowledge workers\u2019 in time planning meetings decreases productivity. Moreover, if the system is chaotic, no amount of planning can reduce uncertainties.\n\nMISFIT example: ParalysisByPlanning Projects that waste everybody\u2019s time in planning everything to an extreme detail but are never able to meet the plans.\n\n(+) A plan that is too detailed becomes huge and hard to follow. It may be easier to just apply common sense or call the customer. Also, the bigger the plan, the more errors it will contain (alternatively, the cost of verifying its correctness grows).",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng, deu"
+      ],
+      "page_number": 7,
+      "orig_elements": "eJy1VMFu3DYQ/ZWBTgm6ECRRWkm5JYcCPrgwEPfkBguKHO0ypkiBpLJWg/57h5TXLRqjQAz7ImmeZoYz8x7n7nuGGic04aBk9gEyrCWvurJv+1GUFauKZuBdKWTPBFZl02Y7yCYMXPLAyf97Jqx1Uhke0Cdb89Uu4XBCdTwFQqqqKCjmET4rGU6Elm1CZ6tMiHF3d1VT5PUOqqLOuy87eLJZl7fRZi19PGMnfwIyv/qAU+zhRj2g/jxzgdlf9ENiQBGUNQehufeH2dmB3Iq8Y0XJyGFUGsM6Y4q9uc5Suea48GPq6S5Dc9yBxCWL58wEH8wyDehiI/GEgA8hBVOYUeYYM1wS3qqgUx3/nXRXFjiKoWDl0Fb7jo+VLLCqmpbxTkjJ32zSrK5zgqq62ib9aLOG5SzaZU2jb58BtoiXzbpndfmao373y3u4jBu4keBwdso6FdSfEQrc33t63iM91YQ5/O4TfkK4N/asUR4Rztbdo/N/LFVR9qBMcoX5kndCDPT2VJBwyD3loobkQh1+U2HN4do6tN/Q7UCNKfU2GFAexInboMQOjAU+2cUEsOM/qQU3VDKlQliMQBc48aPQ5//Wzm/cOU5n4W3s+hkN1ZI1ZVFJyeqhqTves7IrR76v6rLuWmzeUENNTleH9fu83DSU7HrfXyRTF1FUPwBbxAs1VHZ1/5oiur76/OvVLeADn2aNH+CGO65Xr/yn9UlbN85+pXJIRSce4MypaECifB2sXDfhbAqL8nmiN3mEU1Ic8W/ojOCIOaqKmNYwLAG4QzDREfigMfpFvSUZxTw/KYVetMUg6rFkbVOIdt+NvZSiYVXf7vlelG8tBdLhZZ0ke78nvjfmWdoePwBbxEvXScea194nH9PcN6LpBgdrH+lCCQMKO9H9Py20NuK+OXEnI2ej1dqec7gKMPGV/IAWhSJS6d/XxRPN86xXoOjJGvBoPIJ1dP+1TlQL8qHMLoeP2ttdwgZ1PMYMj0rYwIl2DaBz1nlQpERFCYQ1cXHAO64DOpMEotfNX1ifVg4JTI1rVKIiFQvrHI3UoPdwdPbs3/+fzL78DXp6jF4=",
+      "filename": "P49.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "daece44e81a8d53650cec2e6cf1000f9",
+    "text": "(-) No planning at all increases uncertainty among team members and would eventually damage morale.\n\nMISFIT example: LostVision Projects that never schedule anything tend to lose control over their expectations. Without some schedule pressure no one will do anything, and worse, it will become difficult to integrate together the different parts being worked on independently.\n\nTracking\n\n(+) Too much monitoring wastes time and suffocates developers. (+) Tracking does not increase the certainty of the indicators because of the chaotic nature of the system. (+) Too much data is meaningless - The Haystack Syndrome.\n\nMISFIT example: MeasuredToDeath Projects that waste everybody\u2019s time in tracking everything to an extreme detail but are never able to meet the plans. (You measured the tire pressure until all the air was out!)\n\n(-) Not enough monitoring leads to blocks and possible idle time between assignments.",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng, deu"
+      ],
+      "page_number": 7,
+      "orig_elements": "eJy1Vttu3DYQ/ZWpnmp0I+i+Up6LogHqwIAXLQo3MHgZ7bKWSIGkbC+C/nuG1O7GTRYBbNiPHM4Mh3POXG4+JzjgiNrfKpm8h0Q0rOhklXHBZd9gV5RMyqJbZ33Z5VVdJStIRvRMMs9I/3MijLFSaebRxfPA9mb2tztU250nSVFkGdkcxA9K+h1J83WUTkZpH+xubsqqTssVrLMibT+t4HReV2keznnZFWl2ThAtSJK4vfM4hl9cqUccricmMPmPLiR6FF4ZfSsG5tztZA0ntSyl7xVrUujVgH4/YbS9ukxiwHo7s2381U2CersCiXMS3plIfKvnkaMNXwkveHwMn01+fncBHw1MZK2V3gLzwIYBlBYWmUMHsxZoPaNv74GNhlQ8shFGDN4cMC3hwcyDBLwnUGYy3oNkI70Io7FswDQEd4z1I7OWeXWPm/A+BfI9nEUuuoaXeV0JzmUnMa9ZyXORC54X7K3hbPN1Wj+Bs2uadB3Rq8ryrGCxeCGcVdF1rwnn5Yfr3z5sAB/ZOA34Hv4wzv+pHD0NV9b8S1E48DsCWRNcFpzYoZwHJBj3fqciuASoNzAYhyCM9tYMYIKup5Ra8jyRExY+41L4S/kdpRWcGfGrs8mic7NF0AaMRnhQxChpTo+sDqyxDleg/HLPUQQnUvW9EvPgQxAEDm6JL0iHLVIAMYqog5Y4AxOz9CGOIXLyd4eSHiQziRP9gzSG/TPpV3KZtzLLGbWVmstMyB7LqqgCJwvRvBn9ijpLqxXkWZ4t3eIkCDyMhGyr0D3OCKLJywjYlnVTvyYBN5aJO4LjadY3yg94Lttdzbu2ZJxqivd1KzkW7XpdClFXTSsr8XbFfkxu2yzZPgqK8tSsayrrs5LF6If5fr32/MsFbIyBcRY76qdaeWMj2Rm9TKWsRozF5Oa+NyLkhbze42Amas4pRPMDIlSBdKuNPzX3WExfu7vpo4CqR5Enqs5Qk2wmvcON2DHjlQDKf6jug3RJwuGtY6gBMVCOxgQLY2WghgDvYEPqvzPSp4jgeq+lpZJ/XoFmGccGe+yqrpG8LkTR9X0mRFdVedu29RvOhy50+7xYnwbEIijbbqnHvMqbWJDfSxajl478rnrVkf/tjLgkLhCecmN+ReZ33wyKyLQw3O2eG7n/Zy6yvDswT2nwR3ZFjcMMCa2e/HuLoaMTGor6O40JFmZCHDyMD6GpEz/QRxaFBSQQ9m8zB9LEgOKFV/bJRJm1J19hQwl3jAYSxQeE3E8Xz6IRtfS6r+uyz9pCNmVT8r7qUbK2zZHR6H9DGtH6QIyoyuy4Ni6C+rhHUp+Ja+IZyWL0QhplWf2qq8ayOXpAbebt/5rTgEy6gC4fjLhbdsTJOKcC6EoG5AN7OPoHRA0UptrqAI77US/49AVeg8D+",
+      "filename": "P49.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "df71e35b9207a188187b00bdc076ab29",
+    "text": "MISFIT example: WhatHappenedHere? Projects that never track anything tend to lose control over what is being done. And eventually no one really knows what has been done.\n\nSolution\n\n(A thing, albeit temporary) Meet with the team members for a short time (~15 minutes) in a daily Scrum Meeting, where the only activity is asking each participant the following 3 questions:\n\n7",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng, deu"
+      ],
+      "page_number": 7,
+      "orig_elements": "eJy1VMFq3ToU/JWDVy1cjGzJspVN6aa0i5RAAl2EcjmWj6/1Ykt+spybS2m/vZJvWkpfeNCSLD1nRvIZz/j2S0YjTWTD3nTZBWQFSuy5Uppx7JggFIiNLLmo27LQ2Gc7yCYK2GHAyP+Saed8ZywGWrbnEU9uDfuBzGEIESlLxqLmET6aLgwRLeoNnZ2xIelub7mocr6DohIyLz7v4Ccgq0egEJLl7EnkLIpQtpyWQFPa5Mo80Hg9o6bsaxx0FEgH4+xej7gs+9m7NtJYrkrFy0jozUjhNNOmvbrMtpe2hxUP22a3GdnDDjpas3TPHOG9XaeWfFon3RDoIS2cXX64fvfhBugBp3mkC/g0YHiP80yWuvfk6Q1cefdPfJkFQhyBpXvyEDzqO0B7CoOxBwhkOwgORrcQaGeDdyO4RDwmjVmgpcTrnKUc3kZyPMWGFcfxBNZBhMHT9nRn3XE5ywZMOrJnWVrxx8Yf0XsM5p5u0hZxnd+DoVWlsKrLoiqVUKUWsu0rydoG+1IR5y8WjFKoLQc1r3OevvpPoG7yOgGCybx+EtgkfxeLRjRcPmcsrt24pot+df3GhJGecpsaFGXNlZC1Imq4qvq2brUqeqVEp8TLuV2xXETrmrLIq83tR0Dx6Mm5dKzJmyeRs+h//X42O1+9ha0pO8AxViHExkyz8+hPr+GSKMDRhCFSKA5wgonSIQv0zgPCMjgfFWYiePWtqGAydo3OvQZj47RDE2tzrf06bUdttxyHWN3tPGfjFGNo7k04pSbicpeqSKgHmNEHo82MNmzk3o2jO6Yxh39XWlIClos/a55ULedcSkLW6r6VmrNaKRQFY1oie7EsNKJIRSuZfPzf/gAKVpyr2FRNKtp/gbPk75onFW/q54xK/avd75wLkfL183dDpCBh",
+      "filename": "P49.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "eb3d37bd496d79e4e10686b0b20bc957",
+    "text": "(A process, and what stays the same) 1) What they worked on since the last Scrum Meeting. The Scrum Master logs what tasks have been completed and what remains undone. 2) What blocks if any they found in performing their tasks within the last 24 hrs. The Scrum Master logs all blocks and later finds a way to resolve the blocks. 3) What they will be working in the next 24 hrs. The Scrum Master helps the team members choosing the appropriate tasks to work on with the help of the Architect. Because the tasks are schedule on a 24 hr basis the tasks are typically small (Small Assignments).",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng, deu"
+      ],
+      "page_number": 8,
+      "orig_elements": "eJx1U01r4zAQ/SuDTy0EYydpk+wte+9SaGEPoYSxNLZFZclo5Kam9L/vyHYKu2xPsd68mffmI6ePjCx15OLZ6OwHZAo3O31Xb4q6OGBV7rUud7s73FRbor3GKltB1lFEjRGF/5Ep74M2DiPx9LY4+iGeWzJNGwVZr4tCchb4YnRsBS13E9p742LKO53W20O+WcG62Ob7lxVc33fbbV6md7k53OfFf4A5Q5CMR47UpS4ezTvZpx4VZZ8S0BRJRePdWVlkPvfBV0Ir8oMk3wuhNpbi2NOU+/iQTYZdM2AzdXXKyDUr0DRkSacX+OyGrqKQWkkKkd5Ts9nNEaS4IuYVoNNwaTECRxwZYkvA2NEtlLfwO+GCjHDx4ZU0eAdsnKKJJiYjPKkwdPBAFI1rcngWfIEkSgGsb3iuH5FfGVp8I6iIHCjf9dKPVP2yEKhD4xgGp72jHNaLhcp6JbmmFuo4G6q9kMA46CnUPnSingImLDoXE1uJfvlcb6EN/J1BtPYqksxYTJHaOC1vuKBoejHH3r7Nrc/cHDZ/zcikKjTNKtlZ5J0M/Xv5lmw/Tz0SdtBR2heDar3npSfAXrbVByOulu7ETlJJ+0iNTqxUCXw9fR+Dak26phx+ksKBZ9tzMgZZsWpJD5ZSBZzdQYVs+B+enJtRMp0RuEtDunmafo7MpnHpD8m3ebrD61n+whAwmjd6Tqf2+fIHTsQ8Vg==",
+      "filename": "P49.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "6241fbaffa84090e0ab3e810deb333d2",
+    "text": "Scrum Meetings typically take place at the same time and place every day, so they also serve to build a strong culture. As such, Scrum Meetings are rituals that enhance the socialization of status, issues, and plans for the team. The ScrumMaster leads the meetings and logs all the tasks from every member of the team into a global project Backlog. He also logs every block and resolves each block while the developers work on new assignments.\n\nScrum Meetings not only schedule tasks for the developers but can and should schedule activities for everyone involved in the project such as integration personnel dedicated to configuration management, architects, Scrum Masters, Firewall [Coplien95], Coach [Beedle97], or a QA team.",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng, deu"
+      ],
+      "page_number": 8,
+      "orig_elements": "eJy1VEtr20AQ/iuDzkbIkWRZvSWB0ktKSnIzxYx2x9LWq12xu7Ljhv73zkq2CSH0UMjFnp334/u0eU1IU08mbJVMvkAi8nW1a+pstSuqMl+v16umXsuS6iavpJB1soCkp4ASA7L/ayKsdVIZDOSnt8aTHcO2I9V2gTU3N1nGMWf1UcnQsXZZTdrBKhNi3GZzU2ZpsYByXaTZzwVc3utlkVbxvSyKVbr8QDFHsCbxJx+oj1M8qhfSTwMKSv6wQVIgEZQ1W6HR++3gbMNuWVoXZbZih53SFE4DTbGPD8nUsGlHbKepNgmZdgGSxiTWGVi9NWPfkIujxAqBXuKwyZNwYw8PREGZ1gPnVAK1PkHAPcGguSPAAKEj8NgTBMU/aOTZRAdyJ5B4WoC30esEqFny5A7sbKEZlZaA4IOzpgUx6jA6SuHWgx9Ft4B3DaAjcCqMnIXTcWUyHRquNHVghUKtfmNcDdgdZ8Uw+gUo70fi/3NjxsPOuikkEPYpPLM0FXpA3rgDTSj9ZO+vhTlU2yhoPUei33MeZ/vzlD3FBcayl8TAYLA8XKttgxr4Sr/4bHCHYs+pUvhG8zamvHOSRluxn4o58lYfiA0ourP+2PFdp/SS3bUdyHk4WrcHntfQERgMqjUR/j6NR79g4Ds6x1s50HO8Kx/4PU3KIq9XTJBqRaKuSNbIYsVSU1dNln06TdZlnuZvaLLMsnJWLIucTR9p5pj/JEpe5/knEsXYwDdhnnjRkRz1FS9n3L25XzMGEGimo/vOjsyHaxBy8wcVFM2RE0asIQbWIYJDsjClu0ArcoZBEIFHrZt5EItYY0hzUcnsDRzGsBTW7FQ7np16NDxbBASzxIlOxb35K/0mWvDzq3J0jAzY3NtBKzJ1yXu5txGimzsiqamOHzPuFeHH7UyvfwDx51/urd1E",
+      "filename": "P49.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "4e8fe377341f29b94f0556946739cbd3",
+    "text": "Scrum Meetings allow knowledge workers to accomplish mid-term goals typically allocated in Sprints that last for about a month.\n\n(what changes) Scrum Meetings can also be held by self-directed teams, in that case, someone is designated as the scribe and logs the completed and planned activities of the Backlog and the existing blocks. All activities from the Backlog and the blocks are then distributed among the team members for resolution.\n\nThe format of the Backlog and the blocks can also vary, ranging from a list of items in a piece of paper, to software representations of it over the INTERNET/INTRANET [Schwaber97]. The SCRUM cycle can be adjusted but typically ranges between 2 hrs, and 48 hrs.",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng, deu"
+      ],
+      "page_number": 8,
+      "orig_elements": "eJy1VE1v2zgQ/SsDnVrA1eqDsqzeuose9pCgiNOTERgUOZK4oUiBpOMYRf97h1S2CHbTAi3aG/k0j3zD9zSHTxlqnNGEo5LZW8gG0dd1y0TNGrbF3YCMt6zqd40oWNe1PNtANmPgkgdO9Z8yYa2TyvCAPu01v9hTOE6oxikQUlVFQZwn+KxkmAgt24QuVpkQeYdD1RQ520BZMJYXdxv4CpRVmdcRKOttk9cvIiuJoMxffMA5dvJBPaLeL1xg9pk+SAwogrLmKDT3/rg421NZkXcl9UoFg9IYLgsm7oerLIk244mPqbNDhmbcgMRTFu9ZCD6a09yji+3EGwI+xoazvXCnGa4QgzKjB661PcO9sWeNckQ4W3ePzkOwwIWw86KVn2BW8k1AN8NouaaPl0UJYl4SXdDrSlAG9ouLDwZh4gGojQCDdcB7elrgMFsTpjwK/7ePa+4cD+oBb6M2Evk/u/udlEXJu3o7lEPRFVvZlFIOvNph1w+732c361Yvt3XeJLufgLqpVv9L1tTfQFbST9pdN+32V9r96hzNEBOR0b+G/7gvuCELvYUeYUItob+ARz28kcqRQLI1IJ/9JrqbXBXc4wa8ndEaBOVJglejSQng0XkEL5yi47iRoO24YilImIoIXqgVE9f0BA8qKPRgh1T3Jxf3REpVcY+Pykel0FPM7n0O77R+ThucnV8krvXAHcatAUnnkKxTkkBJHFNVbA5mjO/mU1YdeqtP0ZgfC2q17dpqENjKlje7rmgLVrfbumloWvUtFr99LtVdkbfP51LDqhUoGSvy4kVkJf1sUHcN+5VBvSU/yIKZQvaNMDx5+jWzD9xdNuDotpiQFAUONK7SAYr68TG2HBaFAiO28AXdJo42b4dwjuFwuJDnZCSPTfqVCfYBXbry7+vb9zfX72//oMXNO1rAYS+mMyf9XXuXQxS9/+vm4xWIi9CYtMXsy39OPkaNAvdsWLr0E1JBOCNlsoLJ0a8V22O7uP5e5u6+ANqKPKc=",
+      "filename": "P49.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "ab2adaf4a1fb06d5f66a697d532d87d0",
+    "text": "Rationale\n\nIt is very easy to over- or under- estimate, which leads to either idle developer\u2019s time or to delays in the completion of an assignment. Therefore, it is better to sample frequently the status of small assignments. Processes with a high degree of unpredictability cannot use traditional project planning techniques only, such as Gantt or PERT charts because the rate of change of what is being analyzed, accomplished, or created is too high. Instead, constant reprioritization of tasks offers an adaptive mechanism that provides sampling of systemic knowledge over short periods of time.",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng, deu"
+      ],
+      "page_number": 8,
+      "orig_elements": "eJy1U0tv2zAM/iuEz5nhRxLbuw9DDxuCLresCBiJtrXakifJSd2i/32U0mLFsF2G7WZ9Ivk9KB+eEhpoJO2PSibvISlLyik/NadyXTR53tKGWkIhi6bdNlmNyQqSkTxK9Mj1T4kwxkql0ZOL5wEXM/tjT6rrPSNFkWXc8wJflPQ9o3kV0cko7UPf4VCsm7RcQb7Nq7S8W8FPYLtOswCsi026+S0QWxhJ3OI8jcHHTj3Q8GVCQckzX0jyJLwy+igGdO44WXPisiytN0VWcUGrBvLLRLF39ymJknU3Yxd9HRLS3QokzUngmRg+6nk8kQ1mAoOnh2A3ucVAgwOFEa8T98oPUcivcWeVKCuq6rqRRSXX5bas223dNjWWrdxk+X+Mu04ZChfXMF+BpiquQL7eZn9Ark1/F3izycrNvwz8xoNycCa7AKFbwBswfHoHxsKsZfgi59XIka3g0ivRw0AoXSgk5XuyoORATHWmwUxkv85Fljd8r0YKQ7hOEgfqQGngehBmnFg8mwPTAmpgg6rTYa0p7HkgtcYymYrKTuQ9xSkOQx+0lr7PXDsscZrz6GcXJrkRh+HNMJfCzhpBzpGDC0sFhJ73zHI6SxRaZj1Zkkp4PKlB+QUEam08zI7AW5Tq+hiB4//G+4CJM9ZKd8Db6bViHcysh2UFbuZg0MFH1N4H27sPt3sQPVofPAiMI1mv5SADNV/pLn5denxxGiYj8y2PJFeAIialXB9OPFJY4mYZar0x0UsKN5qfEHKBMPzF7GBpsspY1v6Iryl7dPchpJasi5FLnLw6E4wUhCg3sjiWwUbPSrKrGHbQE4KNr1QJuNfmMpAMsvmJgOuN5RZiNhk3EFaevv1xP6Nlv8yzD6/t+e4HDyiwbg==",
+      "filename": "P49.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "2c624232cdd221771294dfbb310aca00",
+    "text": "8",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng, deu"
+      ],
+      "page_number": 8,
+      "orig_elements": "eJxtj92KwyAQRl8lzHUIapso+wB7VyjsZSjBxkkiJCrJhG0offdV9+dqr8Tjd5z52ifgjAs66qyBtwIayTUTnEs9KNmLk+TnRgyKMaPqZuA1lAUsSNpo0jH/hN771VinCbd8n/Xhd+omtONEkQjBWHR+8Kc1NEXKZabBW0fJa1t15tWpLARrmorfyuIPcBbPDGpVyf/AtxIJbMdGuKQeV/vA+SPoHuEVHwwS9mS96/pZb1sXVn+PMVZJXiseA4OdkY6A2b1eIK/sxl2PuVcL6MayMLhDmhMi7ty+3HFNZdIEwkeqCyqpvz+9e08x8rp9AaqkZ7U=",
+      "filename": "P49.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "78290db6faf1d08fd97a7cbaa29faa93",
+    "text": "SCRUM meetings help also in the creation of an \"anticipating culture\u201d [Weinberg97], because they encourage productive values:\n\n\u2022 promote the sharing of knowledge, \u2022 encourage dense communications and \u2022\n\nfacilitate \"honesty\" among developers since everyone has to give a daily status.\n\nThis same mechanism, encourages team members to socialize, externalize, internalize and combine technical knowledge on an ongoing basis, thus allowing technical expertise to become community property for the community of practice [Nonaka95]. Scrum Meetings are therefore rituals with deep cultural transcendence. Meeting at the same place at the same time, and with the same people, enhances a feeling of belonging, and creates the habit of sharing knowledge. Seen from the System Dynamics point of view [Senge94], software development has a scheduling problem, because the nature of programming assignments has a rather probabilistic nature. Estimates are hard to come by because:",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng, deu"
+      ],
+      "page_number": 9,
+      "orig_elements": "eJy9VU1v5DYM/SuCzwPDn2N7r20PBZrFotmih0kQ0BJtC2tLhiVn4i7630tqPEm3GyyKYtMjKZIi+fSeTp8jHHFC4x+0it6JSOVFW6SqLrsWu6aum7RpauiOWZ3IrII8OohoQg8KPFD850hauyhtwKML9gibXf3DgLofPHmyLEkoZ3eftfIDedMqeGerjee80ykr6phcFB0n9wfxbFd1XLGdFmkSV685QgZ5Irc5jxNP8UE/4Xg7g8ToTzpQ6FF6bc2DHMG5h3mxLYUlcZNmGZWIOj2i32YMuR9uotCw6Vfow1SnCE1/EArXiO+Zyf1g1qnFhUfhGzw+8bDR7Q+//nYjJkSvTe/EgOMsYHRWaCP8gEIuCNyIsJ0AI+4iMF5LPQPHC7mOfl3wbs2SVInT76gN3dE3PG+LElaHXGUTaKRdF2pD0ChqpdkeUTzCuKJ7x81fZ3kPywJ8+JH7o0b/CXfeSCmrY9rmVYNl0XVtXkhs2kp1xzY7wpvBnZdJXBxEnhZxw2judlFVccp2k1Rx/rV9if8m2N8NS4Yhy3jDk/Vh8cINsDBQhN4nY88jqh4PYg98AUWhIaSknabVaBkAdwS32iP/jtAv2vmfeZBXwKnqtOyOSqWVhGMDaZbk5TFPk/SYpKWq2zcEJ2PuFcXOxd0uU8IgUC+vCqbeV45Lxn/jIklN+T3h60DqUXtaBtFssAad3+4iAZMlABU+4mhnXJxw2kgUZC8bBYkBnPBW9MwoEAr0uAlHVVYX/1vcME+SNksbRNmURY7HilRGZpms1RGgbt5OQy8kKss6roOGXuy62e20yItXHZeM/4dWHwdNS4cJSSblAEa76fDCHVo+wkRHnBqQcFZqGPUfRDSqgIvZDZr6agRuEd1aTQDS8xqYdeMLRQUJLqktAW+ZvS047Q5E6JVYOY72zM6XNHyid+E1a61l2bXTM5f9xnLAx5vo7HKR9OcjUoV5AXrc9J5O762BT9CU97G4lcs6iZvrpwBLEJMFqQKKRfuVfghx1n6g9eG8/wLUiF/AOImG5ERifC0gwF+0iFc4j4TPFx6vJ1oOLyRUfIlEO4+8Q0M7l7RnEB3iuKtZS2wwvWYIwy75m2IsBiZEqz3HXMXvea00GaIRHQlkiLwNb0f8uBmYtHQivEzOfNR4FqdbeiHYFPQ8nO38mdew05C5E4gHwskB1RraYmUgXn3x9QkiCf2Ql1XbfoFpCitxTveGy7i9Dn17tOJQg/ofia1a7smx+ImsKQzITdBYiqEOQLfb9bpvfaT3fwGKOvcl",
+      "filename": "P49.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "176626d9647957277d6e9669711ef7d3",
+    "text": "1) inexperienced developers, managers and architects are involved in making the estimates 2) there are typically interlocking architectural dependencies that are hard to manage 3) there are unknown or poorly documented requirements, or 4) there are unforeseen technical challenges\n\nAs a consequence, the software development becomes a chaotic beer game, where it is hard to estimate and control the inventory of available developer's time, unless increased monitoring of small assignments is implemented [Goldratt90], [Senge90]. In that sense the Scrum Meeting becomes the equivalent of a thermometer that constantly samples the team\u2019s temperature [Schwaber97-2].",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng, deu"
+      ],
+      "page_number": 9,
+      "orig_elements": "eJy1k01v2zAMhv+K4MtQIDP8lQ/vttNQYB0KdLesCGiZiYXqw5PopEGx/z5KTrtuKHbabhbFl3pJPt4+ZajRoKWd6rMPIquXxbqDsiqbFXbtuq0raPq2Lhtol3y3yRYiM0jQAwHnP2XSOd8rC4QhnTWc3US7AdVhII5UVVGw5hI+qZ4GjpbrFB2dshR12221LPJmIdqmysv7hXg+l2W1yTcxUNabMt+8FZk1HMnCORCa2MetekR9N4LE7Adf7JVGOo+Yrm5vsuTIHiY4JNvbDO1hIXqcslhm5PDOTqZDH73GAoSPsZusvBLK4uOIXqGV2LPmiNrxOSyEActKHwTYXoCXgyKUxEePrDo6fWSBspz3oOxB0IACAykThyeqqxjgzJjNXpUErc+cTui1k0nxUnPyoPnpEW3PNhTLaQBK0gF8L8hdzIj6ddnJPlh3ssJ5MfLeuHzv5BTXz8Y8fp+UTzBwL5zS/C7dO48B0Qo2MNhoT8iBPfLoeIhxRpcBf1aBruMeeHB/8iWrpilWTV/VUMt+v++qJaBsmmZVVPuuW/4/vppNXkR6Vm1eJ8AugXpVzoGyYeTWb0Zm0V8J6zHuRTm7kxpC2I3edZxW5G3dLst/ieBHBkpIZwPvKzK4SCAFt6dTXNQFyDhz0aF0BlP+AI6U5Ah6cQDDqlParSKhwgs0zzgmgvkN8k6n8owvF3T+LNxewBGUhk7jL/rfMYEqVp2sxhA4X3qEwFgZZxULI74sDYaJETwgdbCJtPi6MuMMCadvPzndeyBqi7iCu0gXf+bi2s6MB+TOk6c76ScjbhApFn/uNf1VTPIRdBxBtJswNnzLv9JcJI6PwBL/AQHi67OOEMy3qSrKls9ouC/gXw3ZhhxOwLto1++r+/w17F/Ac5I64te4nh/3PwEHa72b",
+      "filename": "P49.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "489ad087d15f0b647219613774b5fe33",
+    "text": "From the Complexity Theory perspective [Holland95], [Holland98], SCRUM allows flocking by forcing a faster agent interaction, therefore accelerating the process of self- organization, because it shifts resources opportunistically, through the daily SCRUM meetings.\n\nThis is understandable, because the relaxation of a self-organized multi-agent system is proportional to the average exchange among agents per unit of time. And in fact, the \"interaction rate\" is one of the levers one can push to control \"emergent\" behavior -- it is like adding an enzyme or catalyst to a chemical reaction.",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng, deu"
+      ],
+      "page_number": 9,
+      "orig_elements": "eJy1k09v2zAMxb8K4XMSOLKNxLsNBYZdOhRrd0qLQJFoW6gsGZLcxi323Ufa2R8MxQ7DBuQQveiRj9Qvh9cMLfbo0tHo7B1kRb5XRbUTolTbsimbqipLXRe7WtRCnLTIVpD1mKSWSdL910x5H7RxMmGcz1ZOfkzHDk3bJVKEyHPyXORno1NH6nY3q4M3LrHvcBBVvilXsC3q/Wb3sIIfQlWJTc7CthTVpnhTWUwkZXGKCXue5Mac0d4OUmH2lX7QmFAl491RWRnjcQj+RNfyDQ2XV3ShMRbTNODsvbnO5tCuHWU7T3bI0LUr0Dhm3Gcg+ejG/oSBx+EOCc88cPYh+B5Sh3Dl+8Hi2aQJ7jr0YYIBQxw4xhPC4aO31EDXFY/y/bCnw+3V5y/XIK31zxEa69WjcS2cJmh8UPxVQiNpzAAUwiWgHWKQ83ArbhyQLiJIpehtg0xs4Tw0ssIYwTcQ0TZr8KGVzrzIxXlCJceIYBLEzjQpQsDox0Ae8MPgQxqdickoSjZxo+DHtpsra2nsdMndI3LHuOENfl/oJxk4yBPe8ZJoW79zl291LRpRoBCiEFW1r1DvsaFjUxZ5Xf8/7sp6garOL9xdhF1JbC2UlWKze1NZTH/JXZnX23/J3V1nItBndJowS0STPFn8+a78UAGtPM/vzRTIhYMLBqihH20y64WqZSIuSJH59ckkLSQ/F5JPRFaLgGfVUVoSes9ksjUy5xSDQKImyfS4gfdOE6fErUozo3Cf/YItEBx4n3Ez73B20RWL1GRRlHQwjLHj9sq7FLylCgRQ4IbkPGEnn4wPsF4zwFTImkdKpfX8h3GA7mXqqXSgWklaGo5rSVAd9ow0rWbJ8iduH74BQRutHw==",
+      "filename": "P49.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "b49f04d043eeeea5994c48e2d16f2096",
+    "text": "In SCRUM this means increasing the frequency of the SCRUM meetings, and allowing more hyperlinks as described below, but up to an optimal upper frequency bound on the SCRUM meetings (meetings/time), and up to an optimal upper bound on the hyper-links or the SCRUM team members. Otherwise the organization spends too much time socializing knowledge, instead of performing tasks.\n\n9",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng, deu"
+      ],
+      "page_number": 9,
+      "orig_elements": "eJy1kk1v1DAQhv/KyCeQQsjX5oMrEhKHQkXhtKpWjj3JWpvYwXbYbqv+d8ZJFy1QLghuyeN5Z9752D4wHHBE7XdKsjfAaszLrK6qTDa8yLpGlGUuNzxJG5lkbYcsAjai55J7TvEPTBhjpdLco1v+B34ys9/tUfV7TyTLkoQ0T/iopN8TTauFTkZpH3TbbbZJ4iKih3oT57cR/ABNVcRVAGlRlHH1LFlFhJg7OY9j6ORa3eFwM3GB7JEeJHoUXhm9EwN3bjdZ01JYEjdFUlEO1qkB/WnCRXt9xRbTup95v3S2Zaj7CCTOLNSZCO/0PLZoQzuhgse70DB7r+Hm7acvV+D3ysGIXDtQWljkTumeKEJn8euMWpzAdAtYBSOipxAXAdcS+DCYY1CMxiLsyZodlD444I5sOGFVixJapKgI2tnDPIE3JAUzeTXygQBpLoq1Zqa8Rj9TEl6cv16TFl+uFv6Q8ac8i7FXqzNjL1J75CPlDyNyMXykB3tUDpcIY3uu1T0PCwE3oZaOKhkYZ7GHYACcEYoP6j4M4KDNcUDZY0SDpP1yGeZGZTtjx2Wm3B1cHFZ23uAHbi1l/4afw1ZoPb8eel5lok6zsi7qtkq7DRd1I0VJOO/aTfH/Dr0u0jiPIEvKMk7DFZ9BmqTr5debOlz172CV/N2ZV9Rr/i/PvLkc9ztjPIU83n4Hvx9ccA==",
+      "filename": "P49.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "6a90953c579fec3bdb2150737cdf6579",
+    "text": "Known Uses\n\n(Mike Beedle) At Nike Securities in Chicago we have been using SCRUM meetings since February 1997 to run all of our projects including BPR and software development. Everyone involved in these projects receives a week of training in SCRUM techniques.\n\n(Yonat Sharon) At Elementrix Technologies we had a project that was running way past late after about 5 months of development. Only a small part (about 20%) was completed and even this part had too many bugs. The project manager started running bi-daily short status meetings (none of us was familiar with the term SCRUM back then). In the following month, the entire project was completed and the quality had risen sharply. Two weeks later, a beta version was out. The meetings were discontinued and the project hardly progressed since. I don\u2019t think the success of the project can be attributed to the Scrum Meetings alone, but they did have a big part in this achievement.",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng, deu"
+      ],
+      "page_number": 10,
+      "orig_elements": "eJy1VFFv2zYQ/isHAQMSwBNkWbLlva1FBwxDuqBOH4asCE7USeJCkS5JWRGK/vcdaTvJ2mAPRftk3+nu+H3ffeTtp4QUDaT9nWySXyApqG6zKmuJCmxXokHEbcM/y+1WULbBZAHJQB4b9Mj1nxJhjG2kRk8uxgpnM/q7nmTXe87keZZxzyk9ycb3nF1uYnZvpPah7/Y2L6qUU1ydZh8W8BgXZboKcVHxnxfiWM+JxM3O0xA4XMsHUrs9Cko+84eGPAkvjb4TCp2721tTc1mWVmVerLmglYr8vKfYe32VRLi6G7GLnG4T0t0CGhqTcM6e03d6HGqygUg4wdNDoJr8oc2k4b3jtpA9jbyRXkUkX2pdr/NqW6/LZVms27KtaszKipYkVnm9XGX1D9e6ytPNM62Ls/bLolinmxcSx45vU3u7KrffU+yLK3lP8IqoUXQJv3p4G+IdidFKL8mB1PC6lwI7AxNBjweCmkjD6KTuYPf63fsrGIg8Rw44Jwh+o9qOaGdgu2/AG7CjBlQKTAtmtMBk/mF2YbZQYxPmvLp+B6gbcKb1E1pi6AdSZh/2nMKbA9nZaOKGg1EHagIq35Ojp1mWBMkDA0bGSffhLG9R6jCdq49AWdRey48jufS5t96itei5+yao8oLH1vk2r6rNeolltcmrIkekshaYL6lqG6x+tMeK1eZ4X0/x5nx/l0W5fjFx7PhGj5WrvPquJvvLsBSw69EaHV325iivlQ9wE3ZilOmC26LFGt7haa+8ZW6c0AUPxV1OOMMenQfF4gK2nixgzSpCCYPRvndh9f+xz59azTzSDcGDe7QeLo4defbTZRwuzLBnrmysYELuDfaS7lgcAHljYEA9Qz12LoWb/tF5Ic3MLTjPxTzhDLSWPzco+WTXG57Cn/3onq7KhQ6GZqicDBBaHKSSaGGSvg/mZrPa4eTbGsV9yOnLFH6P1ofWKGWmcFBkvYhJpivtE7SvqYWijyMq6efIy0rHXB0vZq9m5jWZeHtcVNcuWLWabQ18/xwbJQ5k4Y4CPFKZKFxY6QQDkXp8dtQZCM9vWAkOO0vOcUV8KZgMNEb/PebZcht2LXWkCW4UguviJX42RqBmPICejVOPgRM/LqFgJ+w4wNUZECrWdsG7CjNpZmzN8eViOrI7blWeVoyil7zw6JT/eRM+/Aus9I3D",
+      "filename": "P49.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "4f68959a8cdbd833e3ab53a9348e1b8b",
+    "text": "One of my software team leaders at RAFAEL, implemented a variation of Scrum Meetings. He would visit each developer once a day, and ask him the 3 questions, and he also managed a backlog. This does not have the team building effects, but it does provide the frequent sampling.\n\nResulting Context\n\n(TO: ) A structure such as DeveloperControlsProcess is fully implemented through FormFollowsFunction, or a CaseTeam in a business environment, is jelled into a highly adaptable and hyperproductive team structure [Coplien95], [Beedle97].\n\nThe application of this pattern also leads to:\n\nhighly visible project status. \u2022 highly visible individual productivity. \u2022 less time wasted because of blocks. \u2022 less time wasted because of waiting for someone else. \u2022 increased Team Socialization",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng, deu"
+      ],
+      "page_number": 10,
+      "orig_elements": "eJy9Vl1v3TYM/SuEnzbgwrBlyx95y7IFG9CuRZO3LAhkib5WI0t3lnzTu6L/vZSdm6VdMKxFskcdk5R4yEP66mOCBke04Uar5ASSCqu6VlzIrOFtI/pWik71WDGV8wpFkWwgGTEIJYIg+4+JdG5S2oqAfjkbcXBzuBlQb4dACGNZRj738J1WYSA0rxd057QN0e/qivEsLTdQNzwtrjdwPLdFlWbxnJcFS7MngNWDkMQffMAxZvFWf0BzsRMSk0/0QWFAGbSzN9II7292k+vILEvbomlqMui1wXDY4eL79nWyPNhuZ7FdsrpK0G43oHBO4j07gm/sPHY4xVTiDQE/xGSTNxbB9TAewLs+3IkJIaAYwaBQOHkQAd6dnp/+8moDetytzKMCAXsxaRGfGN0v5DSP8BoxaLv1KfyKcOdmo2CvvQ6AQg70mD0at8MJnJVIEZQ4bEBYCuZvYdAjhAGhgD9n9DGuXz8SJox3MApLWcSbOyFvjdumcDloD8qhB+sCDGKPS4jl/d2sDVV5C9j3RCUF6+YA9JbFnvjca7Wa9xPSlTaAF5QguaSRzSO5v4tpojT3eBkJI+a+7r+SZVi3lczrqhRdwxteFlWWqbws64L11cv1X9nEbsqzPEvrpQGPAK/XjuQtfXkSWFy+rwMbXjTtc3bgO/SziX0DZ84u4CP6L3Uw+BTtrOeM97zFnPV9W6lS1lWNnGNRx4LULy37PGubtHmk+5yVdcpXnZfZUoh/IqvTvxL/bLz+cPnmBH6EU/BhmmWYSdl+Jh0KDz8fpRgZn5zxbycn0XsgPfWzMYcvtB6Gyc3bAc7dNJ47Y9ydP5/t0hwbcBMp8kx40gepTtuoz9lrG6Oh3evJ2RhmE0O/R2MoHlHpyGwg4ukmqtAuiM7gqnbKfKJeU/Rivb/X8t8JXJ05kijadqH1J0RlsK2vv02xWGdlz7FrslK2XdZSw3RVwzFrFG95K168dVjTfrEy8oLd75CmIKU+Bawu36nYquTPqtjLOJN3VAj5sABCHMU7EQJOdp3XcYF4CO7km2rDODZVLbNC1p1ibY8lK/taVLwjVbcsf7HaFMdSVCxlkfkjwCt+L+KcZWn+JLI6/T+yvpdNXKxRNFTl91R20ogIM23eP2aWMQZfWWmrNC28WRh4EJcOhwdzE+Ua9EhrW/io+Q6lmP3ya9AZJ2/9fzK9E3oZ5D1NBe9GdPRzgcbjg7O2ckIaFgqWcXHhpBZG/7W00eM+eaV9+C0S+en6M1/PGSs=",
+      "filename": "P49.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "4a44dc15364204a80fe80e9039455cc1",
+    "text": "10",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng, deu"
+      ],
+      "page_number": 10,
+      "orig_elements": "eJxtj8uKhDAQRX9Fai0SE1/MB8yuoWGW0khMSg1oIloyLU3/eyfpmVnNMif3VNVtH4AzLmipMxo+EuAiL5uSSyWbXg0FCs7roShlJUomClZBmsCCJLUk6fMPUM5t2lhJuMf3LE93UDehGSfyhHPGvPODv42mydO8jnR1xlLw2rYRIhNpwllVZfktTf5AzljGIqiajP0H3oonsJ874RJ6XM0d569VKoSn/9BIqMg426lZ7nu3bq73MZbVhRCNDwxmRjpXjO71AvFkOx5yjL1aQDumicYDwp7V484eS49bKBM2EN5DXchZcH9HfTpHPvO8vQB4x2gm",
+      "filename": "P49.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "abd724fdb8c86e67b2da056078493fe5",
+    "text": "Sprint\n\nContext\n\n(FROM: NamedStableBases[Coplien95])\n\nYou are a software developer or a coach managing a software development team where there is a high percentage of discovery, creativity or testing involved.\n\nYou are building or expanding systems, that allow partitioning of work, with clean interfacing, components or objects.\n\nProblem\n\nWe want to balance the need of developers to work undisturbed and the need for management and the customer to see real progress.\n\nForces\n\nDevelopers need time to work undisturbed, but they need support for logistics and management and users need to be convinced that real progress is made. (Misfit: Developer without any kind of control will not be productive.)\n\nOften, by the time systems are delivered, it is obsolete or it requires major changes. The problem is that input from the environment is mostly collected at the start of the project, while the user learns most using the system or intermediate releases. (Misfit: Management that is too tight will slow things down.)",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng, deu"
+      ],
+      "page_number": 11,
+      "orig_elements": "eJy1V22P2ygQ/ison1opisBgwP14PfVbX3StdDqtqhWGcULrGJ8hm0bV/fcbcHa3L7nTNkq+RJnxMAwzzzMMN18X0MMWhnTr3eIFWUirjK5tragG2lLKaAeSSVZrw00l2GJJFltIxplk0P7rwoYwOT+YBLHIvTmEXbrdgF9vEmqqilJcc1TvvUsb1DJVtGPwQ8rrbm4qoVf1klRcrfjHJXmQtVypLHP8o0/IxR4Vi3iICbb5DO/8F+jfj8bC4h/84CCBTT4Mt7Y3Md6OU2jRjK401bJCg873kA4jlLXvXi9KuMN6Z9blTDcLGNZL4mC3yPuMqL4ddtsWpnyQvEOCL/moi/fjhOfJ6+/dffCpL1H8mGcjmXGt1NYI1gpRGwFKSM6lchVthLxenmu6EkvCK72iJc9HWdFjXhtM6Am52J+Z54oKcck8vwxD+fuURGtVA3NNA00jbSuY4JQKI7XWleEM4NqJFlW1Yt8kWtRyTrzGD+qEXOzPTLRUSl8y0c9e/fH29QvyxmzBvU+m7eE3EyHevAxj72Fo6o/Pn1QE1VlnhWuwFE3X2Vq6WnEKneWO1hrEFbuKLEltxIzmo1yrak46ExXL8P5JMa84rwwN43V9yTL8FXbETEAMiaFL+/zXwR30YYSJhAn1Nhi7IVszmLUf1icMczFIArMl+w2gOpVfH9F0gzkl6MmiCcZAQkecjzbcwXRYEjuBSf7Op0PeCeuR8gZ+uAv9HbjVt+V/Y6Yp28KHHPcJGPDKmUYbY5lpqVZdKzva1qJyunXMsSs2PdHkokrG7y+XWb6/TBiX/6EoK86FAWUXZeM9DNqd712uAhYEvoxmKMIcYFxiaU0ipu/DnoxmSj7HVqw7sg/T5yXZ+7QhtgczYB0TTJ2xPodgw3YMA5YrZs+h/YTnir9W4Uo4i4WUjNW8VaCkqBnvqNJGdoa29trdVkl2rPAsa3qUBS3E/1Ge7c/stnUt+SXr+w49Yzaf1FFd6zivjeQVdDVDDqnOaVYDHrDiRvFrU0nXx4Z5lJvqgTmCrugJxbziXCoJfVEq/Qlkb3JHDKQ16MKWjkgGAFf63313jdkis4bskGUx7aYWLZBxj+YdcqU03lKeh292F1PYYn9GBxGAYBvtCR5oPUH8RVJpW/GqtZ2tmOgypTgmt650h9N5U9P22qRqGn28PWeZUXFkEVc6s+gnxbziTFoJcdkh5lXAqy0+iVU49VpBlWnw4cM5dZoz5eoOM9t2DVw/01jP6ruxnOHofBxMuBSZRic086IzmVVp3Vwy278/UqfQI/ktnCLREq+xlJlymO3ibhzDlAqd+rBGM29jYdMP5NrFR9/IXmRaGO48MtjNN993RMsTztY4WJFnr33sfHpBHgIs9yCWBb0eyGc/FOajszSFHr/1PRlCyhugM7ezmaGr579E3NZYSvGh0YhGmq5zquVaUbCIL01Nc/W3B8vj7rePD8ZxrNXznCvKnHtCMy86E074gJWXhNPbLsGAWDmUplrAdBx0yDzd9pj/KcPJp1zs0MaAW0OeYHwGw987j0BAEHxCjd1gEBBX5MOmlDVft3lVAY4fRgRDN4Vt2QsQVVMYCu4yikJM/QHx0fd49HwJFPSSmHDGyshJs8s8NOGItcEEFFWGK8FZaxpmH6jIw1hZWg5SIs1jGL6xPFYeY0bzmKN8wOzrRwrMoeZ7KWA6EBYzVGMe99IGXUfiwn74X6R+/Bc514eP",
+      "filename": "P49.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "818c38780f7c1a94758a9de8ac779084",
+    "text": "Some problems are \u201cwicked\u201d, that is it difficult to even describe the problem without a notion of the solution. It is wrong to expect developers do to a clean design and commit to it at the start of this kind of problems. Experimentation, feedback, creativity are needed. (Misfit: Pretending that the requirements can be written down without attempting a solution first is a fallacy.)\n\nWe want every person on the team to understand the problem fully and to be aware of all the steps in development. This limits the size of the team and of the system developed. Trust is a core value in SCRUM, and especially important for the success of Sprints, so SelfSelectingTeams is a plus [Coplien95]. (Misfit: Large teams don\u2019t work well, because there is a limit as to how many humans can work on something together i.e bounded rationality problem.)",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng, deu"
+      ],
+      "page_number": 11,
+      "orig_elements": "eJy1VE1v4zYQ/SsDnVpAEGxLluW9Lnoo0CyCOsUe3MAYUyOZCEVqSSqKd9H/3hkqToNi0UPRHixLj/P1Zt7w+C0jQwPZeNJt9gGyTV2pikpqm6Ztup3aNVVVl2pNtNqV3arLcsgGithiRLb/linnfKstRgrp2+DVTfF0Id1fIiObzWrFPq/wrNt4YXS9S+jotI3idzxutquiymFdlVWxe8zhDag39QKsK3n7LrI4MZSFa4g0CJN7/ULmMKKi7A8+aCmSitrZkzIYwmn07sxmq2JfbtYNG3TaULyOlHzv77JUtO0n7BOzY0a2z6GlKZM8I8MnOw1n8kJHMkR6EcLZwQ0EEp4bGwA9we/TZrVWs1ZP1Kb3Nod4wQg6gI7Q6q7TajIRogN6JstZgvL6TGz1FgpmHS/cQ0CwToiA69J5cGaS7wJ+ThFn72yfQr2MTJmDPZNxI/kArRMcQRnClEX3FtC2oNww6JSfn1xYihvRxyUJR33SbMYfN2IF/MThvRbtoKTPoSNqz6ieclCeGHvW8Zr4Wz6gtoAf7nTodPwA956nYVk2/dIHSefpy6R90mIAxeUx/dnrGKUfbrZ/8WdoGKM44xt56LQPiT5Ch8aguhY/ygxvI/2E3ktN9CBj4nn9XfnnUuGmVF1Vb2tUtWqoPNOKuga3TVN15/9d+XW9Lcr3ym/2dbFadF7ui/13kcXpXyq/2uz/U+V/5omhjaJhfwVRnKjUpvFGwkH0NdmW8Siiey/ubjLmmqTINjx5nEU4rDee5asaaeRtsTc5y+QKeBBpGs3aDYuV/kq3vUgZcVFtOksNelsH1uODn26aUY7TPaOZSHIcPv76212enCnwEmmU6vQwOh+FYOf8EnJSikKQDIfRy0RzViQcyHT8k67b/oHLCEuS0UwBjh/daDTZ/fbx3Ub8gr5fSpYttemW2EeYnX+CmYzJuSkKp5CuBC41xUvEAYP07OJmGNBe4TLx37JByZv7H/hG4iVOt0JPEgB0QXB2MowWfNpfNLKur/P4x915/BPeGQvN",
+      "filename": "P49.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "4fc82b26aecb47d2868c4efbe3581732",
+    "text": "11",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng, deu"
+      ],
+      "page_number": 11,
+      "orig_elements": "eJxtj8FqhDAQhl9F5iySbKpx+wC9FRZ6lEXGZKoBTURHurLsuzex2556zJf/m5m/uQONNJHn1ll4zcDUeFb0UpFEZTpRKsJa1iXWVmOtlYE8g4kYLTLG/B1MCIt1HpnW4z3iHjZuB3L9wJGcTkJE54m/nOUhUqkPOgfnOXlNUytVqDw7iaos1DXP/oAU8gkqXcj/wI8SCaz7yjSlHhd3o/FjRkPwiB+WmAy74Fsz4rq28xK6GBOFFmetY+DTjcT7TId7eYfjZN9v2B+9GiDf55mlDdKeOeLWb1NHSyqTNjDdUl2QMrm/o95C4Jh5XL8Bir5pBg==",
+      "filename": "P49.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "e0bd7b93ee52ddce43a84d08d21e63e9",
+    "text": "For many people \u2013 project managers, customers, it is difficult to give up control and proof of progress as provided in traditional development. It feels risky to do so; there is no guarantee that the team will deliver. Customers and users can seldom give a final spec because their needs as constantly evolving. The best they can do is evolve a product as their needs evolve and as they learn along the process. In our development process we don\u2019t use this learning cycle and its benefits. (Misfit: Customer don\u2019t really know what they want until they see it, pretending otherwise leads to problems.)",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng, deu"
+      ],
+      "page_number": 12,
+      "orig_elements": "eJxtU81u2zAMfhXCpw0IDMf2lqY7DhiwQ4cC6y0rAsWiHa6yZEhUXKPou4+Sm6KHAT5QpPj9UPThpUCDI1o+ki5uodjdNLumqtUO66Y9NW1d7Zp9Tu63TdW3xQaKEVlpxUruvxSdc16TVYwhn41aXOTjGWk4s2Tquqqk5y09k+azZLe7nJ0cWU59h0Pd7stmA3W1LZvHDVzP7df9et62X3b/TawdkinCEhjH5OKentH8nlSHxasUNDJ2TM4eO6NCOE7eneRaVe7bm1rqPRnkZcLcen9XZL12iGrIpg4F2mEDGmORaCZJH20cT+iTk0TA+Jy8Fj+ch1HZBSZ0k0H4E0VdA8L3VwSkkvT6sIEuBnZjDomBAmjqe+qiYWAHA10Q4gSds+ydAWV1wnA9yCfB4DEEUCHFF9KogSywV5qSSWVE6gWNm9K7lvCToUc0ATyFpyXhawfBfQM+o8dEboUyKq8sI0pWcSoBoxphJpPgjCjyJXy/ys6SYkhRpywENNqNq24FPSUNYcIOTtgpuZbwyINF1Fm3GAssdGYBvDhzITuU8CCcJwyZfMmwolPU5RsJV9zqKGMUgI9417ooWisLGFTegjLODtmKdHYyMpmFBRf9x/lcazCj8Nn8YnuGVbSwZyjRB93SmZWFOIhQi70EJXy6oyDR7ftwPsJ4VEZMPlk3w/w22AVmsQ7RMpn1HGTsxBuRIotqdWJz6XFmEhUiQEzKq6WtlX81lJ/Tgl739ZfyXrEM/iHt4OvjP4TMR/c=",
+      "filename": "P49.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "fb49ec8660ed12823baf93061630a9bd",
+    "text": "Most systems development has the wrong basis. It supposes that the development process is a well-understood approach that can be planned and estimated. If a project fails, that is considered proof that the development process needs more rigor. If we could consider developers to follow the process more rigorous the project can be completed successfully. But these step by step approaches don\u2019t work, because they do not cope with the unpredictabilities (both human and technical) in system development. At the start of neither a complete, detailed specification and planning of nor scheduling is possible, because of these many uncertainties. (Misfit: Rigid processes are often too constraining and fall short to deliver a system into production.)",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng, deu"
+      ],
+      "page_number": 12,
+      "orig_elements": "eJx9U8tu2zAQ/JWFTgngCn7byq299ZAiaHtzA4MiVxZbihT4iGME+fcOaTvJoehJ0HJndmaW3L1UbHhgG/daVXdUzZbbrRSNWIjpUqntbLVR61WzadaLxXormnU1oWrgKJSIAv0vlXTOK21F5FD+jTi5FPc960MfUZnPp1NgLuWjVrFHdbYp1dFpGzNut5svm3oxodV0W08fJ3T9364W9SL/z5brdb35R+GMQKUKpxB5yC4e9DObH6OQXL3iQHFkGbWze2lECPvRuxZt07pZzZolGjptOJ5GLtiH+6oItockDsXVrmJ7mJDiVOU5I8p7m4aWfbaSJ0R+zmarexcinXUE9D+xcWNOl3oRKPZMR+/sgVoRdKjpK3rTOLrA+VDE0vERBaGSQyAdSNCRjfmUrGIfonOKxIhjIfszVApLLdMI3ZZxaBVxiHrAYhQmdSBA+2/kQJ3QJkzOMDBLZ4MGK1DocN3/pVhmFWhwnsnrg/OF+8hgSUa9cV2h0ErRUeeMccfCeeV5Z3ApXE+KvIsT6YYRW4GqkGSGdMmYU01fUhEXmJDySO3p/L2mgSiVs7/SfDprIh2d/zMBmxQJAMBOOCXrMAXi6KhjX2YnO8K/llG02uiowXLTOhz2aYCcnCauUG+1FOaWtL3s+GNCNX0+pxai8JGQo2XQIwvx5iXfoYj0s6mRpe7Al+9lGVBWp3E7MtR5CjCjkskVbAm3JOjW8LubsqmcAxSe4ECyB7fN4mu6udeh0/GOvuuDVtfUYUv4jIxssRdX9hU9UHlKFtEJYyj0Dg6wN8VGPxUHF7+gd5lMpfKe6tv8VK4v55vwHnae+Gd+Da+PfwHyXH+i",
+      "filename": "P49.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "d07e5cf3098783d94dfb0b006ffa0ef1",
+    "text": "Developers and project managers often live, or are forced to live a lie. They have to pretend that they can plan, predict and deliver, and then work the best way that they know to deliver the system. They build one way, pretend to build another way, and as a result are without real controls. (Misfit: Rigid plans are often too constraining and fall short to deliver a system into production.)\n\nOften overhead is created to prove that a process is on track. We have followed Pert charts and the like, believing that a system would result. Current process automation adds administrative work for managers and developers and results often in marginally used development processes that become disk-ware. (Misfit: Activity is not synonymous with results. More often than not a project plan shows activities but hardly ensures progress and results.)",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng, deu"
+      ],
+      "page_number": 12,
+      "orig_elements": "eJy1VE2P0zAQ/SujnEAqUZq222ZvCK4LK1iJQ7WqJvEkMXXsynaarVb8d8ZOui1oxQHBJYnH8/3ey/Y5IUUdab+TIrmFZDEv17TJK6z5mRXLus5uVljktaizXCAlM0g68ijQI/s/J5UxVkiNnlw8KzyZ3u9akk3r2ZLnWcYxk3mQwrdsna+j9WCk9iFuu82XRbqYwabI0+xxBufzPNvk6ToY5svV+nXLGMOWxJ2cpy7McS+fSH09YEXJD74Q5Kny0uhdpdC53cGakt2ytFgUWcEOtVTkTweKsfd3SWxZNz02ca5tQrqZgaA+CXUObN7pvivJhmFCBU9PYdzkIx1JmQNZB6gFcKHvXBk61BzDRlN70qDkkWZgLKAlqI2tSIA30QzIL0rhoaUTtMgGvjhYHoDT+RY9P/imQg0HbnEW7oTkEqGcoJDCzuKB/TQMxu7DF5TkPAx4usqx12YI2aeo6DaucCpf9lIJMJpC4OzShZluUBuOseNtKIk8NVhyvfJxtEH6lnFnEyqojPbWKJfCmzvpaulv4YtspIhzuOg/bscbE5ydtyi11E1MXaNS4Fpj/XXLODUMTKSwJiP6iHP6NkB4RvQTWoueAx4CSgzX77QX5WZzs1plS7HKi8WS8rwucD4viNVQ3VD1/2i/ytIlk3qez9NF5P1kWPB7Ynm+SbNXLWPQ3xJ/na/+JfE/R+gMg9ISCpAOKkbdj8TmsoHIgXkYDhU5F1wMg22x2qfwjUay10YpM3DUPTHSVYvWuzObWRh7lk3J2NMx8GJKOFFgMD1zcmRfCh96axngl2rYe9NhWAWgEHwWHZMrcCwQY9QJK/Gi1FFPv6h5zH0WsdTsbBtmgVIn6B29+HdXhcmNbZZUmY5ASLd/NzDXr1TwnhE6Sn8KG2FF8Tza6FNnehcFdC6bwp25aKTlH0Bwxpd/TJBRUMjAzY4ZJRcvWX68RcEtknY95woBjY07ucz0R8E8/gSEwgvA",
+      "filename": "P49.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "139a282eb25406ff7e82b0de81f8b101",
+    "text": "Solution\n\nEach Sprint takes a pre-allocated amount of work from the Backlog. The team commits to it. As a rule nothing is added externally during a sprint. External additions are added to the global backlog. Blocks resulting from the Sprint can also be added to the Backlog. A Sprint ends with a Demonstration (DemoAfterSprint) of new functionality.\n\nGive the developers the space to be creative, and to learn by exploring the design space, doing actual work, undisturbed by outside interruptions, free to adapt their way of working using opportunities and insights. At the same time keep the management and stakeholders confident by showing real progress instead of documents and reports\u2026 produced as proof. Do this in short cycles, Sprints, where part of the Backlog is allocated to a small team. In a Sprint, during a period of approximately 30 days, an agreed amount of work will be performed, to create a deliverable. Backlog is assigned to Sprints by",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng, deu"
+      ],
+      "page_number": 12,
+      "orig_elements": "eJy1VE2P3DYM/SuETy0wNWyPP8a9bZCg6KFFgN3bNhjIEj0WRpYMSc7sIOh/L6mZ2WzSbQ9BcjEsSnx8JB/5+ClDgzPauNcq+xUy2Te9aLqqbKq+7itZt8PYtMWwE2PV43abbSCbMQoloqD3nzLpnFfaioghnY04uzXuJ9SHKZKlqoqCfK7mk1ZxImvZJevitI3s9/hY1bucTGVdFXnxYQOfDe3uYqiL/zIkF7Jk4RwizpzHe/2E5n4RErO/6UJhRBm1s3tpRAj7xbuBnhX5rim2PT0YtcF4XjD5vv8jS5TtYRWHlNdjhvawAYVrxnEWMu/tOg/oORmOEPGJ083unVk5ECPcAB90NInH19Uu+74uWqwLbJpabctKCiVlNW7lrqWS1z+82k1Z593Lare34pZ1Q1evWi5O31bvflsX5fes9zshJ7hfPKUGURwxgIDF4y/CGCepTgrE7Fa6dCOcnD/C6N0McUJ4I+TRuEMOD3SIKGaQbp51DBAd6JjDHWP51SBYFydtD6DJohRhUnD0lmKcQa2erwSERCKHd9c7fqq5BuTk8epI0Bz7YNxAL4YbhTdE9hjAY1hNZLhnltfUpLAgTHAwfIX0nMXd7SlaFeCk40Sc3uJM8aMXzAN+4uPdSPQuT3/molg8wbja1C1hdDznL6X7p/Ds/BEfuN6vSLiqBpqhbuiaodrVYzcUpN6y3WK1a7uu6X+4hLui/nJh9N1V02VdN/n2VcvF6RslXLd19z0l/BuVN/VS4Uc0bkEf0jEwF+4z9Vx6TG3YgLCp9waFtzCcSYqLcUmCF4igD/biSsFdkqaMK4mN1b+B1Sod4uoHkhB5U42DVghUVvR+XZJeNyQ/TJGpbUtkYO3hJM63IWLUNfDXLYvzcbUkdB494qZt4E4GUmS8pCFmwtL0OSIuyTQLS+VgFSWXwIM7OaM4c+nsSIzoiuiFyZ04DGVvaKzdgSYkcAiaV8VslJMr41xie2Q24a+1KqqW36tV8gYI/O/GHN7y0GhGYGhPc3WWBinhy0DQz2lCGtZF+LQxXkxYGv7npcK1gTCTIa2OHH6n+byibD7vBOqldomoWIjCk57Jm5bGtgAlzoG7CYKS+veaOmmCpsYTwuj8jGrDMZMMaANQnw2pwYvBYP4Fw8D9vxC85kR1/J+J/vAPbTKX6w==",
+      "filename": "P49.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "6b51d431df5d7f141cbececcf79edf3d",
+    "text": "12",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng, deu"
+      ],
+      "page_number": 12,
+      "orig_elements": "eJxtj8tugzAQRX8FeY2QzYRXPyC7SpG6RBEa8IRYAhvBoAZF+ffa7mPVpY/vmZnbPgVNNJPlzmjxlggsJGHfAAAWjS5PtYTmBnXVK+xBgxZpImZi1Mjo808xOLdqY5Fpi+8JD7dzdycz3tmTPJfSOz/402i+e6qqSBdnLAevbWuADNIkl2WZqWua/AElVQYRlHUm/wPfiidiOzamOfS4mAdNHwsOJF7+QxPTwMbZbphw27pldb2PyawqTlD5wM1MxMdC0b28i3iyHXccY69WkB3TRNMuwp7F487uc09rKBM2MD1CXaHy4P6OOjvHPvO6fgE+SWjK",
+      "filename": "P49.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "2931092f017c2a250ba93260b556914e",
+    "text": "priority and by approximation of what can be accomplished during a month. Chunks of high cohesion and low coupling are selected. The focus is on enabling, rather than micro-management.\n\nDuring the Sprint, outside chaos is not allowed in the increment. The team, as they proceed, may change course and their way of working. By buffering them from the outside, we allow them to focus on the work at hand and on delivering the best they can and the best way they can, using their skill, experience and creativity.",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng, deu"
+      ],
+      "page_number": 13,
+      "orig_elements": "eJy1U02L2zAQ/SuDz67xZ7zpse21ZWH3FpYwlsaRiC0ZSW5ilv73juyklLL0sLQHY/Q0b+Y9z/PhNaGBRjLhqGXyERLcizbPOxTtQ1ntq2LXo+yEbPq23hWixSSFZKSAEgNy/WsirHVSGwzk1/OAi53DUZE+qcBIWeY5c27wRcugGC3aFZ2sNiHyDoeyybM6hTKvs+Ilhfu5KuqsjeeiLousegPYGIwkfvGBxujiUV9peJpQUPKDLyQFEkFbcxQDen+cnO24LM/2VcUdkl4PFJaJVurj12TVa04znlZTh4TMKQVJcxLHTAwfzTx25KKTOCDQNXpNJqet02EBNBI6fk086qpHjMPB9nBRGECggY4AhbDjNGivSIKcnTYnQBitCSqDz2o2Zx8pij8kCKvIxx6x8WAvDMxMjQxH4HmHIpDM4FkR9FbMHjSTDZDBLpal4DAochAUDx+1cPbDiIadxN1n0fH9A3xDx7X6Oz1HU+zuz4i0ffFQFNTUfS0p37d5VbZ1i2L3sCvafdf+74hUTZs1v0WkyXf3RFRllr8BbIx3RqQu6uZfZuTLtmneBjxxXkxIgW17LQmEQrtuztgAOPCeORnarLXaCLcta11yIBxTQB/vFmC1gkimMOISu5gTxYQ4T2tguEY7uPBdjKB1ZxaQwacFurnv6S5nhN7ZcR12E5TChTYd232wt3DZTVNsBRxoFYfEh3FJA2fnl8WOfNg0xtTfxGxo1HO/SWH2Nwor9Wc9DCnQdeJGZMTmgv3HXPLv9be8vvwE02iMbg==",
+      "filename": "P49.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "c2f1a6ad4d07e7fdab335acca4cfbb8b",
+    "text": "Each Sprint produces a visible and usable deliverable. This is demonstrated in Demo. An increment can be either intermediate or shippable, but it should stand on its own. The goal of a Sprint is to complete as much quality software as possible and to ensure real progress, not paper milestones as alibi.\n\nRationale\n\nDeveloping systems is unpredictable and chaotic. Development is an empirical process that requires significant thought during the process. A method can only supply a framework for the real work and indicate the places where creativity is needed. Yet we tread black-box processes often as fully defined processes. Unpredictable results occur. We lack the controls to measure and respond to the unpredictable.\n\nWhile building a system many artifacts come into existence, many new insights are gained. These new artifacts can guide future thinking. Increased productivity through good tools or uncovered components may open the opportunity for adding more Backlog and more functionality to our system, or for releasing a product early.",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng, deu"
+      ],
+      "page_number": 13,
+      "orig_elements": "eJy1VU1v3DYQ/SsDnbeCtJJWUm8N0kMPLYLGRVAYgUGRoxVhiVRIyutF0P/eR2mdxolRIIYNLLDicL45783154RHntiEG62SnynJVNdX9aGuijprKyVUWbVFqcqsY8VZVSU7SiYOQokgoP85kdY6pY0I7NfzKM52CTcD6+MQINnvsww2F/FJqzBAmterdLbahGh3fb2vsrTcUVW2afFxRw/nQ9ukdTznZZmnxROCzQKSxJ994ClW8U7f8/h+FpKTf3ChOLAM2pobOQrvb2ZnO6hlaVvmhxYKvR45nGdebd/9nqwJm+MijmtV1wmb444UL0mMM0N8Y5apYxdLiREC38dik1+FHOj97FAWIYpaJHsSdKe97kYmYRQtXsRPxaO+Yxe/U7oatCf8FE/W+ODQTUXa0FucU/rF4Fu69ZlICkMdE+swsIM8sJtYaViQdeQHPc/R5466JZAOkNhlVORDjG3hKXiyJxNjMh2tGMn2yPCSM3IIlqSdZjQE+XqaFlT0aRGjDmfytg8n4daL2fr/ioIRG7/gxjFcovSjY+93ZCwaIWakOqHHPlgTG4LfqDudxkY/9P0P4VA3enIVe4mmfjuaRcE5513bFeW+zfOeK+5ZSLVv+0ObNeK1R7Ous23yLucmL7dzua/S6vvzpv+8wWyqNitecjD/FDGMGPnrll/pMPJTra7aqpdZ3vV1VpeK91XTyn3RNVVRqVrU3Wu3ujlUj1ggz6piEwD1WZo9JdlsnskDRd2+KA+85Tse7azNkbZsVngvZnbAqgziATdyEDZomdLFYIU4NAFynmbttNzQBBoBMgcRgK9Piwa2yOuj0T0UYBEAcjSa1OJiSFDDgxHYg/BSg1Urc1gzAsXLPONPUO/ExCfrbqkHd0SrFb2rJGanDZKNzLI6HEUksxNohwlsFLEaOQHZGsZyUCn9zYFO0Malog76tz919v4hFRiDPthE+PfLiAwU99qA6b4opPTXoxahzmWMhCXl4lL6wBSdrulIa4Kz48pXE4uVe2LOMJntxkhR7VHLf4xvWtWUh6aXrerKomiV7BqRd3nTdUI2ZcevDYI8a8tHhJPvy+obFHwv2Yyeuw7Lw0ui4MMAT1hEelRxLMUFCzQJg/FzQfdC4nWxbjhuMuyQew0FI7G+Vh3DJ1z42D9gAi98FHFg1uXleb3+yg3m+7hoxZiuEMchDNrcInBKv8X1Kfw2aljKl9ENg4u4wRq0cWDiNAEHi5EWmxnKcQ9iYeFdkM6Z7IzhjUNl59m6sJjoIyJHqLW+ySLoGwzoaI/rLK6CHv427l1DWrKLuzRiF8NFBw6TJ/zWo0uGxMKN5/+b2I//Ao3dKbs=",
+      "filename": "P49.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "ce2f1ac313c3d733741f5291fa5edda1",
+    "text": "Therefore, during a Sprint, we optimize communications and maximize information sharing in daily Scrum Meetings.\n\nSprints set up a safe environment and time slots where developers can work undisturbed by outside requests or opportunities. They also offer a pre-allocated piece of work that the customer, management and the user can trust the Scrum Team to produce as a useful deliverable, such as a working piece of code at the end of the Sprint. The team focuses on the right things to do, management working on eliminating what stands in this way of doing in better.",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng, deu"
+      ],
+      "page_number": 13,
+      "orig_elements": "eJy1U8tu2zAQ/JWFzq4gybIe/YcUAZKbERiUuLSJUqRKLuOoQf+9S8lpUfRxKNqLQM2+ZjnD42uGBie0dNIyew+ZFHKQnRwaqQbVY18IhVKVfV01h0IVh2wH2YQkpCDB+a/Z6JyX2grCsP4bsbhIpwvq84UYqaqi4JobfNWSLoyW7YrOTltKdcdjVXc5Q2XVNXn7tINvwL4p8iIB5b4rfoNsRQxlYQmEU9rkXr+geZjFiNkXDkgkHEk7exqNCOE0ezdwWpH3RVccOEFpg7TMuNbe32UraXuO4rxudszQnncgMWZpzszwycZpQJ/WSRMIX9LC2eMFPSrnkbOj1/YMAh5mPtAOrghuJj3pzwijm6Zo9SgSqwDCSpjEyxbTlhtMawTCRaxdtAUptFngYfRxgjtEYjjkiekb8Q/Ce656xsdEhln9pG9Zt32purIqhrI8iLZq96Ivx6Yt+lGVzX/Ut8/3LFVd3MR7A5qqu6lZH+q8/SWyFf2lvnVb/lN9Ny0DBCSIM4sb+I0A2mftnU1XvUrJIiME4zjxmgzBnZ/RuBl9gFFYuDr/EaKVOlD0A0oYFuAbDFoiePwUMXCl82yX2Xlin5DGkAObawFhggOnFHqePnt8J4xx7CPuMmsc2WNq608XQfxhr8VAbkK/Y4tZXu07TQ7GwI0SJ/KctkKbxR5RTECORzgZua1gl6ZsFQ2vY9hmXgyGfR7ieNmiaWwy6zceo+OFbiyQBzK0Dlgvcd0HKI1Rjjkir2zXuE/24lNyeKIg3Q/U38ZwNvOYkj/T7zXtG4gXC+m5cDnfvljSUOlub2hAIvR/ejVPXwGZoabk",
+      "filename": "P49.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "1e6f0f20994f2bde6b96920a02beacaa",
+    "text": "Known Uses\n\nAt Argo, the Flemish department of education, we have been using Sprints since January 1997 on a large number of end-user-projects and for the development of a framework for database, document management and workflow. The Backlog is divided in Sprints that last about a month. At the end of each Sprint a working Smalltalk image is delivered with integration of all current applications. The team meets daily in Scrum Meetings and\n\n13",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng, deu"
+      ],
+      "page_number": 13,
+      "orig_elements": "eJy1VEtv2zAM/iuEz2lgx44fu3WHHjZ0KNDuVBQBLdG2VlkyZDlZMPS/j1LSoth6KtpT4i8kvwfN3P9JSNNIxu+UTL5AUlDbpXXaERXY5UIiYiP5I2saQWmFyQqSkTxK9Mj1fxJhrZPKoKc5Pms82sXvBlL94BnZbNKUe87wQUk/MJpVEZ2sMj703d9vimadryAry2ydP6zgBajScl0FoKi3bwOnFkaS+Th7GoOPG/Wb9O2EgpIn/kGSJ+GVNTuhcZ53k7Mtl6XruszrjAs6pckfJ4q9N9dJlGz6Bfvo6z4h069A0pIEnonhnVnGllwwExg8/Q52k+/GHgz8nLktoOeRd8rrqOTfvHOkLdWYVV1eNBy9KLaN4Ki3WbNtsG0/MW9OMaS5LU5pPgNNsT0tICu2Vcz3f+TU9L7EmyJtPjLwSw+Xrrcr8APBFYer5oH7JnQ+5Ay2A5KLwKBlBQeCAfcELZGBZVamh9vJhVSAHwTBNzQLuiO7biqwBhA0up7gRB6nGXmxzOQu2NIv9jgDGgmddVGBpD1pOz1TI3QORzpY9xhLwh5bnImtWbHEqhENu4tfw6BQ2ml7WMMdj/uK4lHbHtQMUu2VJAnKvEj2A3rWN3Nny+tmttEaP6yBQwliWGpUjGI493BJIIi+R9Tao34ENbKASEFa7ckxyUH5gZk89S4mF71oDWJxLiqdJq1Ooc4npZ5whJGIZUlU+hh1CreMcM0gE8acXh/FD3Rh+J7uwirfOA5sN2Vd520lmzIXJGRV8d7yMhNtXoii+bTjqPM8vOebtDy/+c9Alp7/neqyXqdvAaeW951GlddV8ZG3keWv876y1nPN08Nfoqbc7g==",
+      "filename": "P49.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "534a0e44f06bb9c17fab8a706d564f86",
+    "text": "Backlog is re-prioritized after the Demo in a monthly meeting with the steering committee.\n\nResulting Context\n\n(TO: Backlog) High degree of effective ownership by the participants, including users who stay involved through Demo\u2019s and the prioritizing of the Backlog).\n\nAt the end of a Sprint, we have the best approximation of what was planned at the start of the Sprint. At the end of the Sprint, in a review session, the supervisors have the opportunity to change the planning for the future. The project is totally flexible at this point. Target, product, delivery date and cost can be redefined.",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng, deu"
+      ],
+      "page_number": 14,
+      "orig_elements": "eJy1VUuPlEAQ/isVTpogaaB5efNx8OIjurd1M2maYmgFmjTFzI7G/241zPrKxESzeyL1db2/quL6a4A9DjjSzjTBUwjSom6xTHOR6jqtZNnWiU7jXJayiqVQcRBCMCCpRpFi/a+BttY1ZlSE8yr36mQX2nVo9h0xkiRCsM0ZPpqGOkbjYkUna0bydtfXiYyjNIRE8OcmhB9ykUexl+M0Li4DqwUjwXyaCQdfxTtzi/2HSWkMvvFDg4SajB13ulfzvJucrVlNRJUoUnYRtKZHOk242r57HawJj/tF7deqrgMc9yE0uAQ+zsTwblyGGp0vxUcgvPXFBs+V/tzbPZgZHD6ZnLHOkPmCDaiW0AF1CC9xsGBGUDDYkbr+BAMimXEPR0PdqsJ1oPOItsNgiKXI53SX4hvlnCJzwCsfluP/yaJMBBZVruMil6ouszKTTKloYimLNGnzB2SxjBhK/WdjcZOrdGM1q5KL8qr/fxyWWSyS++TwPc5Lv/Lxgvnx4C+tvzLU46WW55p7iwrLXGQxVjJPqqJO2iqusWiysnm4lmcikiFIKbe9OMtZdpZjyUByAdgs/tr0e+vpo6u3T+G8HI/hFZfIVnuHCLYFbFtP7YGF44hu7swE9WldhEk5MtpMiqsNeWl0vzSemWVmPTh2lldFnfjhYPsDbxl1zi7s3O/Yx4VPQzWDGpvN1902egcc1mN3Kf3jeoki1jIVjda6rOK0VKKqUTaYCx74vH5orrMqP6/XJhcyj4qNWllExQVgs/jPIylFXt3nMDyjtffIvDANCj4wMyOFcEToFE+Bf6xxJlATJ3FrBuXT8rrHThEc1QwTRx79VaXzveQ5ueN0cxfB72F+voTb8XV4MHiEGeeZvYebn2VCdzCz5eH6kYqdJutoGQ3xTFrQHRe9vaxZ+Glq7Xba24UWhxFcreNmP3FD/a+ALKme73zb462pe9zS5oeVWlZXbo+cF5s0iybfxJ7Hz52AJwjXAdaW+6HVyI3hzBtsDZf/t6m9+Q5uenL4",
+      "filename": "P49.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "d85e08e0b4cf9074c17c236dd7f3c6ea",
+    "text": "With SCRUM we get a large amount of post-planning flexibility (for both customer and developer).\n\nIt may become clear, in the daily Scrum Meetings throughout the Sprint that some team- members are loosing time at non- or less productive tasks. Alternatively, it may also become clear that people need more time for their tasks than originally allocated by management, because developers may turn out less competent or experienced at the allocated task than assumed or they may be in political or power struggles. But the high- visibility of SCRUM allows us to deal with these problems. This is the strength of the SCRUM method manifested through the Scrum Meetings and the Sprints.",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng, deu"
+      ],
+      "page_number": 14,
+      "orig_elements": "eJy1U8GOnDAM/RWLUyvNIGBgBnpre+phq1WnVQ+j1SgQA1FDghKzM2jVf68Du1ptteqham/g2O89+9mnhwg1DmjorGT0DqJkX9V5Vda7shZ5s99jIVOsKswLuU+qMos2EA1IQgoSnP8QNdY6qYwg9Mu/FrOd6Nyj6nriSJYlCdc8hi9KUs/R9LBER6sMhbrTKSuSON/AodzHh7sNPP2X+2z9T/M8iZNXAmsFRyI/e8IhdHGrrqiPo2gw+skPEgkbUtacGy28P4/O1pyWxFValBkntEojzSMutbc30SLYdJPolq5OEZpuAxKnKPCMHD6baajRhVYCA+E1NBt9V9TD8eOXbzdwQeiQQIAWrkMQg50MgW1htJ62I+MbZTpoNV5VrbSiGd601kFtGaKZPNkBHQgjmfcetR3RvY2Dsiehn4VzgtQ9fg3krOJ3L/Na7pIiKfNduyu41VZUMqnw0BRFlVQJ/m8vqyR74WWa7qt4t3rHkcNrkbXmL93Mq7T8l25+IhjEDDU27AU0GoXbgDJAPYIUSs9wbNw0wA0isZeeH5ydup6ns+QcR8cz4U9B4AMEoRi2MGAg8yAcgrbWhzUgxc+cZqzZAm+BRu+BO5NTEywGEv6Hj+G9JnRmcV3PrGUVKLS3L1SulCPaUSMYRAmDZbKFJOwYi1NuxQyphhlVx8ZrHcC0bXgFJNQzoxseT9ipTSAQk8fndfQLOU2O67njRTJrGNmfsOkO8MpZCk3DYGIdyTN6YF/J2cRp4MgqbH6ceRj0aPkuVCN0eBvthQ/Ck5u6jrli+PA45p7Xcwv3yj/dER/ZeoOB7eJh4i4t62acSzhQLuI+wt7wvTDQ1155UH4BY3xeD05ikMXDBYjPpLcyjEO16Bf5q9VrzsstCDf7bL//09He/QLw7Mxe",
+      "filename": "P49.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "702a55301d7bfddc23fb6f96aa224d7c",
+    "text": "Difficulties in grouping backlog for a sprint may indicate that priorities are not clear to management or to the customer.\n\nThe method is not suitable for people who need strong guidance.\n\n14",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng, deu"
+      ],
+      "page_number": 14,
+      "orig_elements": "eJy1k01r3DAQhv+K8HkxkiV/9Vx6awk0tyUss9LYFrUlI8tNlpD/3pGSpaXNpSG5+OPxvGhmnt3jY4EzLujiyZriEyvOQgJvRCeVkrI30ElQivMzghRQ1bI4sGLBCAYiUP1job0PxjqIuOX3GS5+j6cJ7ThFIlXFOWVe8L01cSIq2kxXb11MueOxUl1JSFSc7ncH9ht0VdkmIFQlSvk6ySFCxXbZIi5pkhv7gPP3FTQWT/TBYEQdrXcnPcO2ndbgz1TGy15IWVPBYGeMlxVz9uZrkZt24w5jnuxYoBsPzOBepHNWwie3L2cMaZx0QsSHNHDx2Q6D1fscLW7MOjYGv6/WjewM+sfsRzb4wIBta6Dh2QIXKjJW0wZZnCAy4j7YnIaAzPnI9IwQWPRU7ejg5Iv5DOKETO9b9AuGMvV8HeEbhADR/sTb1Bb197fpZgCohqpWUhvRq6aWfdO0bT2Yuuuxrz/OdM1LRdJkkpdNX0HDn9ULIdrs9RWSQ28z3dWdUO9p+paWTyuavGF2y6K23UY4z5gdr+hXeryfPHOIhm0xePoZjLs14DT+n64BlJA9INSiBy5UTVdutBik5C32+sN0dVKW3YFVvGlKkVxcgeAvcrom/1P/Bc+Rt8lqlerb95Ql1J/7/uJ9pJqnu1+W+4J8",
+      "filename": "P49.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "fe3c53b40076c279caff1f8146ff02af",
+    "text": "Backlog\n\nContext (FROM: Scrum Meetings, Sprints)\n\nYour are anyone connected to a software project, or any other project that is chaotic in nature that needs a information on what to do next.\n\nProblem\n\nWhat is the best way to organize the work to be done next at any stage of the project?\n\nForces\n\nProject plans captured in Pert charts or Gannt charts often try to capture tasks to be done a priori, but they often fail in their implementations, because they lack flexibility. Tasks are pre-allocated time in Pert or Gant charts but their priorities and number grow or dimish as required in real projects, and therefore they are not good tools to use where the number of tasks changes drastically over time\n\nNot having a repository of tasks in any shape or form simply translates into project failure. There must be some sort of project control.",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng, deu"
+      ],
+      "page_number": 15,
+      "orig_elements": "eJy1V21v2zYQ/iuEPm2AJ/BNFNUvAzag+5QuWAoMQ1AEFHWyuciiR9FxvGL/vUdKSbslKNLMBozYd7wjj3f33MNcfyxggC2M8cZ1xRtSMMv7irNaSMWNBgnQ86YV0tS9YMxWxYoUW4imM9Gg/cfCeh86N5oIU5YHc/T7eLMBt95E1HBOKfos6oPr4ga1rM7anXdjTH7X11zqsloRLnSpP6zIo6yrUiRZClbyZ+Rsj4piOk4RtukOl+4ehqudsVD8gwsdRLDR+fHGDmaabnbBt2hGSy0lE2jQuwHicQfZ9/KiyOGO671Z5ztdFzCuV6SDfZHO2aH6ZtxvWwjpIumECPfpqsVPxt4Ofp02eNjvvYtDDuO/ida071pjuOwtt1yCEKB4W7e2U13dKzhfoitayhURgpY8J3qWJVNz4mvBS/VUnu2/muiT5fFnP6af5Lu3v/168YZc2bDfkguA6Mb1tCJXu5Bu8/2L8iwqy2ugPdOdrRvV254CrRvBwDZMm/M2NKqkoiV9aGiUK0wnSzKTTJb1M4rZ43Ut3WB08pSl+MPvAzEBiBmPfgRi/Tji0dCR6Ikhk+/jIS1jBH+ifkV8SKbExw2EBy2JGxOJm4jdGB+dJW4kmOA9+uWVEaCbcDc39j5sTboYwc8hreExnUeL+1h+We93JgQ0vIP3KdBn6s5lZzumFGOVaGuolayY6GmtjeoNbe0Z696UOFUUFnPG1yJXYhlcVKUqP5Gz/SsHWU21PmXVL3FnzOaLANYYXjFJwVTU9h01lHZCmLpBUSgr5bkHmWqWRC5ymlcZcEzgCn1GMXu8MtWqUeyUqf59gQbihbQwRXIwx9T0PqzN6P6GvHDw4TYpW0AwIAoTHAj6JaRNETcnvs+GC+B+/CaoaMsFby0SEZN9AopouKq47imjWMb23BXUjP+LijR+NUkWdZ3eAE/kbP/K+lWsOSnnv/XBostLkKIE9EpUsjOsqyQo3TJMVN0iQ2nb1OzcI0k/ImWWGdVyQYaseELGU43+H1hpJGMnJaPLhU526I5kYnaJQrrEJpcQYmKXEKfEQL+Ycfws9xFGEkOG1eJEoplupy8hZRA7zge3Iu0+ERYcF8feuCEdgSoXiNvu5ppmlsLHSAvW7CeYPQZ8AJJ+gHvXusHFY0ne53NmhoQfzDB4azJ7ui08Bj5H/BjwEoALS0jRAW4xdmTOClkHf0g+ndu6aUPMRAL8tXdLKgKY4WEOYHzJL3ExILUuUaZoRh/J2vtE437IiUiXOCTDPEiWo9JYyTfA0EYsF+mCmZDB8SKYnzu0SBf5pmljeFMx22mmqa4N10rjrEEO6SnnojHi3NOGMS6XfzEeFI1aXmBC5Tfac5rs9EocsEaelJ7fYfE25g5fw9i2AXZ+ctGH4+dqYRtkatiYHaROSc8qMqXeRRAEBM+QsolmWPeHN1rqc0QGtmxugu0euQjBMflt+pO6tH+0xVdgDH742ovswyfXfGpR",
+      "filename": "P49.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "e3c37704a8948d9da822e1b78d9e9fa0",
+    "text": "Solution\n\nUse a Backlog to organize the work a SCRUM team.\n\nThe Backlog is a prioritized list. The highest priority backlog will be worked on first, the lowest priority backlog will be worked on last. No feature, addition, enhancement to a product is worth fighting over; it is simply either more important or less important at any time to the success and relevance of the product.\n\nBacklog is the work to be performed on a product. Completion of the work will transform the product from its current form into its vision. But in SCRUM, the Backlog evolves as the product and the environment in which it will be used evolves. The backlog is dynamic, constantly changed by management to ensure that the product defined by completing the Backlog is the most appropriate, competitive, useful product possible.",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng, deu"
+      ],
+      "page_number": 15,
+      "orig_elements": "eJy1VF2L2zoQ/SvCz8Y4suWP3rf2uaXc3T4tJcjSKBG1JSPJSXPL/e8dyfE2vXRL77ILgeCjOaPRnDPz8C2DESYwYa9l9oZkomc9Zy3dMdrXPRV1MyjWlEPHFe2hqrKcZBMELnngGP8tE9Y6qQ0P4NP3yC92Cfsj6MMxIEJpWSLnCp+1DEdEd21CZ6tNiLyHB8rKos7JjlZ10X7OyQ+gK4syAnXZFeUvgURBJPMXH2CK7/iov8J4N3MB2b94ICGACNqavRi59/vZ2QHDyqJjbddhgNIjhMsMifvxfZZKNoeFH9K7HjIwh5xIWLJ4z4zw3izTAC4+Jt4Q4Gt8bnZnxyVeFDNsCe91GFMd/+02tqFr2kZKRsumUp2i1W4o+64sKVRN279et+u+qLB1FaVFl7q9AawpdhHoWfsEkCjP7HbLaP2S3f7kgXDylosvoz2QYIl1B270P0DCEcjZui94fPfu70/vSQA+FbeqfODO8aBPcB+T/UIdQaGjgMYfhKopHyqlVK0q6CQbasHF66vTY8tv1WHxPwK7mlVPICvpefr0VcP6l9TnHlXY1NEetZidtk4HVEiSUftQkBhyxAaBD9vphQxXzlmPIxlWJZFhDVHa+ZAneUd7/kMSvhJv+mCJAh4WBznhUurYgZyAOXIjku7RQLFEKxcRYr2YIRzxSpRPmwOxJ3B/EZ2OvJ7m8UJAYyWOTNYBQQTjOeaxjozg/Q3C8WcuJOgJ4i2xfL8IEYO4kcSh806xDGJVOrwW8f8MCwpYT5uhonWFO7xjux76apC0qxkf5Guuk3UTs665Lu8r0O3azZ5V8wSykp5p2Lpl1Usa9sasjxsE9UI3zeCUddNqqEeXFOSdRSNALG7TLpGSCYPjxkfWraZEOTuhizwRi3PRdikCm2kTetIekxXk7YJGM+v2Wg2/FQcnO54AneN/yhuNFL/BnLSzJjkaE5yPWhyja7e5WDw+4ppjnb/hx6vlxfBJi5wIa3y0Lppc4IQckDNcyMQNNm8bFjAepwkvRXvfViJBabMSxLU9OD7h52UQPyeLA8xn5OEUow3zFI/h0eZ5rFQt42Pa2XqvhxF+NxWfvwOyJszq",
+      "filename": "P49.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "20fa5b47548a87b343a3361c7ef99880",
+    "text": "There are many sources for the backlog list. Product marketing adds work that will fulfill their vision of the product. Sales add work that will add new sales or extend the usefulness to the installed base. Technology adds work that will ensure the product uses\n\n15",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng, deu"
+      ],
+      "page_number": 15,
+      "orig_elements": "eJy1ksGK2zAQhl9F6ByMZSeW3QforSWwuYUljKWxLaJIRpI3G5Z9946cblmWnEp7MMKf/n/0zzDHN44WL+jSyWj+jfEahWgGGHTVtAq2db/rKj0oJQAbiV3HN4xfMIGGBKR/48r7oI2DhHH9t3DzSzpNaMYpEamqsiTPb3w1Ok1EhVzp7I1L2Xc8VttdUW+YaHdtIZ837A/oZFWUGYhtvnpI7iZCPN5iwkvuZG9e0T7NoJC/04XGhCoZ707KQoynOfieZGXR1dudIMFgLKbbjKt3/4Ovod24wLh2duToxg3TuPD8zkz45JZLjyG3k19I+Job5ocJAzKg7wLuxqJfgsLIBh9YmpD1oM7Wj8yamAq2D14vKpE0nDEZNzLQOrKrD2dSQ2JXYy0bFjvkk/wmsBcTqQ/mh7XefK9QsCew9AzZv7ozcnhlcRVQDAqKTq/uJSIVdxgjS34lxsUE1qKmpBELdkA1OU+Jbw+joYsLtfopSa4Z8/g+pvkTQoBkXvCQJ0Sj+rp0aiixF9VQSwGyK1spUHc19Fp2shXQ/7ela+s671hVNk0h8kZ9AFGKol5B0xblI3C3/N3KyaYq5b9cObH7PO/v3ifSvD//Asw5NQs=",
+      "filename": "P49.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "d8853e7e51c404af4edac1810b03e375",
+    "text": "the most innovative and productive technology. Development adds work to enhance product functions. Customer support adds work to correct underlying product defects.\n\nOnly one person prioritizes work. This person is responsible for meeting the product vision. The title usually is product manager or product marketing manager. If anyone wants the priority of work changed, they have to convince this person to change that priority. The highest priority backlog has the most definition. It is also prioritized with an eye toward dependencies.",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng, deu"
+      ],
+      "page_number": 16,
+      "orig_elements": "eJy1U02PmzAQ/SsjzhEyBELotb3soe1K3Vu0iow9gBWwkW2Spav+945NsrvaVj1U7Y158/We53F4TnDAEbU/Kpl8gESyvMhagZiV27LMM1GzZlfui10lWVWXWbKBZETPJfec6p8TYYyVSnOPLsYDX8zsjz2qrveE5Dlj1HOFL0r6ntCsiuhklPah73DIi11abSBnRcoeN/ASV1W6DXFWsH3KfgfEDkIStziPY1Bxr55w+DZxgckPSkj0KLwy+igG7txxsqahMpbWGWmiglYN6JcJY+/95yQS1t3Mu6jqkKDuNiBxTsKeieCjnscGbZASNnh8CmIT3yOMxnlQWpsz9+qMwLUE2ihnEUOi0mszmG5J4ROecTBTeH/gUjq4GHsCbwB1z7XAWx+0s44CXAofZ+fNiBbcPE3GvmsUxlrSCrOWaIdF6e5lhsSWMi4N6m5iv3BrI8uHIICUvPdDUTdVVWLL5D7DJqt4ne+2TIi9YHWzz5r/54eSpcUGtlmdltEPa1wyssV6/pyF8/8CrB1/6YeCFfW/9MNXPSxgNB0SrTOabqGMVV59x/VkKTz0yt2y9GXRTXRm1QwIrbEwIvpwxGCs2yHPyhH30EpuUp4qZzfzgTaFUdeikWuiZYFmvEL2tE67JlO4a8meSyB44fTy1zWRI/FuV1sJ8mKHchOyC/Q8mDg4TZ9V8Kh/oyDgsZpQ7l9GrVx7sgC6VxQaLk70I9DIdXP8c8imSisfFd75IIkPzrx5OQkX5XviDbgEJhduJXVNSJbXQuEfHf74E/1qncc=",
+      "filename": "P49.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "3519c6aac2ff3031cc82ad401244b714",
+    "text": "Depending on how quickly products are needed in the marketplace and the finances of the organization, one or more Scrum Teams work on a product\u2019s backlog. As a Scrum Team is available (newly formed or just finished a Sprint) to work on the backlog, the team meets with the product manager. Focusing on the highest priority backlog, the team selects that Backlog that the team believes it can complete within a Sprint iteration (30 days). In doing so, the Scrum team may alter the backlog priority by selecting backlog that is mutually supportive, that is, that can be worked on at once more easily that waiting. Examples are multiple work items that require developing a common module or interface and that make sense to include in one Sprint.",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng, deu"
+      ],
+      "page_number": 16,
+      "orig_elements": "eJxtU8tuGkEQ/JXWnmIJrQCDgdwSJZFySGTJvhEL9c407IR5bOYB3lj+9/TMLg4HXxBd04+q6t7tS0WaDNm4U7L6CNWm2TdSrPfNct3MxGJ51+BsJZaz9XxNzXSzqCZQGYooMSLnv1TCOS+VxUihxBp7l+KuJXVoIyPz+XTKNSN8VjK2jM5WBe2csjHXbbfzxaa+ncBycVevniZwidebeT3N8WyxXNSrd4ChgpEq9CGSySru1TPphw4FVa/8ICmSiMrZndAYwq7zruG0ab1ZLmdzTtgrTbHvqNTe/6gKYXtIeCiqthXZwwQkpSrP6Rje2WQa8llKnhDpOYutvlBHlu04gLPQujP8SUocdQ88UiYRA6AnsESSJCgLsSUw6I8UO81sAa0s2J4dtYICuH2JnT+gVX8xi5hw74yAcdzrQfhk4JHQBDg7f8yD8TLuV5pPZ5sADTIJd6jhExO4KgHF8QmVxkYTfLB0Zqp75w2z4wG/U4iZigotA1zYed7XDUT3NiqTG7tPShBzW0PEUs8qtgUb2bBSy9b5Gr45kcLoUk5o+ViIZ3F/51Xs32kZ+E6zf7HFCJ+H5yF4S2lIKzqxaSqCQAvCmY73SoWIsm8C+J18sRI+3E5BYh9uavhuQbrMKbhh7GDToAd7QM1V13qv2PYjvVzeXHNjf02KCTX7GlLXOR/ViSaXx/FPJttQ8TQbz0wj//I5lA0TBsXlJfOMKg+p4eszZnHDPZmko+Jo2AqrM6NPnvj+OEGyLdp1mR5mWwzPMLwTXe6ILSG//39+mDd1JNZkA+VlKyt0kpQPNp/e4GKdv5LLR/MTfXb0RI/5Q3h9+gfnfXmk",
+      "filename": "P49.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "6b91a08cae4c2b69b92c569deced630b",
+    "text": "The team selects a cohesive group of top priority Backlog, that \u2013 once completed \u2013 will have reached an objective, or milestone. This is stated as the Sprint\u2019s objective. During the Sprint, the team is free to not do work as long as this objective is reached.\n\nThe team now decomposes the selected backlog into tasks. These tasks are discrete pieces of work that various team members sign up to do. Tasks are performed to complete backlog to reach the Sprint objective.\n\nResulting Context\n\nProject work is identified dynamically and prioritized according to:\n\n1) the customer\u2019s needs, and 2) what the team can do.",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng, deu"
+      ],
+      "page_number": 16,
+      "orig_elements": "eJy1lU2P2zYQhv8KoVsAQ+CXRCnHNJcAabFo9rYNDIoa2cxKoiBS67hB/nuHlL1xC6dAFmvAB+slZzgfD4cP3zLoYYAxbG2bvSUZdIwrLuuyNMIAq4u2oLKgylS0KkrdZRuSDRB0q4PG/d8y49zc2lEH8Om710e3hO0e7G4fUOGcUrQ5yQfbhj2qTCV1cnYM0e7hgRc0lxtS8zoXnzfk/M3w9FVgUohcXFNWG1Qyf/QBhpjHnf0K/adJG8i+40ILAUywbtyaXnu/nWbX4Daa10JyhRs620M4TpBs737PUsjjbtG7lNdDBuNuQ1pYsnjOhPJ2XIYG5phMPCHA15hudr8HEkAPxGNhTfBEE+P24O0TkN3slom4jgQ3kWm2brbhSN5p89g79B72OpC/Fk6ZIG40gIbDhGFBe1YPtu/JXqOrGbTZ44IeiWu+xNyeYEPcTAZMxAc3Qk7u99YT/Pmgow/t8QQgn/DgMSSHtf9hnJP3Cy7sLvZs0v+UDHrpZsAPR0YXSOvIwc2P0WXv0Ca5thfeosEpxDzW8lzaP/Q867jhPpYL6/Zf/ipDTVtXrFSSG9kpqXTNWV0bowvaSHk7/mS90lWxE4AngdXqhJtQVa6uKqvRSwmkNyJwdAfcHyFyHtbmr1AiDM0KHcH8HQnaP/rIC3hYP4iegbTWmxnDJpMFgw4Q3NT1xOmTRn4Xv540QAwESbO7kSDi6LN16PDZ1QRz5+YBD8alM9bPQaCWYLlg7wLMX+JHcgqqLg1TpdRNVVSFFCWlLZNSCd6VN+SnTChwIXO18nMSzkAVNf2JkExeRk9VKl68Jj1/gl/6EAfBb25M4kX5723o4VrZFeWdKjXDwle6pJUCqkA1dWMEMN60t342mGDq3++GKKq1D4yVLF3kK0oyemnhRfGqhb+bXSR+vWJxcLdYXttZvDPtcdSDNbrvjzjw2/PTYf+OU92YVMl4i97+0lXpKBRMsq6FTmoOJTc1dKZWDROmFsBv1jNxblFd5VVsyFmQiq6CEixn14TV5H879moNYW/SPDILPqcDzOcXcwRo/Sb1gb8hhzgLn59Jg88xDr7LNny0PnyIkX7//A+dqua+",
+      "filename": "P49.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "7f03660a80484bfc9ca09b8b4ccc9dc3",
+    "text": "4. Conclusions\n\nSCRUM is a knowledge creating process with a high level of information sharing during the whole cycle and work progress.\n\nThe key to SCRUM is pinning down the date at which we want completion for production or release, prioritizing functionality, identifying available resources and making major decisions about architecture. Compared to more traditional methodologies the planning phase is kept short since we know that events will require changes to initial plans and methods. SCRUM uses an empirical approach to development where interaction with the environment is not only allowed but encouraged, changing scope,",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng, deu"
+      ],
+      "page_number": 16,
+      "orig_elements": "eJy1VE1vnDAQ/SsWZ4SA5WPpNedUUZOeVtFqsAdw19jUmCXbqP+9Y5O0VZv2ECWX/XjM13tvhsNjhApH1O4oRfSBRWXdZlXHs6YqmobvRIMAexCi22Obdm0exSwa0YEABxT/GHFjrJAaHM7hv4KLWdxxQNkPjpA8T1PKeYJXKdxAaFYHdDJSO593OORFmexilpVFluzuY/YL2O+T1APlLk3qF4GQQkg0X2aHo+dxIx9Q3U7AMfpODwQ65E4afeQK5vk4WdNSWJrsq7opKKCTCt1lwpB7cx2FkXW/QB94HSLUfcwELpHvMxF81MvYovVkfAeHD55uVCTsymiulpm6zb7Oc9k76VSY5k/Nu7LFrMw7XjdplhVZl+UlbyreFXy3F8jfUfMmSFztiqTeNN+AOss3ibPin8iW9DrVm+yNVb+9+vT5msmZATtpsyoUPTJuEZzUPaO+HOeZrdINFDGQTEzhGRUzHZO6M3YEPyabB7A+QSzhyw3I1sEoKnXh9AlasNXYky/YW6qY/O7vR7CWypzxzg/1gs9VUzX7pi44z4scUZRYluAvCyGjn+2731ZdPF3OM9Ds05+uVuGW/ka2pFf6XOyq+i19viNHTnhhzrCflk9S62CaWXWwjPQjrxxZJ/nAVvIQtGPcjBNN4W0mw72FYglDM/pnySmYMSZYGiud/OYrdosOEaCku8RMCvJSdhf/CM4gFbS0FLQHZrG0X2E9Rjj5xyN8oap0uzK8Bhi05BADywfppVos+tfEOIFF4cmMxiJzFoTc+jHag8EIo0wvqbJnNZFigec00KSe+AknRytrLH1KzdFT9dtP4cSe9pv8p51Ximb8ukjqwAdS3dcztPbUihr5sk+jh5Zz8qTsMgdKDMdJWskpFCYSDUhSShf+fMzkt5t0RqpN24YWNkXDofmhUZ+lNTqE0cTaOGa0ujBQyqxEvSVVUHMSkDwX8TagJzlzM2H8n/O6/wEUWimZ",
+      "filename": "P49.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "b17ef6d19c7a5b1ee83b907c595526dc",
+    "text": "16",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng, deu"
+      ],
+      "page_number": 16,
+      "orig_elements": "eJxtkN2OgyAQRl/FzLUxIBXtPkDvNmmyl6YxKKOSKBgd05qm715gf672ksN3mPmon4ATzmipMRo+EuCiz8/YIitl20kmFT/l2FZnUVa9FqyENIEZSWlFyuef0Dm3amMV4RbPkzrcTs2IZhjJkzxnzDs/+G40jZ7yMtLFGUvBq+tKiEykSc6kzPgtTf4AZzwTEcgqY/+Bb8UT2I6NcA49ruaB09eiOoSXv9BI2JFxtukmtW3NsrrWx1hWFqei8IHeTEjHgtG9fkJc2Q67GmKvGtAOaaJxhzBn8bix+9ziGsqECYQPih8og/v71MU58pnX7Q0PAWim",
+      "filename": "P49.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "519e7d7301a52ac32d2b649db82d1c63",
+    "text": "technology and functionality are expected and continuous information sharing and feedback keep performance and trust high.\n\nWhen SCRUM is combined with other organizational patterns [OrgPatt], specially those by James O. Coplien [Coplien95], it provides with adaptive, yet well structured software development organization.\n\nTheir application also generates a strong culture with well-defined roles and relationships, with meaningful and transcending rituals.\n\nAcknowledgements\n\nWe would like to thank all of the SCRUM users and reviewers from which we have received feedback over the years. Also, we thank the all of the members of the Chicago Patterns Group that attended an early review session of the Scrum Meeting pattern (especially Brad Appleton, Joe Seda and Bob Haugen). Finally we thank our PLOP98 shepherd, Linda Rising, for providing us comments and guidance to make our paper better.\n\n(Personal acknowledgement from Mike Beedle.) I\u2019d like to thank both Jeff Sutherland and Ken Schwaber for adapting the SCRUM techniques to software in the early 90s, and for sharing their findings with me. SCRUM has made a significant contribution to the software projects where I used the technique.",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng, deu"
+      ],
+      "page_number": 17,
+      "orig_elements": "eJy1Vm1v2zYQ/isHf2oBT9C7rH1rC2xr16xG22EfsiKgyKPERSY1korjFfvvO1J2mhbGgAZJgCC5073yubfLzysccYfaXymx+hFW6SaXuRCyYQVPq5aXKHleNjnLMiGRt6s1rHbomWCekfznFTfGCqWZRxfpkR3M7K8GVP3giZPnaUo6R/ZeCT8QN2sidzJK+6B3eZmXbVKsIU/LJPu0hju6qRc6K+rqPCNqEGflDs7jLmSxVbc4fpgYx9W/9EGgR+6V0Vd8ZM5dTdZ0JJYmbVE2ZGIl1Yj+MGHU3V6sYsC6n1kfs7pcoe7XIHBeBT8Tsa/0vOvQhlSCB4+3IVn6ywdtRtMfgGkBctbRLxuVJ45FwNuJQkERP3OjvdKzmR0oLY3dsSAMbmBW6X6xgCg6xq/hGnGCCW0U0xzjV29n52Ggp05CzKcUfmPWkqkb/BjCovi+RZk3ImWCgO3KVqBMqzytZFsUbVEXrWjwqVEusjap7qFc5kc6K8vsLGPReCjKlNdjovzHgBo+vHr/+wUoRyjuOqUJ0r3yAxg/oAVje6bVP2wBHybmPVrt4PKd7bdEkANHhaDYOB7AD8YhdAd4w3bo4F0Cr8w0KvJxefynDW+hPFBKN0qQTHRF8EwB5TUc0MMexxEcVQT3s6VonJF+H0pO4A2OZgrwfxXX95XMpmz4BkvWpbKWRVfwtqiqppU1tpXkWD5hyeRJQxXR5Em6lEykq5K6P1ZIvtkk6RnGovHAksnyJn/MkvlIeVtgE8HJly5nozPQo0YbnghYwM5Q1/N5DAAuEAdQf6AOjfVlzRgEqe8tjtGIG9Tk1ovoDglZ3ct5PI4Gph1HLcIkscrP5O/7EEdsRC15WtRdxTNR80pW2HVtJ6uikGn21EOiztMT4gtdZwvAddacpaP8w/De1PTzmHi/4Nfa7EcUfXxSd//lPyo/4rkXF1Uj6y7lpWR1hh2irCRjOXai2WzaTfp0L16lSbmGJjv12EK3xSZplikc/jvDWDQe2GMlzfZHHcvUNGYeBYzqGsEbGqxMX1OjjWAkEXic2bNDe+qjG4X7QElrdrAfFA89BwO7QfrIkdrj3g42NzTag50DMusSeEEtvA7yi6Pw5Z6zHYYg3Yl8RcZZb2B72gU/WzNPQdVDYGkRrwIg07QTlsjAoXNhWJzi53bewQWiD1193CrwDL/skpeWCXhBYwa90Wt4Y0gJBYvZvjQd/MJmmjnPE/iJyiYo3EVvZgvbt++27YYOEJxoi4k1vFWalN8rpwIGdHscV1BwP8fVF6s7mu9nJeJlQi+/Y4RAsDgxulmgwxDp942fiq4STjsn55x3XKabGvNGZkUqBZ1+LX/q8UP99tX4ycj1qfipPZpznEXnoe2QpZvHbIdnW6q+eH6wr4fRUuwXoUleUmmPmDyH13/OeZq13/ZOR+cMvEEp4cMcDpsxAB1+fw0XEB/2jBzHuliOESqLL30Wj2H190xLiwze3SNKR5mlztuU9lc8dMnG6fD1cVnS0gt15k7rLTmaHZij+hIYVqbqtZLUV5RUOKat6ua4XGMC+MUnvfJf9Oxki5JAeB1mgIgid0H+X3V++g+k6DDl",
+      "filename": "P49.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "9738ee6c256a1f238677b08a858ccfae",
+    "text": "References [Beedle97] Michael A. Beedle, cOOherentBPR \u2013 A pattern language to build agile organizations, PLoP \u201997 Proccedings, Tech. Report #wucs-97-34, Washington University, 1997. [Coplien95] James O. Coplien and Douglas C. Schmidt, Pattern Languages of Program Design (A Generative Development-Process Pattern Language), Addison and Wesley, Reading, 1995. [Goldratt90] Eliyahu Goldratt, Theory of Constraints, North River Press, Great Burlington (MA), 1990. [Holland95] John Holland, Hidden Order \u2013 How Adaptation Builds Complexity, Helix Books, Addison-Wesley, Reading MA, (1995). [Holland98] John Holland, Emergence \u2013 from chaos to order, Helix Books, Addison- Wesley, Reading MA, (1998). [Nonaka95] I. Nonaka and H. Takeuchi, The Knowledge Creating Company, Oxford University Press, New York, 1995. [OrgPatt] Org Patterns web site: http://www.bell-labs.com/cgi-user/OrgPatterns/OrgPatterns?ProjectIndex [Schwaber97] Kenn Schwaber\u2019s, SCRUM web page: http://www.controlchaos.com [Schwaber97-2] personal communication.",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng, deu"
+      ],
+      "page_number": 17,
+      "orig_elements": "eJx1VNFu2zgQ/JWF7iUBZEVW4tjKy8Fxi7jXOjacFMXBZwQ0uZZ4oUiBpCL7iv77LWU7SNO7N3FI7szODrX6HqHCCrV/kiK6gSgfXo4Qr3k2uGb9bXY5uh4ON+mIjQYjzrcMoxiiCj0TzDM6/z3ixlghNfPourVie9P4pxJlUXpCsixN6c4RbqXwJaH9YYfWRmof7q1W2SBNrmLoZ+lVkq9jeAXyUT8ZBKB/lV0l6X8ih0sERW7vPFahk4XcoXqoGcfoB21spUK/r7HbWsyiTpMuGlZ0wlcR6iIGgU0UytQEP+mm2qANakMBj7vQT7TELVrUHB2sbhGFwny4hpnkJUMF4wQOYAx8Pi/DSX+7WMJfTZb2L2EMNfMerYYTOXgDm0YqAawgiWBswbT8h3lptIth8cUsDpfzfAgLazhHsrugrUfkZQJLrI318FvbcNfLh71L8uwbcyWd8UbDVy1f0Drp98G4fJjAamJqJVHngzX8wSpqY57AEQOmBXwwTaGYg0kCD7ysaGIk46j6y8kyMNugprCsgg/oZKHhbAx3qNGS9Bck8AWVqUO0ekE2OvdLlfMYxkJIZw7E39ApJJ1LZKHFTvCABN8ZJaiqz9M1fFRyz8oGThjZUKKx+6BnQo55y0KkYrgnV0pYhu5JKLHHcGeRebhtrDqaczYbn3csKbFMjaKZiM4WU2o4rmOYSiHImrkVVOo4x6lpSTqrfTcnqkkDJMdMVSvcdWZPUckd3Brz7F677L3rEGbjGM5Cl+dvBIzeC/hYoS1C4k7sW2sqoLwZF9JjgrD/IXzv6SvjKDDeG82eWej4UwKHRTeIaQKP7BkbXsrOX/isTatQUFonwcNQKPTKNFWe77ak4E3QTnbfYwt/Gvv8Ose5LUIC1mRlccqCgxY3QNfwBkrv65uLi7Ztkw0q1VNs4xJuqgteyF7j0F4cK4R7b79/p4D9jdx/0gJ3sKLUtoxebniXn1FrOAGHd0TSHibLr7OOOTz0n5i50d4a1bkbyN+W62VrqKlJckoB7VWNlrxLQBL+J6ffyz2zh0fwGH4ZP9b/Av1QxUY=",
+      "filename": "P49.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "4523540f1504cd17100c4835e85b7eef",
+    "text": "17",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng, deu"
+      ],
+      "page_number": 17,
+      "orig_elements": "eJxtj8tugzAQRX8FzRohYze26Qd0VylSlyhCBk+IJbARDGpQlH+v7T5WXfr4npm57QNwwhk9dc7CawFKmVNveTMMV95o0RgtlWq4bpi2SgoJZQEzkrGGTMw/YAhhtc4bwi2/J3OEnbobuvFGkXDOWHR+8KezdIu0VpkuwXlKXttqISpRFpxJWdWXsvgDNasrkYHUFfsPfCuRwHZshHPqcXZ3nD4WMyA844dFwoFc8N0wmW3rljX0McYq9XLSPAaubkI6Fszu+R3yyX7czZh7tYB+LAuLO6Q9S8Sd3+ce11QmbSC8p7pQq+T+jnoLgWLmefkCjCRoPQ==",
+      "filename": "P49.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "1eeb9ced0ae886784977da79bcf0616b",
+    "text": "[Senge90] Peter Senge, The Fifth Discipline - The art and Practice of the Learning Organization, Doubleday/Currency, New York, 1990. [Sutherland97] Jeff Sutherland, SCRUM web page: http://www.tiac.net/users/jsuth/scrum/index.html http://www.jeffsutherland.org/scrum/index.html [Weinberg97] Gerald Weinberg, Quality Software Management \u2013 Vol. 4., Anticipating Change, Dorset House, New York, 1997.\n\n18",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng, deu"
+      ],
+      "page_number": 18,
+      "orig_elements": "eJy1k9tu1DAQhl9llOvgOIfm0DvUqiBEYWELCIXVyrEniUvWjhyH7VL13bFTFqrSKwSX82X+8Rz+1LcBDrhDZbdSBKcQpIIWSZonacOwFZQznvGW51wkDU9PeBKEEOzQMsEsc/m3AdfaCKmYxWmJB3bQs932KLveOpIklDrNT7yXwvaOxsVCRy2V9bq6TtKSFCG4bEI3IRzjrKCk8HGc0ROSPgHuFY4E02GyuPNTrOQNDuuRcQzu3AeBFrmVWm35wKZpOxrduDRKyiyjlUto5YD2MOKiXV0GS8Oqm1m3TFUHqLoQBM6Bf2d0eKvmXYPGj+JfsHjjhw3qtcvEim5g5d40sIQhXPUIF7K1PZzLictxkArh2YKZscCUgJVhrkWOoFuwjr9GZpRUHbw1HVPyO/P9h3Cu52ZAwQ7R2WwMKn4I4Q3u4bM2X0OIq4oSqNezq2DcBKIqNvAK2xZ+oxDWZ+8/XMIeG/CTnEJv7XgaRfv9nljJOFFoo3lCM0XXk5NFEzfzLpJK4A3p7W54KLh2xadftYk23Z/p9SeUyi2r8928QMMGAUcUwruZDdIeYK1bu2cG4ZIp15b3JHyZExqn8FEPBDISwnPlViRHtwu3mLOeLcs912ZCCy+16/nRMgriT3m87BtmjJN+wyt/LXe2x+ZvszzOS3ZStknj/J60MSsq2hSYVGlZ0PK/mb9M03sr5zmJvbmPIKYxSReQl4Q+Be4lf2f/Iq/y+F/aPy4f7vtCa/cPBHebH/nfXz4=",
+      "filename": "P49.pdf"
+    }
+  }
+]

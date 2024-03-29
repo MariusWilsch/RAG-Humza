@@ -1,0 +1,22 @@
+[
+  {
+    "page_content": "CHAPTER 1\n\nREAL ESTATE APPRAISAL FORMULAS\n\n1. GROSS INCOME MULTIPLIERS\n\nThe multipliers are often used in determining the value of a real property\n\nPGI - Potential Gross Income\nGIM - Gross Income Multiplier\nV - Market Value ( the use of Fair Market Value is not encouraged under the IVS/PVS)\nEGI - Effective Gross Income\nRe - Rental Rate\nNIM - Net Income Multiplier\nNOI - Net Operating Income\n\n$1.1 GIM = \\frac{V}{EGI}$\n\nWhere: EGI = PGI \u2013 Vacancy, or Losses\n\n$1.2 NIM = \\frac{V}{NOI}$\n\nWhere : NOI = EGI \u2013 Opex\n\n$1.3 GIM = \\frac{V}{Re}$\n\n2. CAPITALIZATION FORMULAS\n\nCR - Capitalization Rate\nI - Income ( or Net Operating Income, NOI)\nV - Market Value\n\n$2.1 \\quad V = \\frac{I}{CR}$\n\n3. TIME VALUE OF MONEY FORMULA\n\nFV - Future Value\nPV - Present Value\nn - Duration; period (may be in years, months, days)\nI - Interest rate; discount rate\nPMT - Payment; Annuities xxx\n\n$3.1 \\quad FV = PV \\: (1 + i)^n$",
+    "page": "1",
+    "source": "6_Formula_Real Estate Appraisal Formulas.pdf"
+  },
+  {
+    "page_content": "3.2 $FV = \\frac{PMT[(1 + i)^n - 1]}{i}$\n\n3.3 Where : Sinking fund factor = $\\frac{[(1+i)^n-1]}{i}$\n\n3.4 $PV = \\frac{PMT [1 - (1 + i)^{-n}]}{i}$\n\n4. CAPITALIZATION RATE DERIVATION\n\nSP - Selling Price\nOpex - Operating Expense\n\n4.1 $CR = \\frac{NOI}{V (or SP)} = \\frac{EGI-Opex}{V (or SP)}$\n\n4.2 CR = Over-all Rate = Recapture rate + Return of Capital (or Interest rate)\n\n5. Mortgage Constant\n\nMC - Mortgage Constant\nADS = Annual Debt Service ( or annuity in some situations)\nM = Mortgage; Mortgage Equity\n\n5.1 $MC = \\frac{ADS}{M} = \\frac{i}{[1-(1+i)^{-n}]}$\n\n6. Equity Dividend Rate\n\nED - Equity Dividend\nEDR - Equity Dividend Rate; Cash on Cash; Equity Yield Rate; Equity Capitalization Rate\nE - Equity; Equity Investment\n\n6.1 $EDR = \\frac{ED}{E}$\n\nWhere : ED = NOI - ADS\n\n7. Debt Coverage Ratio\n\nDCR - Debt Coverage Ratio",
+    "page": "2",
+    "source": "6_Formula_Real Estate Appraisal Formulas.pdf"
+  },
+  {
+    "page_content": "7.1 $DCR = \\frac{NOI}{ADS}$\n\n8. Band of Investment\n\nCR - Capitalization Rate\nM - Mortgage Constant \nMP - Mortgage Position = LTV Ratio = Loan / Value\nEP - Equity Position = 1 - LTV Ratio\n\n8.1 $CR = (MC x MP) + (EDR x EP)$\n\n9. Depreciation (Straight Line Method)\n\nFor machineries:\n\n9.1 Composite Life = Total Depreciated Value / Annual Depreciation\n\n9.2 Recapture = 1 / n\n\n10. Simple Interest\n\nI - Interest Rate\nP - Principal\nr - Rate of Interest\nt - Time\nF - Final Amount\n\n10.1 $I = Prt$\n10.2 $F = P + I = P (1+rt)$\n\nBanker's Rate :\n\n10.3 $I_o = \\frac{Pr(number\\ of\\ days)}{360} = Ordinary\\ Interest$\n\n10.3 $I_e = \\frac{Pr(number\\ of\\ days)}{365} = Exact\\ Interest$\n\n11. Simple Discount\n\n11.1 D = Fdt",
+    "page": "3",
+    "source": "6_Formula_Real Estate Appraisal Formulas.pdf"
+  },
+  {
+    "page_content": "Where: D - Simple Discount\nd - discount rate\n\n11.2 D = F \u2013 Pt = D / Fd\n\nPresent Value or Proceeds:\n\n11.3 P = F \u2013 D = F (1 \u2013dt)\n\n12. INCOME LADDER\n\nPotential Gross Income PGI\n( or Gross Scheduled Income)\nLess: Vacancy and Losses (V/L)\nEffective Gross Income EGI\nLess: Operating Expenses (Opex)\nNet Operating Expense NOI",
+    "page": "4",
+    "source": "6_Formula_Real Estate Appraisal Formulas.pdf"
+  }
+]

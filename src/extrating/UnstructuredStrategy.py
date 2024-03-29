@@ -1,6 +1,6 @@
 import json, datetime, os
-
 from enum import Enum
+from typing import IO, Union
 from unstructured_client import UnstructuredClient
 from unstructured_client.models import shared, errors
 from PyPDF2 import PdfReader, PdfWriter
@@ -18,6 +18,7 @@ class PDFType(Enum):
 
     STANDALONE = 1
     SPLIT = 2
+    UPLOAD = 3
 
 
 # CONSTANTS
@@ -76,25 +77,35 @@ def call_strategy_on_folder(folder_path: str, pdf_type: PDFType):
 def save_json_data(filename: str, data: list, pdf_type: PDFType):
     if filename.endswith(".pdf"):
         filename = filename[:-4]
-    if pdf_type == PDFType.STANDALONE:
-        now = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
-        output_file = f"unstructured/{filename}_{now}.json"
+    now = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+
+    # Define the base directory based on the PDFType
+    base_dir = "unstructured"
+    if pdf_type == PDFType.UPLOAD:
+        base_dir = "unstructured/uploaded"
+        os.makedirs(base_dir, exist_ok=True)
+
+    # Define the output file
+    output_file = f"{base_dir}/{filename}_{now}.json"
+
+    # Write data to the output file
+    if pdf_type in [PDFType.STANDALONE, PDFType.UPLOAD]:
         with open(output_file, "w") as f:
             json.dump(data, f, indent=2)
-    else:  # PDFType.SPLIT
-        output_file = f"unstructured/{filename}.json"
-        if os.path.exists(output_file):
-            with open(output_file, "r") as f:
-                existing_data = json.load(f)
-        else:
-            existing_data = []
-        existing_data.extend(data)
-        with open(output_file, "w") as f:
-            json.dump(existing_data, f, indent=2)
+        # else:  # PDFType.SPLIT
+        #     output_file = f"unstructured/{filename}.json"
+        #     if os.path.exists(output_file):
+        #         with open(output_file, "r") as f:
+        #             existing_data = json.load(f)
+        #     else:
+        #         existing_data = []
+        #     existing_data.extend(data)
+        #     with open(output_file, "w") as f:
+        #         json.dump(existing_data, f, indent=2)
 
 
 # Main Function
-def UnstructuredStrategy(file_path: str, pdf_type: PDFType):
+def UnstructuredStrategy(file: Union[str, IO[bytes]], pdf_type: PDFType):
     """
     Function explanation
     ====================
@@ -116,14 +127,17 @@ def UnstructuredStrategy(file_path: str, pdf_type: PDFType):
       Chunks sorted by title
     """
     # Load the document
-    print(f"Loading the document {file_path}")
-    filename = os.path.basename(file_path)
-
-    with open(file_path, "rb") as file:
-        files = shared.Files(
-            content=file.read(),
-            file_name=filename,
-        )
+    if isinstance(file, str):
+        filename = os.path.basename(file)
+        file = open(file, "rb")
+    else:
+        filename = file.name
+    files = shared.Files(
+        content=file.read(),
+        file_name=filename,
+    )
+    file.close()
+    print(f"Loading the document {filename}")
     # Fast strategy is for simple documents
     # request = shared.PartitionParameters(
     #     files=files,
@@ -161,9 +175,10 @@ def UnstructuredStrategy(file_path: str, pdf_type: PDFType):
     try:
         response = unstucturedCli.general.partition(request)
         os.makedirs("unstructured", exist_ok=True)
+
         # Save the data
         save_json_data(filename, response.elements, pdf_type)
-        print(f"Document {file_path} was successfully loaded and chunked")
+        print(f"Document {filename} was successfully loaded and chunked")
     except errors.SDKError as e:
         print(f"An error occurred while using the Unstructured API: {e}")
     except Exception as e:
@@ -171,10 +186,10 @@ def UnstructuredStrategy(file_path: str, pdf_type: PDFType):
 
 
 # Call on multiple files
-# call_strategy_on_folder(
-#     folder_path="data/Neurohabiltation/above100pages/ilovepdf_split-range",
-#     pdf_type=PDFType.STANDALONE,
-# )
+call_strategy_on_folder(
+    folder_path="data/CONSULTANT_RAG/raw_pdfs",
+    pdf_type=PDFType.STANDALONE,
+)
 
 # Call on a single file
 # UnstructuredStrategy(

@@ -13,11 +13,11 @@ class ClaudeConfig:
 @dataclass
 class OpenAIConfig:
     SYSTEM_PROMPT_FAV: str
-    SYSTEM_PROMPT_OPTION_1: str
-    SYSTEM_PROMPT_OPTION_2: str
+    SYSTEM_PROMPT_LAW: str
     SYSTEM_PROMPT_NEURO: str
     OPENAI_CHAT_MODEL: str
     OPENAI_EMBEDDING_MODEL: str
+    SYSTEM_PROMPT_CONSULT: str
 
 
 @dataclass

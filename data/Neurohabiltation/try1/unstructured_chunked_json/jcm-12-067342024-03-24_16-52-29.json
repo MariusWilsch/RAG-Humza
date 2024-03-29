@@ -1,0 +1,1707 @@
+[
+  {
+    "type": "CompositeElement",
+    "element_id": "2344107a83e021d4f0519c0b81e73f9a",
+    "text": "Journal of Clinical Medicine\n\nReview Advances in Stroke Neurorehabilitation\n\nMuhammed Enes Gunduz 1,*, Bilal Bucak 2 and Zafer Keser 2\n\n1 Department of Neurology, University of Massachusetts Chan Medical School, Worcester, MA 01655, USA 2 Department of Neurology, Mayo Clinic, Rochester, MN 55905, USA; bucak.bilal@mayo.edu (B.B.);\n\nkeser.zafer@mayo.edu (Z.K.)\n\n* Correspondence: muhammed.gunduz@umassmed.edu; Tel.: +1-508-667-3261",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 1,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "763a9dc7c360fab4349cf9a4518185e3",
+    "text": "Abstract: Stroke is one of the leading causes of disability worldwide despite recent advances in hyperacute interventions to lessen the initial impact of stroke. Stroke recovery therapies are crucial in reducing the long-term disability burden after stroke. Stroke recovery treatment options have rapidly expanded within the last decade, and we are in the dawn of an exciting era of multimodal therapeutic approaches to improve post-stroke recovery. In this narrative review, we highlighted various promising advances in treatment and technologies targeting stroke rehabilitation, including activity-based therapies, non-invasive and minimally invasive brain stimulation techniques, robotics- assisted therapies, brain\u2013computer interfaces, pharmacological treatments, and cognitive therapies. These new therapies are targeted to enhance neural plasticity as well as provide an adequate dose of rehabilitation and improve adherence and participation. Novel activity-based therapies and telereha- bilitation are promising tools to improve accessibility and provide adequate dosing. Multidisciplinary treatment models are crucial for post-stroke neurorehabilitation, and further adjuvant treatments with brain stimulation techniques and pharmacological agents should be considered to maximize the recovery. Among many challenges in the \ufb01eld, the heterogeneity of patients included in the study and the mixed methodologies and results across small-scale studies are the cardinal ones. Biomarker-driven individualized approaches will move the \ufb01eld forward, and so will large-scale clinical trials with a well-targeted patient population.",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 1,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "1fb97d2dd269e67cd38f9bdbeaff3064",
+    "text": "Keywords: stroke; neurorehabilitation; neuromodulation; brain computer interfaces; virtual reality\n\n& check for updates\n\nCitation: Gunduz, M.E.; Bucak, B.; Keser, Z. Advances in Stroke Neurorehabilitation. J. Clin. Med. 2023, 12, 6734. https://doi.org/ 10.3390/jcm12216734\n\nAcademic Editor: Behnam Sabayan\n\nReceived: 4 September 2023 Revised: 20 October 2023 Accepted: 23 October 2023 Published: 25 October 2023\n\n1. Introduction\n\nStroke is one of the leading causes of long-term disability worldwide. Stroke rehabili- tation therapies aim to enhance favorable neuroplasticity. With the advances in technology, the stroke recovery \ufb01eld is rapidly evolving and various promising novel treatment ap- proaches and technological advances are becoming part of the therapeutic armamentarium to improve post-stroke recovery in both the post-acute and chronic phases. In order to inform and guide medical providers treating patients with stroke, this review aims to discuss these advances, including activity-based therapies, technology-assisted therapies, non-invasive and minimally invasive brain stimulation techniques, lesion bypass systems, pharmacological treatments, and cognitive therapies.",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 1,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "f26bce042aa549b7b3bf5f286c64cdc6",
+    "text": "2. Non-Invasive/Minimally Invasive Brain Stimulation\n\nCopyright: \u00a9 2023 by the authors. Licensee MDPI, Basel, Switzerland. This article is an open access article distributed under the terms and conditions of the Creative Commons Attribution (CC BY) license (https:// creativecommons.org/licenses/by/ 4.0/).\n\nRecovery from stroke requires extensive plastic changes in the nervous system and their adaptation. The initial spontaneous recovery occurs via this neuroplasticity, mainly by neuroregeneration and reorganization. Functional magnetic resonance imaging (fMRI) studies showed reorganization of the lesional area into the non-lesional cortex [1,2]. This reorganization is associated with increased bilateral activation in the early/acute phase, which becomes lateralized towards the non-lesional hemisphere in the chronic phase. The later changes typically lead to a maladaptive interhemispheric imbalance, which may interfere with recovery. These post-stroke intra and interhemispheric changes were",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 1,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "e6ef388e9a0726ff2226de4bb79f6c6d",
+    "text": "J. Clin. Med. 2023, 12, 6734. https://doi.org/10.3390/jcm12216734\n\nhttps://www.mdpi.com/journal/jcm",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 1,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "c13a050d9f442a37a62ec907ad2e32b4",
+    "text": "2 of 19  further characterized by electroencephalogram (EEG) and used to understand mecha- nisms of recovery and treatment responses. After stroke, the higher frequency activities (\u22658 Hz, such as alpha and beta waves) and intra-hemispheric connectivity are reduced, which results in imbalanced activity between lesioned and non-lesioned hemispheres [3]. The compensatory changes in the non-lesioned hemisphere discussed above are hypoth- esized to worsen this interhemispheric imbalance. Therefore, the recovery mechanisms are focused on restoring interhemispheric balance and increasing intrahemispheric con- nectivity in the lesioned hemisphere. Figure 1 illustrates these post-stroke changes and recovery patterns. ",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 2,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "333a5ba33d53d7079792a21f9c9153bd",
+    "text": "Figure 1. Illustration of the post-stroke EEG changes in the brain and patterns of recovery identi\ufb01ed on the EEG correlating with good (highlighted in red) and poor recovery (highlighted in blue). Degree of coherence of intrahemispheric connectivity is represented by the width of the lines in the network. The overall activity of the hemisphere, as well as nodes in the network, is represented in a color-coded manner (red: most active, yellow: less active, blue: least active, no color: no activity). Stroke infarct is represented as a dark shade on the lesioned hemisphere. Up arrow means increased and down arrow means decreased.",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 2,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "590663ec3db69f23838d00571a223816",
+    "text": "The concept of brain stimulation techniques aims to modulate neural networks speci\ufb01- cally and selectively by enhancing adaptive patterns and suppressing maladaptive ones [4]. The historical use of brain stimulation dates as early as the 11th century, and in the 1960s, scienti\ufb01c studies on animal models using weak electric current to the exposed motor cortex showed long-lasting polarizing effects [5] and subsequently in human studies [6]. The hypo- thetical model of brain stimulation modulated the imbalanced interhemispheric inhibition by activating the lesional/affected hemisphere while inhibiting the non-lesional/unaffected hemisphere. The rationale of brain stimulation techniques is to improve recovery by enhanc- ing adaptive plasticity when applied concomitantly with other therapies. The application of brain stimulation techniques has increased signi\ufb01cantly, and we will focus on current advances in non-invasive/minimally invasive stimulation techniques, particularly va- gus nerve stimulation (VNS), transcranial magnetic stimulation (TMS), and transcranial",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 2,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "3f27483f97c94ecf0c8f11148fbbd048",
+    "text": "J.",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 2,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "553946346245b9c9b3a5a94e3192ad01",
+    "text": "J. Clin. Med. 2023, 12, 6734\n\ndirect current stimulation (tDCS). Table 1 summarizes prominent recent clinical trials in neuromodulation.\n\nTable 1. Prominent clinical trials in neuromodulation. UEFM: Upper Extremity Fugl-Meyer; WMFT: Wolf Motor Function Test; MAL: Motor Activity Log; SIS: Stroke Impact Scale; BDI: Beck\u2019s Depression Inventory; Euro-Qol-5D: EQ 5 Dimensions Quality of Life, SS-QOL: Stroke Speci\ufb01c Quality Of Life Scale; ARAT: Action Research Arm Test.",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 3,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "Table",
+    "element_id": "e505e153c5d3ccfc0e159127f807e567",
+    "text": "Author, Year Time Since Stroke Dawson, 2021 [7] 9 months\u201310 years Fridrikson, 2018 [8] >6 months Harvey, 2018 [9] 3 to 12 months Vink, 2023 [10] Within 3 weeks Stockbridge 2023 [11] <3 months Sample Size (Active/Sham) Neuromodulation Intervention Behavioral Intervention and Frequency Outcome Metrics Main Ef\ufb01cacy Outcomes 53/55 VNS Standardized 7-tasks arm in-clinic training (18 sessions over 6 weeks) followed by home exercise UEFM, WMFT, MAL, SIS, BDI, Euro-Qol-5D, SS-QOL Clinically meaningful response (UEFM > 6 points) was seen in 47% in active vs. 24% in sham group (p < 0.01) at 90 days 34/40 tDCS Computerized speech therapy Correct Naming on Philadelphia Naming Test and 80 Trained Items Relative 70% increase in correct naming for A-tDCS relative to sham and no futility. 132/67 rTMS Task-oriented upper limb therapy (18 sessions over 6 weeks) UEFM, WMFT, ARAT, SIS Euro-Qol-5D, PHQ-9 Both groups had clinically meaningful response, without signi\ufb01cant difference (p = 0.76) 29/31 cTBS Standard upper limb therapy (10 sessions) ARAT, UEFM, SIS, Euro-Qol-5D Signi\ufb01cant improvement in active cTBS (9.6 points in ARAT, p = 0.0244) 30/28 tDCS Computer-delivered naming treatment Philadelphia Naming Test No signi\ufb01cant difference (p = 0.54)",
+    "metadata": {
+      "text_as_html": "<table><thead><th>Author, Year</th><th>Time Since Stroke</th><th>San.w le Size (Active/Sham)</th><th>NeummOdL.llatwn Intervention</th><th>Behavioral Intervention and Frequency</th><th>Outcome Metrics</th><th>Main Efficacy Outcomes</th></thead><tr><td>. 28;\\15[0;]\\\u2019</td><td>9 months-10 years</td><td>53/55</td><td>VNS</td><td>Standardized 7-tasks arm in-clinic training (18 sessions over 6 weeks) followed by home exercise</td><td>BLIJDEFg;rY)Yg(i}-\u00e9gA g\u00e9_\u2019(glosi \u2019 !</td><td>Clinically meaningful response (UEFM &gt; 6 points) was seen in 47% in active vs. 24% in sham group (p &lt; 0.01) at 90 days</td></tr><tr><td>o Fridrikson, 2018 [8]</td><td>&gt;6 months</td><td>34/40</td><td>tDCS</td><td>) Computerized speech therapy</td><td>Correct Naming on Philadelphia Naming Test . and 80 Trained Items</td><td>Relative 70% ir'lcrease in correct naming foe A-tDCS relative to sham 1 and no futility.</td></tr><tr><td>Harvey, 2018 [9]</td><td>3 to 12 months</td><td>132/67</td><td>rTMS</td><td>) Task-oriented upper . . limb therapy (18 sessions over 6 weeks)</td><td>UEFM, WMFT, ARAT, SIS Euro-Qol-5D, PHQ-9</td><td>Both groups had clinically . meaningful response, without significant . _ difference (p = 0.76)</td></tr><tr><td>) 20\\2/;\u2019\u201c[];\u20190]</td><td>Within 3 weeks</td><td>29/31</td><td>cTBS</td><td>. ?kt\\\u2018:rr\\z?arcill;)pszes;il(l::s}; Py</td><td>511; REAUFI;\u2019OI_JQE(I:[IY;\u2019D \"</td><td>Significant improvement in active \u00a2TBS (9.6 points in ARAT, p = 0.0244)</td></tr><tr><td>Stockbridge 2023 [11]</td><td>&lt;3 months</td><td>30/28</td><td>tDCS</td><td>Computer-delivered naming treatment</td><td>. . . Philadelphia Naming Test</td><td>No significant difference (p = 0.54)</td></tr></table>",
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 3,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "526bece8cf74b8bb7b47629e488a8f67",
+    "text": "2.1. Vagus Nerve Stimulation\n\nVagus nerve stimulation (VNS) is a minimally invasive neuromodulation technique provided concomitantly with behavioral therapies such as task-oriented arm therapy in stroke to enhance motor recovery. Meyer and colleagues provided an initial proof of concept that, compared to sham stimulation, coupling VNS with rehabilitative training resulted in a twofold increase in long-term recovery for complex and basic motor tasks in rats with stroke [12]. Overall, the proposed mechanism of VNS in post-stroke motor recovery is the reorganization of the primary motor cortex through modulation of cholinergic and noradrenergic retrograde projections of nucleus tractus solitarius (one of the main vagus nuclei).",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 3,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "ab0ecc628359640b2c880432a500718b",
+    "text": "Initial clinical studies also showed that when combined with task-oriented upper limb therapy, VNS was shown to increase motor recovery in patients with chronic stroke [13,14]. This led to a phase III pivotal trial in which Dawson and colleagues performed a random- ized, sham-controlled, blinded, adequately powered study that showed that compared to sham stimulation, patients in the active VNS groups had a signi\ufb01cantly higher likelihood of achieving clinically meaningful motor recovery (measured by at least six points increase in the upper extremity Fugl-Meyer assessment) at 90 days [7]. After the positive results of the pivotal phase III trial, the United States Food and Drug Administration (FDA) approved the use of VNS in patients with chronic ischemic stroke and moderate to severe arm weakness. The real-world implementation of VNS for post-stroke upper extremity recovery is still underway. A multidisciplinary approach, including vascular neurology, neurosurgery, and rehabilitation medicine, is crucial for success. Additionally, patient compliance and the \ufb01nancial burden for long-term management are other critical factors for real-world implementation. Finally, stroke patients generally have multiple comorbidities potentially requiring antithrombotic use, which might make them ineligible for the procedure. Al- though non-invasive VNS (nVNS) might be an alternative treatment for patients ineligible for VNS therapy, previous studies failed to show consistent neuromodulatory effects of nVNS in the motor cortex [15,16].",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 3,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "fa0ea5ffec48333e3a5af13d20c93670",
+    "text": "Additionally, further investigation should be pursued as to whether VNS will show similar bene\ufb01ts for other post-stroke de\ufb01cits such as aphasia, cognitive impairment, and\n\n3 of 19",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 3,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "e18796f0aa668b8bdd7889880aea343c",
+    "text": "J. Clin. Med. 2023, 12, 6734\n\ndysphagia. The safety and ef\ufb01cacy of VNS in hemorrhagic or subacute stroke are other frontiers in VNS research [17].\n\n2.2. Transcranial Magnetic Stimulation\n\nTMS modulates cortical excitability through the scalp via coil using the principle of electromagnetic induction. This electromagnetic \ufb01eld induces a focal electric current in the brain suf\ufb01cient to depolarize neurons transiently. Single or paired-pulse TMS is commonly used as an assessment tool to explore brain functioning, while when applied repetitively\u2014repetitive TMS (rTMS)\u2014they can modulate cortical excitability in a sustained manner. This modulation of excitability depends on the parameters of stimulation; high- frequency (\u22655 Hz) rTMS induces excitatory effects, while low-frequency (\u22641 Hz) induces inhibitory effects. rTMS is an FDA-approved treatment for multiple psychiatric disorders such as major depression, obsessive compulsive disorders, and migraines. rTMS is con- sidered safe (only non-serious adverse effects) when appropriate protocol and screening are used [18].",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 4,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "89dab7f3c4d790f84753348b858d9183",
+    "text": "The effects of both high- and low-frequency rTMS on motor recovery have been studied in over 70 studies; most studies focus on upper extremity impairment, with limited data available for the lower extremity [19,20]. The meta-analyses and evidence-based guidelines suggest that using low-frequency over the contralesional hemisphere and high- frequency rTMS over the ipsilesional hemisphere in the subacute phase is potentially effective. At the same time, very limited evidence exists for the use of rTMS in the chronic phase to enhance upper extremity rehabilitation [21]. However, current evidence from randomized controlled trials is con\ufb02icting. An important phase III, multicenter, double- blinded, randomized, sham-controlled trial assessed 18 sessions of low-frequency rTMS over the motor cortex combined with intensive goal-oriented motor training in chronic stroke patients with moderate upper extremity hemiparesis [9]. Although both groups showed signi\ufb01cant clinical improvement with intense therapy, additional rTMS did not offer other bene\ufb01ts. These results were similar to their recent extension study (E-FIT: Electric Field Navigated 1-Hz rTMS for Poststroke Motor Recovery) designed to address concerns in sham TMS coil in the previous study [22]. Another group used a similar design in patients within the \ufb01rst three months after stroke; similarly, there was no signi\ufb01cant difference between the active and sham rTMS groups [23].",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 4,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "8427b339790345c2d0aac8d469234f88",
+    "text": "On the other hand, a randomized sham-controlled clinical trial recently showed that contralateral continuous theta burst stimulation (inhibitory) over the contralesional hemisphere could improve upper limb recovery in stroke patients within 3 weeks of symptom onset [10]. All these con\ufb02icting results from various studies suggest that the theory of inhibitory stimulation over the contralateral motor cortex is considered sim- plistic, given the heterogeneity of strokes involving motor de\ufb01cits. Further evidence suggests that the structural reserve after stroke contributes to recovery models (bimodal balance\u2013recovery model). Therefore, future studies need to consider lesion anatomy, the extent of damage to transcallosal networks, and the integrity of the corticospinal tract for better patient strati\ufb01cation [24].",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 4,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "778e9fd9787cc27c0e76c766a5e3c2a1",
+    "text": "Aphasia recovery is also studied using rTMS based on the same interhemispheric inhibition hypothesis. The literature suggests bene\ufb01cial perilesional activation in chronic aphasia patients; however, the role of right hemisphere activation is unclear. Interestingly, an fMRI study showed a robust right-sided contralesional activation selectively during incorrect naming responses in post-stroke aphasia patients compared to healthy subjects, which may re\ufb02ect a dysfunctional reorganization rather than compensatory [25]. A dif- fusion tensor imaging study further supported this [26]. Therefore, most rTMS studies focused on delivering low-frequency inhibitory stimuli over the right hemisphere in com- bination with traditional language therapies. While the initial studies on heterogenous patient population/aphasia type with variable protocols had mixed results, recent studies on non-\ufb02uent aphasia, especially Broca\u2019s aphasia at the chronic stage, showed promising effects of low-frequency rTMS over the right inferior frontal gyrus [27]. A phase II, random-",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 4,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "fc1c29e1870b53316dd0150d00ed12b3",
+    "text": "4 of 19",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 4,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "21293aa8a6c4cb5b19c6d8bfc7e4e46a",
+    "text": "J. Clin. Med. 2023, 12, 6734\n\nized, controlled, blinded trial, is in the recruitment phase to further test this in combination with constraint-induced language therapy (NCT03651700).",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 5,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "8c09238ddf11234b735f4f64da7b9204",
+    "text": "Hemispatial neglect, a common and disabling condition, is described as pathologi- cally asymmetric spatial performance, particularly in strokes involving the right posterior parietal and superior temporal gyri. Based on initial evidence of rTMS effects on reducing contralesional extinction by Oliveri and colleagues, studies focused on excitability-reducing paradigms such as low-frequency rTMS and continuous theta burst stimulation (cTBS) over the contralesional-hemisphere [28,29]. Despite studies suggesting improvement with rTMS over the contralesional hemisphere, the evidence is limited given most of these studies were not controlled. Also, another sham-controlled study compared low-frequency rTMS of the contralesional hemisphere, high-frequency rTMS of the ipsilesional hemisphere, and sham stimulation. It showed better improvement of visuospatial neglect in ipsilesional high-frequency rTMS compared to other groups [30]. cTBS, another inhibitory TMS stimu- lation protocol, has more promising evidence in visuospatial neglect. Five sham-controlled studies with overall similar protocols showed signi\ufb01cant clinical improvement in cTBS over the left posterior parietal cortex, as well as improvement in global functioning [21,31\u201334]. A recent study showed the response to cTBS was associated with the integrity of interhemi- spheric connections within the corpus callosum, indicating that responders had corpus callosum intact but not in non-responders [33]. Currently, Level C evidence supports the use of cTBS of the contralesional hemisphere for visuospatial neglect [21]. Further studies are needed to test other visual-cognitive disorders with different pathophysiologies and establish these neuroanatomical markers to identify",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 5,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "23e2d2fc966e05ed72775233f1b8b5c4",
+    "text": "responders.",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 5,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "663bff83f35ae55d21b83c954547763f",
+    "text": "2.3. Transcranial Direct Current Stimulation\n\ntDCS consists of applying low-amplitude, steady, direct current via electrodes placed over the skull. The current from the electrode suf\ufb01ciently penetrates the underlying brain tissue by \ufb02owing across the scalp. It provides a sub-threshold stimulus that modulates neuronal transmembrane potentials and, therefore, in\ufb02uences the level of polarization and likelihood of neuronal \ufb01ring [35]. Two modes of tDCS have been most commonly used: anodal stimulation increases excitability and cathodal stimulation decreases the excitability of the cortex. The prolonged clinical effects are attributed to long-term potentiation and depression if applied for a suf\ufb01cient duration and intensity [36].",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 5,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "ba6850407928def2a84c430647c1892d",
+    "text": "tDCS stimulates a wider area of the cortex in a less targeted fashion compared to techniques like TMS, which can be advantageous by stimulating additional regions that may play a role in recovery. Additionally, it has further advantages such as a better safety pro\ufb01le and ease of use. Important parameters in tDCS studies include the location of electrodes (montage/stimulation target), electrode sizes (current density), current intensity, duration, and frequency. No irreversible severe side effects were seen with tDCS when appropriately screened; common side effects include mild, temporary headache, skin irritation/redness, and tingling/itching sensation during dose ramp up/down [37].",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 5,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "5ac081abc08e0b6c04ee9d03a3e14e84",
+    "text": "Motor recovery is the most studied in tDCS studies, modulating interhemispheric inhibition by increasing excitability in the lesional hemisphere or decreasing excitability in the non-lesional hemisphere. The proof-of-concept studies showed improvement in upper extremity motor function, assessed mainly by the Fugl-Meyer scale, which could last for several weeks and was associated with increased cortical excitability in the ipsilesional hemisphere. Most clinical trials combined tDCS with various therapies, including occupa- tional/physical therapy, constraint-induced movement therapy (CIMT), robotic-assisted therapy, or virtual reality. Unfortunately, these trials showed mixed results and effect sizes in post-stroke motor recovery, particularly given the signi\ufb01cant variety in stimulation parameters and study designs. A meta-analysis showed a dose\u2013response relationship in motor recovery; higher charge and current densities correlated with higher clinical improvement [38]. Furthermore, the effect size was larger in chronic stroke patients and with bihemispheric montage. Currently, TRANSPORT2, a multicentered, randomized, triple-blinded, phase 2 clinical trial is investigating the effects of tDCS at different dosage",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 5,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "7184d84f6eff75fd7affd1930bb65f4f",
+    "text": "5 of 19",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 5,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "6a861eead8cb14434ff1b05f2ee8b4c4",
+    "text": "J. Clin. Med. 2023, 12, 6734\n\nlevels combined with an ef\ufb01cacy-proven rehabilitation therapy (CIMT) (NCT03826030). The current literature suggests a possible role of tDCS as an adjuvant therapy for post- stroke upper extremity motor recovery, particularly when applied in chronic stroke patients. Further directions include developing biomarkers such as imaging biomarkers assessing the structural and functional integrity of descending motor tracts [39].",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 6,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "ed0a206d70b18359eca709f03750fb0e",
+    "text": "Aphasia recovery is another potential use of tDCS as an adjunctive therapy to im- prove the effects of aphasia treatments. Based on several promising pilot studies [40\u201343], a double-blinded, randomized, controlled study assessed the effects of three weeks of fMRI-guided anodal tDCS over the language cortex during outpatient speech therapy in 74 patients with post-stroke aphasia with varying types of aphasia (Broca\u2019s aphasia being the most common type) [8]. This study, with a futility design, showed the feasibility and possible clinical improvement in speech production (naming). Most of these studies were conducted on chronic stroke patients; therefore, another recent trial tested the effects of MRI-guided anodal tDCS over the language cortex combined with computer-delivered lan- guage therapy in subacute poststroke aphasia patients (varying types of aphasia included in the study) [11]. This study showed no signi\ufb01cant difference in naming performance one week after therapy, likely due to a higher variability of improvement in this subacute stroke population. Interestingly, in their secondary analysis, the discourse signi\ufb01cantly improved in the tDCS group \ufb01ve weeks after therapy, which is critical to life participation and quality of life. All these studies showed favorable safety pro\ufb01les, and there were no detrimental effects of stimulating over longer periods, even up to 20 weeks. These two studies underline the importance of using MRI guidance in individualizing the treatment targets across the subjects. Also, since they determined the stimulation target based on fMRI or MRI, they liberally included different types of aphasia rather than creating aphasia type-based enroll- ment criteria and treatment protocols. However,",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 6,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "c661ba5da1f025674e7532b39c829f06",
+    "text": "non-\ufb02uent aphasia is typically the most common type of aphasia included in the tDCS studies [8]. A recent meta-analysis showed that anodal tDCS, particularly over the left inferior frontal gyrus (the typical location for Broca\u2019s aphasia), is most promising among multiple different tDCS stimulation types [44]. Further con\ufb01rmatory trials are needed for clinical translation, given mixed results. Further studies are currently underway with new stimulation techniques/montages to optimize the stimulation of cortical networks involved in speech. Future studies with larger sample sizes, longer and higher dose therapies, and more outcome measures are needed.",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 6,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "8d92054e6814eac40b293b676eef61f7",
+    "text": "Besides tDCS, two newer electric stimulation techniques, transcranial alternating current stimulation (tACS) and transcranial random noise stimulation (tRNS), use weak alternating currents to stimulate the cortex. tACS delivers sinusoidal currents (0.1\u201380 Hz) between electrodes, while tRNS delivers a wider range frequency (0.1\u2013640 Hz) in a ran- dom order, and they modulate neuronal activity by in\ufb02uencing brain oscillations. These techniques are more commonly tested in behavioral and movement disorders, but few proof-of-concept studies suggested feasibility and possible effects in stroke recovery, es- pecially in the chronic phase [45\u201347]. Current evidence is limited for clinical translation; more studies are ongoing to assess the ef\ufb01cacy and mechanism of these alternating current stimulations in different modalities, including motor, sensory, speech, cognitive, and visual recovery (NCT04043689, NCT05576129, NCT06029062, NCT06048159, NCT05466487).",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 6,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "cfd3e0ed2d33aadcd8a61303704db4d2",
+    "text": "Finally, neuromodulation techniques have been used to treat disorders of conscious- ness, de\ufb01ned as an alteration in arousal and awareness. This disorder is commonly caused by cardiac arrest, traumatic brain injury (TBI), and stroke, especially intracerebral hem- orrhage. Unfortunately, currently, amantadine is the only bene\ufb01cial treatment shown by a randomized trial on TBI patients, despite the signi\ufb01cant burden to patients, caregivers, and healthcare. Besides many pharmacological treatments, TMS [48\u201357], tDCS [58\u201368], tACS [69], tRNS [70], and VNS [71,72] are considered possible treatment approaches to restore consciousness by neural restoration across large cortical-thalamo-cortical networks. TMS and tDCS were more commonly studied, targeting either the dorsolateral prefrontal cortex or the motor cortex (M1). Despite positive results on consciousness, these studies are limited to drawing a conclusion, given most of them were case reports/case series or",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 6,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "104208876c0f4d869e7a21307f7907bd",
+    "text": "6 of 19",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 6,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "7ccf17f0ae13c1f0ad11858486a93993",
+    "text": "J. Clin. Med. 2023, 12, 6734\n\nsmall sample-sized randomized studies with mixed patient populations. Neuromodulation can be a promising tool for prognostication and recovery in stroke patients with disorders of consciousness; current pilot/small studies are encouraging, and further robust large sample-sized clinical trials are needed.\n\n3. Activity-Based Therapies\n\nActivity-based therapies are the key component of stroke neurorehabilitation. The principle of these therapies is to provide structuralized activities with adequate quantity and quality to induce plasticity for recovery. However, there are many challenges in clinical and research settings, including a lack of standardization, limited dose and intensity, and variability of responders. While the therapies with favorable plasticity use high intensity in animal studies with a range of 300\u2013800 repetitions, achieving similar intensity in clinical settings has been challenging [73,74]. A study observed in in-clinic therapies showed a mean of 32 repetitions per session, which was a substantially smaller dose compared to animal studies [75]. We will highlight current advances in promising therapies aiming to provide higher quality and quantity of rehabilitation. Table 2 summarizes prominent recent clinical trials in activity-based therapies.",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 7,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "da71eaca71f0bb1704edf34b4c1df80c",
+    "text": "Table 2. Prominent clinical trials in activity-based interventions. WMFT: Wolf Motor Function Test; MAL: Motor Activity Log; ARAT: Action Research Arm Test; UEFM: Upper Extremity Fugl-Meyer.",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 7,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "Table",
+    "element_id": "49b1efb153d75d8c1041d41ec3f305ac",
+    "text": "Author, Year Time Since Stroke Sample Size (Active/Control) Study Intervention Control Group Outcome Metrics Main Safety and Ef\ufb01cacy Outcomes Wolf, 2006 [76] 3 to 9 months 106/116 Constraint-induced movement therapy Usual care WMFT, MAL Signi\ufb01cant reduction in WMFT performance time (p < 0.001) 1 week to 5 years 257/259/254 Robot-assisted training or enhanced upper limb therapy Usual care ARAT No signi\ufb01cant difference 4 to 36 weeks 62/62 Telerehabilitation In-clinic therapy UEFM Non-inferiority of telerehabilitation",
+    "metadata": {
+      "text_as_html": "<table><thead><th>Author, Year</th><th>. . Time Since Stroke</th><th>Sample Size (Active/Control)</th><th>. Study Intervention</th><th>~ Control Group</th><th>. Outcome Metrics</th><th>Main Safety and Efficacy Outcomes</th></thead><tr><td>Wolf, 2006 [76]</td><td>3 to 9 months</td><td>106/116</td><td>Constraint-induced movement therapy</td><td>Usual care</td><td>WMEFT, MAL</td><td>Significant reduction in WMFT performance time (p &lt;0.001)</td></tr><tr><td>Rodgers, 2019 [77]</td><td>1 week to 5 years</td><td>257/259/254</td><td>Robot-assisted training or enhanced upper limb therapy</td><td>Usual care</td><td>ARAT</td><td>No S! ignificant difference</td></tr><tr><td>Cramer, 2019 [78]</td><td>4 to 36 weeks</td><td>62/62</td><td>Telerehabilitation</td><td>In-clinic therapy</td><td>UEFM</td><td>Non-inferiority of telerehabilitation</td></tr></table>",
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 7,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "0846111ead70aae9a4c795d95d3ea4a2",
+    "text": "3.1. Constraint Induced Movement Therapy\n\nConstraint-Induced Movement Therapy (CIMT) is an effective and popular rehabilita- tion approach primarily designed to improve the functional use of an affected limb in stroke patients. This therapy involves an intense functionally oriented task practice of the paretic extremity along with restraint of the less-impaired extremity for most waking hours [79]. The main two principles of CIMT are (i) constraint of forced use of the less-affected limb with a splint or mitt, preventing its use during 90% of the day and therefore promoting more frequent and intensive use of the more impaired limb; (ii) intensive training of more affected limb with task-oriented, structured, and repetitive activities for up to 6 h a day for two weeks.",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 7,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "779c44f6c25a45b09c138a84b5c414fc",
+    "text": "The history of constraint-induced therapy theory dates back to the early 1900s when the phenomena of motor disability due to disuse was described in monkeys with pyramidal tract lesions by Franz and colleagues [80]. Subsequently, they provided the \ufb01rst documented evidence that these monkeys, forced to use their hemiparetic extremity by immobilizing the better limb, had increased and faster recovery. It was hypothesized that the deafferentation leads to inactivity and behavioral changes of not using the affected limb; \u201clearned nonuse\u201d could be overcome by behavioral strategies such as CIMT [81]. The current evidence is from the multicentered, randomized, single-blinded EXCITE trial, the \ufb01rst National Institute of Health (NIH)-funded stroke neurorehabilitation trial, and the only randomized- controlled Phase III trial that has shown ef\ufb01cacy in stroke recovery [76]. EXCITE trial showed signi\ufb01cant and clinically relevant improvement in upper extremity motor function in patients with \ufb01rst stroke within the previous 3\u20139 months as a result of 10 days of CIMT",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 7,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "18e0c7792d8ac9303fdf4cb29ce86700",
+    "text": "7 of 19",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 7,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "adb21a43e92e72b1ccaf5a49fa0b7d5f",
+    "text": "J. Clin. Med. 2023, 12, 6734\n\ntherapy. These clinical improvements persisted for at least one year after the intervention. Although this therapy was designed to improve upper extremity weakness, further studies in the lower extremity suggested improvement in motor functions and balance-related motor function [82]. The current evidence supports the use of CIMT in stroke patients, particularly in upper extremity motor recovery.\n\nBesides the theory of overcoming \u201clearned nonuse\u201d, plasticity plays an important role in CIMT outcomes. Several studies showed cortical reorganization after CIMT-based interventions by changes in the size and excitability of regions representing the affected limb [83,84]. Researchers evaluated the motor cortex changes with TMS motor mapping and showed an increase in the size of hand muscles only in the ipsilesional hemisphere after CIMT treatment, as well as changes in excitability corresponding to recovery [85]. Given these changes in inter and intra-cortical excitability, further investigations of CIMT in combination with non-invasive brain stimulation techniques are underway (NCT03826030). Further studies are needed to develop biomarkers to identify the best responders and to guide concomitant interventions to optimize the rehabilitation of stroke patients.",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 8,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "cbf1ffdd5a38cd7e6ea3c99974acca90",
+    "text": "3.2. Robot-Assisted Therapies\n\nRobot-assisted therapies (RAT) are another novel modality in which patients are provided upper or lower limb therapy by robotic devices rather than conventional hands- on therapy. RAT can provide a high-intensity standardized therapy, which is thought to be important in motor cortex reorganization and promoting recovery. RAT aims to increase the capacity of motor control of the paretic arm or leg, muscle strength, and upper limb capacity, and thus promote basic activities of daily living.",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 8,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "bd8da218d7a297dda3206e0dc22b8c9c",
+    "text": "As a proof-of-concept study, Takahashi and colleagues conducted a 3 week-long upper limb RAT in 13 patients with stroke. They showed that RAT produced a signi\ufb01cant motor gain in patients with moderate post-stroke motor de\ufb01cits [86]. In a larger-scale, multicenter, randomized, and controlled trial, Lo and colleagues compared RAT, intensive comparison therapy, and usual care in chronic stroke patients with moderate-to-severe upper-limb impairments [87]. They showed that RAT increased motor function in 36 weeks compared to standard therapy. However, RAT was not superior to intensive therapy, which suggested that RAT was as good as intensive behavioral therapy. Similarly, Rodgers and colleagues showed that compared with usual care, RAT did not lead to better motor recovery in patients with stroke-related moderate to severe upper limb dysfunction [77]. At this point, RAT is safe and induces positive effects in motor recovery after stroke, but its superiority to usual intense therapy is yet to be proven [88]. Overall, repetition and intensity are the key factors for favorable motor recovery, and RAT is a promising alternative to conventional therapies to achieve these goals.",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 8,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "43439a1c168f6655d1aafe51439c5417",
+    "text": "3.3. Telerehabilitation\n\nTelerehabilitation is a method of delivering rehabilitation services remotely using communication methods. This therapy aims to address the main challenges of providing higher doses of rehabilitation therapies, such as cost-related issues, traveling dif\ufb01culties, limited access to high-quality rehabilitation centers/providers, poor compliance, and dose limitations of in-clinic therapy sessions. Furthermore, telerehabilitation\u2019s principles of high intensity, easy access, and gami\ufb01cation of tasks help to promote a higher quality of therapy by creating more challenging, motivating, and variable goal-oriented tasks in more relevant environments with the supervision and feedback of therapists. A randomized, multicen- tered, non-inferiority trial showed comparable ef\ufb01cacy of home-based telerehabilitation to traditional in-clinic rehabilitation, with excellent adherence and higher arm movement repetition (average 1031 repetitions per day) [78].",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 8,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "acf6b022ce8f1b06d9f00dad65d37a7a",
+    "text": "Most studies enrolled patients with chronic stroke patients, but a recent study assessing the optimal time for motor recovery showed that the task-speci\ufb01c motor therapies were most effective within the \ufb01rst 2\u20133 months, suggesting enhanced neural plasticity in earlier stages after stroke [89]. In clinical practice, the early initiation of rehabilitation is challenging\n\n8 of 19",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 8,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "ecee112ef45c261bdfd5304fbecc940c",
+    "text": "J. Clin. Med. 2023, 12, 6734\n\ndue to limited, fragmented, and often delayed transition care from initial hospitalization to in-facility rehabilitation and/or to home settings. Telerehabilitation may address these challenges of transition and improve earlier access to rehabilitation with better continuity of care. A recent feasibility study supports that telerehabilitation is feasible, safe, and possibly ef\ufb01cacious in providing therapy to early stroke patients [90]. Further controlled studies are needed to expand the use of telerehabilitation.",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 9,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "719af8b77fc7e2af88935c1256bd7506",
+    "text": "4. Brain\u2013Computer Interfaces\n\nThe activity-based therapies described above require some residual movement of the affected limb; however, not all stroke survivors qualify for these treatments. The brain\u2013computer interface (BCI) is an emerging \ufb01eld, especially in settings of technological advances such as virtual reality, robotics, and sensors. BCIs allow control of robotics devices by translating the brain\u2019s neural and/or physiological activity into a signal, completely bypassing the lesion [91]. While BCIs can be used as assistive technology to help with patients\u2019 functions and daily living activities [92], here we focus on their use as rehabilitation technologies. The rehabilitative (also referred to as neurofeedback) BCIs aim to recognize patients\u2019 intention of movement/task with brain signals captured with scalp-recorded electroencephalogram (EEG), then provide a user perceivable feedback using a feedback mechanism (combination of visual displays, robotic devices, exoskeletons, etc.) [93,94]. The aim of BCIs is to enhance neuroplasticity with motor imagery and sensory feedback by closing the gap in the motor intention, execution, and feedback loop.",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 9,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "2fed1aae92825a7a9237df7b6f5ac4d7",
+    "text": "Most studies assessed rehabilitative BCIs for upper extremity motor recovery. Two metanalyses showed statistically and clinically signi\ufb01cant improvement in upper extremity motor functions, measured mainly by the Fugl-Meyer assessment, with effect sizes compa- rable to other treatment modalities used in stroke rehabilitation [95,96]. There is limited evidence for the use of rehabilitative BCIs for lower extremity recovery; however, it is far less studied due to dif\ufb01culties in decoding algorithms of lower extremity movement kinematics using non-invasive recordings [97]. The literature is promising for BCIs\u2019 use for cognitive and speech rehabilitation in other brain disorders like cognitive impairments, attention de\ufb01cit disorders, and traumatic brain injury [98\u2013100]. However, currently the data are very limited for post-stroke rehabilitation. Lesion bypass mechanisms with neuro- feedback are promising for stroke recovery, particularly with severe post-stroke de\ufb01cits; further large controlled clinical trials are needed to validate its use in motor recovery and explore its effects in cognitive and speech recovery.",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 9,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "dfe8d3bbc9de6013ec613d69511e8283",
+    "text": "5. Pharmacological and Cellular Therapies\n\nOver the past decades, the research on pharmacological therapies primarily focused on neuroprotection in the acute stroke phase; however, many drugs have been studied to possibly enhance stroke recovery through neuroplasticity and neuronal regrowth. Several therapies include anti-depressants, stimulants, dopamine agonists, niacin, memantine, growth factors, monoclonal antibodies, and stem cells. In this review, we focused on promising therapies with translational potentials: selective serotonin reuptake inhibitors, maraviroc, and stem cell therapies.",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 9,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "0302657c29d8bb0bba8b84ff538ee513",
+    "text": "5.1. Selective Serotonin Reuptake Inhibitors (SSRIs)\n\nSSRIs are the most extensively studied pharmacological agent in stroke recovery. Post-stroke depression is common, with higher vulnerability in the early chronic period. Post-stroke depression may directly affect motivation and adherence to participate in rehabilitation. Therefore, identifying and treating depression was of interest to support recovery. However, SSRIs may also enhance synaptic plasticity after an ischemic brain injury besides the anti-depressant effects. This was initially tested with the FLAME (Fluoxetine for Motor Recovery After Acute Ischemic Stroke) trial, which showed a statistically signi\ufb01cant improvement in motor recovery, measured by a Fugl-Meyer motor score, in stroke patients treated with \ufb02uoxetine [101]. However, a subsequent Cochrane systematic review, including",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 9,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "251ae05fd261dfdb4a1a4586f2ec2972",
+    "text": "9 of 19",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 9,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "ef03a523fb2ab2445c2fa36768c12002",
+    "text": "J. Clin. Med. 2023, 12, 6734\n\n52 randomized trials, challenged these results, given the methodological limitations and heterogeneity of studies [102]. Therefore, three additional large randomized controlled clinical trials (AFFINITY: Assessment of Fluoxetine in Stroke Recovery, FOCUS: Fluoxetine or Control Under Supervision trials, and EFFECTS: Ef\ufb01cacy of Fluoxetine\u2014a Randomised Controlled Trial in Stroke) were conducted and they did not show functional improvement at 6 months, measured by a modi\ufb01ed Rankin Scale (mRS) [103\u2013105]. The main issues with these trials include the heterogeneous study population with mainly mild stroke patients, which might decrease the sensitivity to detect group differences. Another limitation was the use of mRS, which may limit the interpretation of these trials. Despite the fact that mRS is commonly used in studies for stroke outcomes to assess functional independence, this measure is potentially insensitive in capturing various improvements in different systems such as motor, language, cognition, etc. SSRIs may still play an important role in treating post-stroke depression and possibly improve recovery, especially if paired with other therapies. Finally, given language recovery was limitedly assessed in these trials, another multicentered, randomized, placebo-controlled phase II trial (ELISA: Escitalopram and Language Intervention for Subacute Aphasia trial) is currently in the recruitment phase, assessing the effect of escitalopram as an adjunct to traditional speech and language treatment [106].",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 10,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "8fc0c71c92a7c2772ab58fac7ec6be69",
+    "text": "5.2. Maraviroc\n\nC-C chemokine receptor 5 (CCR5), which plays a role in learning, memory, and plastic- ity [107], was recently shown to be differentially upregulated in neurons post-stroke [108]. This study showed that the knockdown of CCR5 in the premotor cortex induces motor recovery after stroke. An FDA-approved drug for the treatment of HIV, maraviroc, has known effects on selectively antagonizing CCR5 function, and this treatment also showed similar effects in recovery in this animal study. Interestingly, they performed an obser- vational study in a large cohort of stroke patients and showed that patients with CCR5 loss-of-function mutation had better recovery after stroke [108,109]. Given these promising results, two randomized controlled phase II trials for human stroke recovery are currently ongoing (NCT03172026, NCT04789616).",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 10,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "61ec51cfe455a4d62602df99343f0a02",
+    "text": "5.3. Stem Cell Therapies",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 10,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "b78d43b6e80b03e62cda6fb7ea0cde73",
+    "text": "Current stroke recovery treatments focus on enhancing neuroplasticity but are still limited in terms of their regenerative bene\ufb01ts. Stem cell therapies have been a promising treatment approach for potential neuroprotection and neuroregeneration [110]. Neuro- protective use of stem cells aims to limit the extent of initial damage during the acute stroke phase and expand the window of available treatments. Neuroregenerative stem cell therapies aim to reduce the neuronal loss and to replace injured neurons. Here, we highlight the evidence for the neuroregenerative use of stem cells to enhance post-stroke recovery. The initial evidence is from animal stroke models: one meta-analysis including 141 pre-clinical studies showed improvement in functional outcomes including motor, sensorimotor and cognitive function, without any differences based on delivery route or dose [111]. A phase I/II non-controlled study showed that single-dose intravenous allogeneic mesenchymal stem cells were safe in patients with chronic stroke and substantial functional, and furthermore suggested behavioral gains [112]. A single-center, open-label randomized clinical trial (ISIS-HERMES trial) showed improved motor outcomes after intravenous autologous mesenchymal stem cell combined with rehabilitation [113]. The treatment group had greater motor cortex activation suggesting that this effect was through sensorimotor neuroplasticity. On the other hand, the RECOVERY trial, a phase 2, ran- domized, sham-controlled study, assessed the safety and ef\ufb01cacy of intracarotid infusion of autologous bone marrow-derived ALD-401 and showed no signi\ufb01cant difference in mRS at 90 days [114]. However, there was an increased incidence of smaller lesions in the treatment",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 10,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "ee75623e8d5f6f12b79ca05c908e70d0",
+    "text": "group. Finally, the PISCES-II trial, an industry-funded, single-arm study, assessed intracerebral CTX0E03 human neural stem cell injection in stroke patients with",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 10,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "d7d3dff54c45ba08fc2df5aa43eab481",
+    "text": "10 of 19",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 10,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "75c2cc91ffc4c1b22be0f23ddfb02085",
+    "text": "J. Clin. Med. 2023, 12, 6734\n\nsevere arm motor de\ufb01cits [115]. Only 1/23 patients met prespeci\ufb01ed criteria for respon- ders, 3/23 at 6 and 12 months, and responders were only the ones with residual upper limb movement at baseline. All these studies found that these interventions were safe and feasible. Current studies vary in their protocols with different cell types, delivery methods, and doses; further studies with larger sample sizes and robust methodologies are needed.\n\n6. Cognitive-Based Therapies 6.1. Prism Adaptation Therapy",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 11,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "cc505260ee129ae49f5e435f95f509fd",
+    "text": "Spatial neglect is described as failure to orient, perceive, and/or respond to left space after a right brain stroke, which is accompanied by functional disability and is usually under-recognized [116]. This condition is particularly important for stroke recovery given the challenges such as prolonged hospitalization, requiring more caregiver/supervision, poor motor recovery, and increased fall risk. Despite several therapeutic approaches available for visual perception de\ufb01cits, such as visual scanning training [117,118], these approaches focus on abnormal visuospatial perception, also de\ufb01ned as \u201cwhere\u201d spatial neglect [119]. While neglect can present as the classic visual perceptual phenomenon (\u201cwhere\u201d spatial neglect), it can be in the form of spatial motor-intentional de\ufb01cits (\u201caiming\u201d spatial neglect). Aiming spatial neglect can present as postural imbalance, veering while ambulating or in a wheelchair, and out of proportion weakness to motor dysfunction [120]. These de\ufb01cits are often undetected and may not respond to visual perceptual therapies, limiting their recovery after stroke. Prism adaptation therapy is a novel approach, targeting impairments in spatial motor aiming spatial neglect.",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 11,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "069183c46a6b4d5d4fcce990f5e6f924",
+    "text": "PAT is a simple and inexpensive therapy that requires stroke patients to wear wedge prism lenses, shifting the visual \ufb01eld approximately 12 degrees rightwards during intensive motor training. This therapy is brief (20 min), easy to perform, and has advantages for in-hospital/clinic use standardization. PAT is well tolerated; adverse effects include mild and transient discomfort or dizziness [121]. Level A evidence supports using cognitive rehabilitation for spatial neglect, including PAT [122]. A systematic review including 26 controlled studies suggests improvement in functional disability during daily living activities with PAT [123]. However, the results from controlled studies are inconsistent and present variability in patient responses to PAT. One of the issues with the current literature is the failure to stratify spatial neglect patients; as discussed above, PAT may be more effective in \u201caiming\u201d spatial neglect rather than early perceptual de\ufb01cits. Studies demonstrated speci\ufb01c alterations in spatial motor aiming bias in healthy and stroke patients with PAT [124]. Furthermore, the outcome measure choices in the literature are more oriented to spatial attention or awareness, therefore failing to capture the improvements with PAT [121]. The dosage of PAT is also variable in studies, and a recent study predicted greater improvement with a higher dose of PAT [125]. Finally, the neuroanatomy of stroke lesions may affect the response to PAT. A recent randomized controlled study showed that only patients with frontal lesions improved their neglect symptoms, while the presence of frontal lesions did not affect the response in the standard-care group [126].",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 11,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "c56d8410ed24e8fc9476b4a0ddc4e011",
+    "text": "Further studies are needed with better classi\ufb01cation and strati\ufb01cation of spatial neglect patients, possibly screening for spatial \u201caiming\u201d de\ufb01cits to optimize patient selection, better outcome measures including both mechanistic and functional outcomes, and identifying neuroimaging biomarkers for PAT response. Currently, two studies are ongoing to address these questions (NCT05983185, NCT00989430).\n\n6.2. Virtual Reality\n\nVirtual reality (VR) and interactive video gaming are other developing treatment approaches in stroke rehabilitation. VR therapies use an interactive simulation where patients/users have the opportunity to engage in an environment similar to the real-world using controllers [127]. Currently, there are three main virtual reality systems; (i) non- immersive, (ii) semi-immersive, and (iii) fully immersive simulations. The non-immersive\n\n11 of 19",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 11,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "3ef9c4e150397f9983ed0c55fad98a0c",
+    "text": "J. Clin. Med. 2023, 12, 6734\n\nsystems allow a two-dimensional computer-generated environment through consoles and computer displays, where patients can control an avatar using a control tool, similar to common video games. While semi-immersive systems provide a three-dimensional environment with a \ufb01xed visual perspective, the fully immersive systems allow patients to experience the most realistic simulation environment where they can immerse themselves using a head-mounted display and extensive motion sensors.",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 12,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "f6b577112c96632b1ab9969218b6a53a",
+    "text": "VR offers many advantages in stroke rehabilitation. The duration and repetition (dose) of training are important for recovery; VR can increase the rehabilitation dosage by enabling patients to practice functional tasks in simulated environments. Several studies suggested the feasibility of high-dose rehabilitation using VR [128,129]. The simulated environments also help the effectiveness of sessions by increasing the active training time and, furthermore, can decrease the travel and accessibility-related dif\ufb01culties. Given the signi\ufb01cant variability in study protocols, it is hard to draw de\ufb01nitive conclusions from the existing literature. A meta-analysis in 2017 with 72 studies failed to show signi\ufb01cant improvement in upper extremity function of VR compared to conventional therapy, but it was signi\ufb01cant when combined with usual care [130,131]. More recent studies since this meta-analysis had positive results, which were particularly attributed to higher doses of therapy [130,131]. The studies with signi\ufb01cant improvement had more intensive therapies, suggesting a dose\u2013effect relationship [132]. Besides the dose differences, multiple different VR systems and controllers, as well as newer features including hand movement trackers, enhanced feedback systems, and sensorized hand-held objects, varied widely in the studies. Finally, a recent meta-analysis comparing immersive and non-immersive virtual reality for upper extremity motor recovery suggested superior effects with immersive virtual reality systems [133]. The superior effects of immersive systems could be attributed to higher user perception and sensory feedback, and facilitation of patients to engage in task-oriented activities [134]. Current evidence suggests the",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 12,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "ae2113181197e8c1e256c4463df8d4ef",
+    "text": "bene\ufb01cial effects of virtual reality, especially with immersive systems, in upper extremity motor recovery. Further studies should focus on providing high-intensity VR therapy and test if using these physical objects or enhanced feedback systems may improve recovery.",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 12,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "451bfec52bc49ddd4486979b6cd895a6",
+    "text": "6.3. Motor Imagery and Action Observation Therapies",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 12,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "fcadb1141fee049eed2e1da97b112205",
+    "text": "Motor imagery and action observation therapies are forms of cognitive treatment that aim to activate motor cortex plasticity without an actual motor execution. While action observation therapy is de\ufb01ned as the perception of other individuals performing a motor task, motor imagery is a mental practice to simulate a movement without motor input [135]. This mental practice theory for neurorehabilitation is based on multiple forms of evidence which indicate that imagery of a motor task induces a similar pattern of brain activity compared to actual motor execution [136]. More recently, the focus of research has been combining motor imagery and action observation, and this combination was found to involve a greater neuronal activity including other supplemental cortical and subcortical motor areas [137]. Therefore, the possible bene\ufb01ts of these treatments have been tested for motor recovery after stroke. Despite motor imagery having promising early studies [138,139], the overall literature is con\ufb02icting [140,141]. A meta-analysis showed signi\ufb01cant heterogeneity in methodological quality in these trials, and despite detecting a signal for the ef\ufb01cacy of motor imagery for upper and lower extremity motor function and balance, there was no signi\ufb01cant difference when only high-quality studies were included [142]. The action observation had more consistent positive effects, especially if combined with concomitant physical therapy of observed action [143,144]. Finally, combining observation and motor imagery had better functional outcomes [145]; however, this needs to be tested further with a larger sample size [146]. Currently, the evidence of these mental practices is limited to drawing a \ufb01nal conclusion; the most promising effect",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 12,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "7a168c35f78e4c24faa145653d4fdee3",
+    "text": "is likely when action observation and motor imagery are combined and when introduced concomitantly with actual physical training.",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 12,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "3bb90d497b4fa65fa4e4e2bf3eea9195",
+    "text": "12 of 19",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 12,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "78006e065ea801e13693fbe64a06eea9",
+    "text": "J. Clin. Med. 2023, 12, 6734\n\n7. Conclusions\n\nVarious new approaches and technological advances had promising results in pro- moting recovery after stroke. These therapies target to enhance neural plasticity and help overcome challenges of rehabilitation access in order to provide an adequate dose of rehabilitation and improve adherence and participation. CIMT and telerehabilitation are promising to overcome these challenges of accessibility and dosing, and the future of recovery is focused on involving virtual reality in activity-based treatments. The mul- tidisciplinary treatment models are crucial for post-stroke neurorehabilitation; further adjuvant treatments with brain stimulation techniques and pharmacological agents should be considered to maximize the recovery. Finally, there is a signi\ufb01cant gap in identifying and treating cognitive disorders after stroke, further diagnostic/screening tools and treatment options are needed. One of the main challenges in the \ufb01eld is the methodological variations and heterogeneous patient populations that limit providing an overarching conclusion. The studies and their mixed results point out the importance of matching the appropriate patient population; therefore, developing biomarkers is crucial to guide future research designs and clinical practices.",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 13,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "747920eacc56d87a00dd84e10ebb59e2",
+    "text": "Author Contributions: Conceptualization, M.E.G. and Z.K.; All authors contributed to data curation, writing\u2014original draft preparation, review and editing. All authors have read and agreed to the published version of the manuscript.\n\nFunding: This research received no external funding.\n\nCon\ufb02icts of Interest: The authors declare no con\ufb02ict of interest.\n\nReferences\n\n1. Loubinoux, I.; Carel, C.; Pariente, J.; Dechaumont, S.; Albucher, J.-F.; Marque, P.; Manelfe, C.; Chollet, F. Correlation between cerebral reorganization and motor recovery after subcortical infarcts. NeuroImage 2003, 20, 2166\u20132180. [CrossRef]",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 13,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "2de7fa512606dccdcac9e453557418e2",
+    "text": "2. Nair, D.G.; Hutchinson, S.; Fregni, F.; Alexander, M.; Pascual-Leone, A.; Schlaug, G. Imaging correlates of motor recovery from cerebral infarction and their physiological signi\ufb01cance in well-recovered patients. NeuroImage 2007, 34, 253\u2013263. [CrossRef] Keser, Z.; Buchl, S.C.; Seven, N.A.; Markota, M.; Clark, H.M.; Jones, D.T.; Lanzino, G.; Brown, R.D.; Worrell, G.A.; Lundstrom, B.N. Electroencephalogram (EEG) With or Without Transcranial Magnetic Stimulation (TMS) as Biomarkers for Post-stroke Recovery: A Narrative Review. Front. Neurol. 2022, 13, 827866. [CrossRef] [PubMed] Fregni, F.; Pascual-Leone, A. Technology Insight: Noninvasive brain stimulation in neurology\u2014Perspectives on the therapeutic potential of rTMS and tDCS. Nat. Clin. Pract. Neurol. 2007, 3, 383\u2013393. [CrossRef] Bindman, L.J.; Lippold, O.C.J.; Redfearn, J.W.T. The action of brief polarizing currents on the cerebral cortex of the rat (1) during current \ufb02ow and (2) in the production of long-lasting after-effects. J. Physiol. 1964, 172, 369\u2013382. [CrossRef] [PubMed] Priori, A. Brain polarization in humans: A reappraisal of an old tool for prolonged non-invasive modulation of brain excitability. Clin. Neurophysiol. 2003, 114, 589\u2013595. [CrossRef] [PubMed] Dawson, J.; Liu, C.Y.; Francisco, G.E.; Cramer, S.C.; Wolf, S.L.; Dixit, A.; Alexander, J.; Ali, R.; Brown, B.L.; Feng, W.; et al. Vagus nerve stimulation paired with rehabilitation for upper limb motor function after ischaemic stroke (VNS-REHAB): A randomised, blinded, pivotal, device trial. Lancet 2021, 397, 1545\u20131553. [CrossRef] Fridriksson, J.; Rorden, C.; Elm, J.; Sen, S.; George, M.S.; Bonilha, L. Transcranial Direct Current Stimulation vs Sham Stimulation to Treat Aphasia after Stroke: A Randomized",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 13,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "2859e8cd28a50b2ca3117588949d87f9",
+    "text": "Clinal Trial. JAMA Neurol. 2018, 75, 1470\u20131476. [CrossRef]",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 13,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "a6a843ae1823cfbb38ee29e44949686a",
+    "text": "3.\n\n9. Harvey, R.L.; Edwards, D.; Dunning, K.; Fregni, F.; Stein, J.; Laine, J.; Rogers, L.M.; Vox, F.; Durand-Sanchez, A.; Bockbrader, M.; et al. Randomized Sham-Controlled Trial of Navigated Repetitive Transcranial Magnetic Stimulation for Motor Recovery in Stroke. Stroke 2018, 49, 2138\u20132146. [CrossRef]\n\n10. Vink, J.J.; van Lieshout, E.C.; Otte, W.M.; van Eijk, R.P.; Kouwenhoven, M.; Neggers, S.F.; van der Worp, H.B.; Visser-Meily, J.M.; Dijkhuizen, R.M. Continuous Theta-Burst Stimulation of the Contralesional Primary Motor Cortex for Promotion of Upper Limb Recovery After Stroke: A Randomized Controlled Trial. Stroke 2023, 54, 1962\u20131971. [CrossRef] Stockbridge, M.D.; Elm, J.; Breining, B.L.; Tippett, D.C.; Sebastian, R.; Cassarly, C.; Teklehaimanot, A.; Spell, L.A.; Sheppard, S.M.; Vitti, E.; et al. Transcranial Direct-Current Stimulation in Subacute Aphasia: A Randomized Controlled Trial. Stroke 2023, 54, 912\u2013920. [CrossRef] [PubMed]",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 13,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "5916ecd3905af3a9acd9ebb3a3e49f71",
+    "text": "12. Meyers, E.C.; Solorzano, B.R.; James, J.; Ganzer, P.D.; Lai, E.S.; Rennaker, R.L.; Kilgard, M.P.; Hays, S.A. Vagus Nerve Stimulation Enhances Stable Plasticity and Generalization of Stroke Recovery. Stroke 2018, 49, 710\u2013717. [CrossRef] [PubMed]\n\n13. Dawson, J.; Pierce, D.; Dixit, A.; Kimberley, T.J.; Robertson, M.; Tarver, B.; Hilmi, O.; McLean, J.; Forbes, K.; Kilgard, M.P.; et al. Safety, Feasibility, and Ef\ufb01cacy of Vagus Nerve Stimulation Paired With Upper-Limb Rehabilitation after Ischemic Stroke. Stroke 2016, 47, 143\u2013150. [CrossRef] [PubMed]",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 13,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "7ff82b20583364cd040bf92c23de3ba6",
+    "text": "13 of 19",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 13,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "ff66c29b94a14adf12021c92bff485a6",
+    "text": "J. Clin. Med. 2023, 12, 6734\n\n14. Kimberley, T.J.; Pierce, D.; Prudente, C.N.; Francisco, G.E.; Yozbatiran, N.; Smith, P.; Tarver, B.; Engineer, N.D.; Dickie, D.A.; Kline, D.K.; et al. Vagus Nerve Stimulation Paired With Upper Limb Rehabilitation After Chronic Stroke. Stroke 2018, 49, 2789\u20132792. [CrossRef]\n\n15. Capone, F.; Miccinilli, S.; Pellegrino, G.; Zollo, L.; Simonetti, D.; Bressi, F.; Florio, L.; Ranieri, F.; Falato, E.; Di Santo, A.; et al. Transcutaneous vagus nerve stimulation combined with robotic rehabilitation improves upper limb function after stroke. Neural Plast. 2017, 2017, 7876507. [CrossRef]",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 14,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "9ba38074e64f7797d5aa8135d208175d",
+    "text": "16. Chang, J.L.; Coggins, A.N.; Saul, M.; Paget-Blanc, A.; Straka, M.; Wright, J.; Datta-Chaudhuri, T.; Zanos, S.; Volpe, B.T. Transcutaneous auricular vagus nerve stimulation (tavns) delivered during upper limb interactive robotic training demonstrates novel antagonist control for reaching movements following stroke. Front. Neurosci. 2021, 15, 767302. [CrossRef]\n\n17. Keser, Z.; Feng, W. Vagus Nerve Stimulation for Stroke Motor Recovery\u2014What Is Next? Transl. Stroke Res. 2022, 14, 438\u2013442. [CrossRef]",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 14,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "da59463874580c9d885f4400617d9f59",
+    "text": "18. Rossi, S.; Hallett, M.; Rossini, P.M.; Pascual-Leone, A. Safety, ethical considerations, and application guidelines for the use of\n\ntranscranial magnetic stimulation in clinical practice and research. Clin. Neurophysiol. 2009, 120, 2008\u20132039. [CrossRef] Fisicaro, F.; Lanza, G.; Grasso, A.A.; Pennisi, G.; Bella, R.; Paulus, W.; Pennisi, M. Repetitive transcranial magnetic stimulation in stroke rehabilitation: Review of the current evidence and pitfalls. Ther. Adv. Neurol. Disord. 2019, 12, 175628641987831. [CrossRef] 20. Hsu, W.-Y.; Cheng, C.-H.; Liao, K.-K.; Lee, I.-H.; Lin, Y.-Y. Effects of Repetitive Transcranial Magnetic Stimulation on Motor",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 14,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "a0b3e86d6c1f1669966267d4ea68ed4d",
+    "text": "Functions in Patients With Stroke. Stroke 2012, 43, 1849\u20131857. [CrossRef]\n\n21. Lefaucheur, J.-P.; Aleman, A.; Baeken, C.; Benninger, D.H.; Brunelin, J.; Di Lazzaro, V.; Filipovi\u00b4c, S.R.; Grefkes, C.; Hasan, A.; Hummel, F.C.; et al. Evidence-based guidelines on the therapeutic use of repetitive transcranial magnetic stimulation (rTMS): An update (2014\u20132018). Clin. Neurophysiol. 2020, 131, 474\u2013528. [CrossRef] [PubMed]\n\n22. Edwards, D.J.; Liu, C.Y.; Dunning, K.; Fregni, F.; Laine, J.; Leiby, B.E.; Rogers, L.M.; Harvey, R.L. Electric Field Navigated 1-Hz rTMS for Poststroke Motor Recovery: The E-FIT Randomized Controlled Trial. Stroke 2023, 54, 2254\u20132264. [CrossRef] [PubMed] 23. Kim, W.-S.; Kwon, B.S.; Gil Seo, H.; Park, J.; Paik, N.-J. Low-Frequency Repetitive Transcranial Magnetic Stimulation Over Contralesional Motor Cortex for Motor Recovery in Subacute Ischemic Stroke: A Randomized Sham-Controlled Trial. Neurorehabilit. Neural Repair 2020, 34, 856\u2013867. [CrossRef] [PubMed]",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 14,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "d695fa3fe515ed93016843f5073df033",
+    "text": "24. Di Pino, G.; Pellegrino, G.; Assenza, G.; Capone, F.; Ferreri, F.; Formica, D.; Ranieri, F.; Tombini, M.; Ziemann, U.; Rothwell, J.C.; et al. Modulation of brain plasticity in stroke: A novel model for neurorehabilitation. Nat. Rev. Neurol. 2014, 10, 597\u2013608. [CrossRef] [PubMed]\n\n25. Postman-Caucheteux, W.A.; Birn, R.M.; Pursley, R.H.; Butman, J.A.; Solomon, J.M.; Picchioni, D.; McArdle, J.; Braun, A.R. Single-trial fMRI Shows Contralesional Activity Linked to Overt Naming Errors in Chronic Aphasic Patients. J. Cogn. Neurosci. 2010, 22, 1299\u20131318. [CrossRef] [PubMed]",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 14,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "1899879c3105077144ee4ba5b4b4caf7",
+    "text": "26. Keser, Z.; Sebastian, R.; Hasan, K.M.; Hillis, A.E. Right Hemispheric Homologous Language Pathways Negatively Predicts Poststroke Naming Recovery. Stroke 2020, 51, 1002\u20131005. [CrossRef]\n\n27. Khedr, E.M.; El-Fetoh, N.A.; Ali, A.M.; El-Hammady, D.H.; Khalifa, H.; Atta, H.; Karim, A.A. Dual-Hemisphere Repeti- tive Transcranial Magnetic Stimulation for Rehabilitation of Poststroke Aphasia: A Randomized, Double-Blind Clinical Trial. Neurorehabilit. Neural Repair 2014, 28, 740\u2013750. [CrossRef]\n\n28. Oliveri, M.; Rossini, P.M.; Traversa, R.; Cicinelli, P.; Filippi, M.M.; Pasqualetti, P.; Tomaiuolo, F.; Caltagirone, C. Left frontal transcranial magnetic stimulation reduces contralesional extinction in patients with unilateral right brain damage. Brain 1999, 122, 1731\u20131739. [CrossRef]",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 14,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "29e7484f4b06514fa4c7951b489dc8f3",
+    "text": "29. Oliveri, M.; Rossini, P.M.; Filippi, M.M.; Traversa, R.; Cicinelli, P.; Palmieri, M.G.; Pasqualetti, P.; Caltagirone, C. Time-dependent activation of parieto-frontal networks for directing attention to tactile space: A study with paired transcranial magnetic stimulation pulses in right-brain-damaged patients with extinction. Brain 2000, 123, 1939\u20131947. [CrossRef]\n\n30. Kim, B.R.; Chun, M.H.; Kim, D.-Y.; Lee, S.J. Effect of high- and low-frequency repetitive transcranial magnetic stimulation on visuospatial neglect in patients with acute stroke: A double-blind, sham-controlled trial. Arch. Phys. Med. Rehabil. 2013, 94, 803\u2013807. [CrossRef]",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 14,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "bc05363b48e27fa6ba6b6dd834b26f5c",
+    "text": "31. Cazzoli, D.; M\u00fcri, R.M.; Schumacher, R.; von Arx, S.; Chaves, S.; Gutbrod, K.; Bohlhalter, S.; Bauer, D.; Vanbellingen, T.; Bertschi, M.; et al. Theta burst stimulation reduces disability during the activities of daily living in spatial neglect. Brain 2012, 135, 3426\u20133439. [CrossRef] [PubMed]\n\n32. Nyffeler, T.; Cazzoli, D.; Hess, C.W.; M\u00fcri, R.M. One session of repeated parietal theta burst stimulation trains induces long-lasting improvement of visual neglect. Stroke 2009, 40, 2791\u20132796. [CrossRef] [PubMed]",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 14,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "150ec1994b2c1018461dcb307defee90",
+    "text": "33. Nyffeler, T.; Vanbellingen, T.; Kaufmann, B.C.; P\ufb02ugshaupt, T.; Bauer, D.; Frey, J.; Chechlacz, M.; Bohlhalter, S.; M\u00fcri, R.M.; Nef, T.; et al. Theta burst stimulation in neglect after stroke: Functional outcome and response variability origins. Brain 2019, 142, 992\u20131008. [CrossRef] [PubMed] Fu, W.; Song, W.; Zhang, Y.; Yang, Y.; Huo, S.; Zhang, R.; Wang, M. Long-term effects of continuous theta-burst stimulation in visuospatial neglect. J. Int. Med. Res. 2015, 43, 196\u2013203. [CrossRef]\n\n34.\n\n35. Rossini, P.M.; Burke, D.; Chen, R.; Cohen, L.G.; Daskalakis, Z.; Di Iorio, R.; Di Lazzaro, V.; Ferreri, F.; Fitzgerald, P.B.; George, M.S.; et al. Non-invasive electrical and magnetic stimulation of the brain, spinal cord, roots and peripheral nerves: Basic principles and procedures for routine clinical and research application. An updated report from an I.F.C.N. Committee. Clin. Neurophysiol. 2015, 126, 1071\u20131107. [CrossRef]",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 14,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "a7ddbe736378bc64fe1920d5b0648bb1",
+    "text": "14 of 19",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 14,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "f7c8f7fabcfba902663dcfdf1e1b19da",
+    "text": "J. Clin. Med. 2023, 12, 6734\n\nSchlaug, G.; Renga, V.; Nair, D. Transcranial Direct Current Stimulation in Stroke Recovery. Arch. Neurol. 2008, 65, 1571\u20131576. [CrossRef]\n\n36.\n\n37. Bikson, M.; Grossman, P.; Thomas, C.; Zannou, A.L.; Jiang, J.; Adnan, T.; Mourdoukoutas, A.P.; Kronberg, G.; Truong, D.; Boggio, P.; et al. Safety of Transcranial Direct Current Stimulation: Evidence Based Update 2016. Brain Stimul. 2016, 9, 641\u2013661. [CrossRef]\n\n38. Chhatbar, P.Y.; Ramakrishnan, V.; Kautz, S.; George, M.S.; Adams, R.J.; Feng, W. Transcranial Direct Current Stimulation Post-Stroke Upper Extremity Motor Recovery Studies Exhibit a Dose\u2013Response Relationship. Brain Stimul. 2015, 9, 16\u201326. [CrossRef] Feng, W.; Wang, J.; Chhatbar, P.Y.; Doughty, C.; Landsittel, D.; Lioutas, V.; Kautz, S.A.; Schlaug, G.; Feng, W.; Wang, J.; et al. Corticospinal tract lesion load: An imaging biomarker for stroke motor outcomes. Ann. Neurol. 2015, 78, 860\u2013870. [CrossRef]",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 15,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "f5442c5c21ff6c72748f239dd694f724",
+    "text": "39.\n\n40. Baker, J.M.; Rorden, C.; Fridriksson, J. Using transcranial direct-current stimulation to treat stroke patients with aphasia. Stroke\n\n2010, 41, 1229\u20131236. [CrossRef] Fridriksson, J.; Richardson, J.D.; Baker, J.M.; Rorden, C. Transcranial direct current stimulation improves naming reaction time in \ufb02uent aphasia: A double-blind, sham-controlled study. Stroke 2011, 42, 819\u2013821. [CrossRef] [PubMed]\n\n41.\n\n42. Cherney, L.R.; Erickson, R.K.; Small, S.L. Epidural cortical stimulation as adjunctive treatment for non-\ufb02uent aphasia: Preliminary \ufb01ndings. J. Neurol. Neurosurg. Psychiatry 2010, 81, 1014\u20131021. [CrossRef] [PubMed]",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 15,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "441cd206120b0351243915e04f25dc97",
+    "text": "43. Kang, E.K.; Kim, Y.K.; Sohn, H.M.; Cohen, L.G.; Paik, N.-J. Improved picture naming in aphasia patients treated with cathodal tDCS to inhibit the right Broca\u2019s homologue area. Restor. Neurol. Neurosci. 2011, 29, 141\u2013152. [CrossRef] [PubMed] 44. Elsner, B.; Kugler, J.; Mehrholz, J. Transcranial direct current stimulation (tDCS) for improving aphasia after stroke: A systematic\n\nreview with network meta-analysis of randomized controlled trials. J. Neuroeng. Rehabil. 2020, 17, 88. [CrossRef]\n\n45. Hayward, K.S.; Brauer, S.G.; Ruddy, K.L.; Lloyd, D.; Carson, R.G. Repetitive reaching training combined with transcranial Random Noise Stimulation in stroke survivors with chronic and severe arm paresis is feasible: A pilot, triple-blind, randomised case series. J. Neuroeng. Rehabil. 2017, 14, 46. [CrossRef]",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 15,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "86c74339d7c15dc1580d048a86559d17",
+    "text": "46. Arnao, V.; Riolo, M.; Carduccio, F.; Tuttolomondo, A.; D\u2019amelio, M.; Brighina, F.; Gangitano, M.; Salemi, G.; Ragonese, P.; Aridon, P. Effects of transcranial random noise stimulation combined with Graded Repetitive Arm Supplementary Pro- gram (GRASP) on motor rehabilitation of the upper limb in sub-acute ischemic stroke patients: A randomized pilot study. J. Neural Transm. 2019, 126, 1701\u20131706. [CrossRef] Fedorov, A.; Chibisova, Y.; Szymaszek, A.; Alexandrov, M.; Gall, C.; Sabel, B.A. Non-invasive alternating current stimulation induces recovery from stroke. Restor. Neurol. Neurosci. 2010, 28, 825\u2013833. [CrossRef]",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 15,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "aea64cf5d5846382212ff50cbbcd89d6",
+    "text": "48. Wu, M.; Wu, Y.; Yu, Y.; Gao, J.; Meng, F.; He, F.; Shi, J.; Luo, B. Effects of theta burst stimulation of the left dorsolateral prefrontal cortex in disorders of consciousness. Brain Stimul. 2018, 11, 1382\u20131384. [CrossRef]\n\n49. Piccione, F.; Cavinato, M.; Manganotti, P.; Formaggio, E.; Storti, S.F.; Battistin, L.; Cagnin, A.; Tonin, P.; Dam, M. Behav- ioral and Neurophysiological Effects of Repetitive Transcranial Magnetic Stimulation on the Minimally Conscious State. Neurorehabilit. Neural Repair 2010, 25, 98\u2013102. [CrossRef]",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 15,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "8c05106ba9620cc671fee3f2b1cf89d7",
+    "text": "50. Liu, P.; Gao, J.; Pan, S.; Meng, F.; Pan, G.; Li, J.; Luo, B. Effects of High-Frequency Repetitive Transcranial Magnetic Stimulation on Cerebral Hemodynamics in Patients with Disorders of Consciousness: A Sham-Controlled Study. Eur. Neurol. 2016, 76, 1\u20137. [CrossRef]\n\n51. Xia, X.; Liu, Y.; Bai, Y.; Liu, Z.; Yang, Y.; Guo, Y.; Xu, R.; Gao, X.; Li, X.; He, J. Long-lasting repetitive transcranial mag- netic stimulation modulates electroencephalography oscillation in patients with disorders of consciousness. NeuroReport 2017, 28, 1022\u20131029. [CrossRef] [PubMed]",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 15,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "bf4ecd9836dbc1b666b57f394f842a49",
+    "text": "52. Xia, X.; Wang, Y.; Li, C.; Li, X.; He, J.; Bai, Y. Transcranial magnetic stimulation-evoked connectivity reveals modulation effects of repetitive transcranial magnetic stimulation on patients with disorders of consciousness. NeuroReport 2019, 30, 1307\u20131315. [CrossRef] [PubMed]\n\n53. He, F.; Wu, M.; Meng, F.; Hu, Y.; Gao, J.; Chen, Z.; Bao, W.; Liu, K.; Luo, B.; Pan, G. Effects of 20 Hz Repetitive Transcranial Magnetic Stimulation on Disorders of Consciousness: A Resting-State Electroencephalography Study. Neural Plast. 2018, 2018, 5036184. [CrossRef] [PubMed]",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 15,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "957e09be99d2f483a7f60ebb0d64a6c9",
+    "text": "54. Lin, Y.; Liu, T.; Huang, Q.; Su, Y.; Chen, W.; Gao, D.; Tian, X.; Huang, T.; Zhen, Z.; Han, T.; et al. Electroencephalography and Functional Magnetic Resonance Imaging-Guided Simultaneous Transcranial Direct Current Stimulation and Repetitive Transcranial Magnetic Stimulation in a Patient With Minimally Conscious State. Front. Neurosci. 2019, 13, 746. [CrossRef] 55. Bai, Y.; Xia, X.; Kang, J.; Yin, X.; Yang, Y.; He, J.; Li, X. Evaluating the Effect of Repetitive Transcranial Magnetic Stimulation on",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 15,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "007a8c6bcf1d27dbc2e383106e8bd018",
+    "text": "Disorders of Consciousness by Using TMS-EEG. Front. Neurosci. 2016, 10, 473. [CrossRef]\n\n56. Xia, X.; Bai, Y.; Zhou, Y.; Yang, Y.; Xu, R.; Gao, X.; Li, X.; He, J. Effects of 10 Hz Repetitive Transcranial Magnetic Stimulation of the\n\n57.\n\nLeft Dorsolateral Prefrontal Cortex in Disorders of Consciousness. Front. Neurol. 2017, 8, 182. [CrossRef] Jang, S.H.; Kwon, Y.H. Effect of repetitive transcranial magnetic stimulation on the ascending reticular activating system in a patient with disorder of consciousness: A case report. BMC Neurol. 2020, 20, 37. [CrossRef]",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 15,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "987d15fc90ad62279a24489eb0207106",
+    "text": "58. Naro, A.; Bramanti, A.; Leo, A.; Bramanti, P.; Calabr\u00f2, R.S. Metaplasticity: A Promising Tool to Disentangle Chronic Disorders of Consciousness Differential Diagnosis. Int. J. Neural Syst. 2018, 28, 1750059. [CrossRef]\n\n59. Bai, Y.; Xia, X.; Wang, Y.; Guo, Y.; Yang, Y.; He, J.; Li, X. Fronto-parietal coherence response to tDCS modulation in patients with disorders of consciousness. Int. J. Neurosci. 2018, 128, 587\u2013594. [CrossRef]\n\n15 of 19",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 15,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "001455ba2d0aab3203b57bde64640f17",
+    "text": "J. Clin. Med. 2023, 12, 6734\n\n60. Martens, G.; Fregni, F.; Carri\u00e8re, M.; Barra, A.; Laureys, S.; Thibaut, A. Single tDCS session of motor cortex in patients with disorders of consciousness: A pilot study. Brain Inj. 2019, 33, 1679\u20131683. [CrossRef]\n\n61. Bai, Y.; Xia, X.; Kang, J.; Yang, Y.; He, J.; Li, X. TDCS modulates cortical excitability in patients with disorders of consciousness. NeuroImage Clin. 2017, 15, 702\u2013709. [CrossRef]\n\n62. Cavinato, M.; Genna, C.; Formaggio, E.; Gregorio, C.; Storti, S.F.; Manganotti, P.; Casanova, E.; Piperno, R.; Piccione, F. Behavioural and electrophysiological effects of tDCS to prefrontal cortex in patients with disorders of consciousness. Clin. Neurophysiol. 2018, 130, 231\u2013238. [CrossRef] [PubMed]",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 16,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "987671c1eb926e0e6084cacc06a2ea90",
+    "text": "63. Martens, G.; Lejeune, N.; O\u2019Brien, A.T.; Fregni, F.; Martial, C.; Wannez, S.; Laureys, S.; Thibaut, A. Randomized controlled trial of home-based 4-week tDCS in chronic minimally conscious state. Brain Stimul. 2018, 11, 982\u2013990. [CrossRef]\n\n64. Wang, X.; Guo, Y.; Zhang, Y.; Li, J.; Gao, Z.; Li, Y.; Zhou, T.; Zhang, H.; He, J.; Cong, F. Combined Behavioral and Mismatch Negativity Evidence for the Effects of Long-Lasting High-De\ufb01nition tDCS in Disorders of Consciousness: A Pilot Study. Front. Neurosci. 2020, 14, 381. [CrossRef] [PubMed]",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 16,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "bbdbc055a0c7bda8a8c15e684ac68222",
+    "text": "65. Guo, Y.; Bai, Y.; Xia, X.; Li, J.; Wang, X.; Dai, Y.; Dang, Y.; He, J.; Liu, C.; Zhang, H. Effects of Long-Lasting High-De\ufb01nition Transcranial Direct Current Stimulation in Chronic Disorders of Consciousness: A Pilot Study. Front. Neurosci. 2019, 13, 412. [CrossRef] [PubMed]\n\n66. Zhang, Y.; Song, W.; Du, J.; Huo, S.; Shan, G.; Li, R. Transcranial Direct Current Stimulation in Patients with Prolonged Disorders of Consciousness: Combined Behavioral and Event-Related Potential Evidence. Front. Neurol. 2017, 8, 620. [CrossRef]",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 16,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "04dad967e1840bd66891e78a30722f27",
+    "text": "67. Hermann, B.; Raimondo, F.; Hirsch, L.; Huang, Y.; Denis-Valente, M.; P\u00e9rez, P.; Engemann, D.; Faugeras, F.; Weiss, N.; Demeret, S.; et al. Combined behavioral and electrophysiological evidence for a direct cortical effect of prefrontal tDCS on disorders of consciousness. Sci. Rep. 2020, 10, 4323. [CrossRef]\n\n68. Zhang, Y.; Lu, J.; Du, J.; Huo, S.; Li, R.; Song, W. Neural correlates of different behavioral response to transcranial direct current stimulation between patients in the unresponsive wakefulness syndrome and minimally conscious state. Neurol. Sci. 2020, 41, 75\u201382. [CrossRef]",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 16,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "47f181f347facbc3ea942fb4d10528b0",
+    "text": "69. Naro, A.; Bramanti, P.; Leo, A.; Russo, M.; Calabr\u00f2, R.S. Transcranial Alternating Current Stimulation in Patients with Chronic Disorder of Consciousness: A Possible Way to Cut the Diagnostic Gordian Knot? Brain Topogr. 2016, 29, 623\u2013644. [CrossRef] 70. Mancuso, M.; Abbruzzese, L.; Canova, S.; Landi, G.; Rossi, S.; Santarnecchi, E. Transcranial Random Noise Stimulation Does Not Improve Behavioral and Neurophysiological Measures in Patients with Subacute Vegetative-Unresponsive Wakefulness State (VS-UWS). Front. Hum. Neurosci. 2017, 11, 524. [CrossRef]",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 16,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "a0f024ce8fa8d8f3efd11561a45f7f84",
+    "text": "71. Yu, Y.T.; Yang, Y.; Wang, L.B.; Fang, J.L.; Chen, Y.Y.; He, J.H.; Rong, P.J. Transcutaneous auricular vagus nerve stimulation in disorders of consciousness monitored by fMRI: The \ufb01rst case report. Brain Stimul. 2017, 10, 328\u2013330. [CrossRef] [PubMed] 72. No\u00e9, E.; Ferri, J.; Colomer, C.; Moliner, B.; O\u2019Valle, M.; Ugart, P.; Rodriguez, C.; Llorens, R. Feasibility, safety and ef\ufb01cacy of transauricular vagus nerve stimulation in a cohort of patients with disorders of consciousness. Brain Stimul. 2020, 13, 427\u2013429. [CrossRef] [PubMed] Jeffers, M.S.; Karthikeyan, S.; Gomez-Smith, M.; Gasinzigwa, S.; Achenbach, J.; Feiten, A.; Corbett, D. Does Stroke Rehabilitation Really Matter? Part B: An Algorithm for Prescribing an Effective Intensity of Rehabilitation. Neurorehabilit. Neural Repair 2018, 32, 73\u201383. [CrossRef] [PubMed]",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 16,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "62c506ae927751ad1699994f80026b1e",
+    "text": "74. Birkenmeier, R.L.; Prager, E.M.; Lang, C.E. Translating Animal Doses of Task-Speci\ufb01c Training to People With Chronic Stroke in 1-Hour Therapy Sessions: A Proof-of-Concept Study. Neurorehabilit. Neural Repair 2010, 24, 620\u2013635. [CrossRef]\n\n75. Lang, C.E.; Macdonald, J.R.; Reisman, D.S.; Boyd, L.; Kimberley, T.J.; Schindler-Ivens, S.M.; Hornby, T.G.; Ross, S.A.; Scheets, P.L. Observation of Amounts of Movement Practice Provided During Stroke Rehabilitation. Arch. Phys. Med. Rehabil. 2009, 90, 1692\u20131698. [CrossRef]",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 16,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "3103f6c559132df621cbfbd8de1842bc",
+    "text": "76. Wolf, S.L.; Winstein, C.J.; Miller, J.P.; Taub, E.; Uswatte, G.; Morris, D.; Giuliani, C.; Light, K.E.; Nichols-Larsen, D. Effect of Constraint-Induced Movement Therapy on Upper Extremity Function 3 to 9 Months After Stroke: The EXCITE Randomized Clinical Trial. JAMA 2006, 296, 2095\u20132104. [CrossRef]\n\n77. Rodgers, H.; Bosomworth, H.; Krebs, H.I.; van Wijck, F.; Howel, D.; Wilson, N.; Aird, L.; Alvarado, N.; Andole, S.; Cohen, D.L.; et al. Robot assisted training for the upper limb after stroke (RATULS): A multicentre randomised controlled trial. Lancet 2019, 394, 51\u201362. [CrossRef]",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 16,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "e210a0810e2324f1ff49cfbea4d03a09",
+    "text": "78. Cramer, S.C.; Dodakian, L.; Le, V.; See, J.; Augsburger, R.; McKenzie, A.; Zhou, R.J.; Chiu, N.L.; Heckhausen, J.; Cassidy, J.M.; et al. Ef\ufb01cacy of Home-Based Telerehabilitation vs In-Clinic Therapy for Adults After Stroke: A Randomized Clinical Trial. JAMA Neurol. 2019, 76, 1079\u20131087. [CrossRef]\n\n79. Kwakkel, G.; Veerbeek, J.M.; Van Wegen, E.E.H.; Wolf, S.L. Constraint-induced movement therapy after stroke. Lancet Neurol. 2015, 14, 224\u2013234. [CrossRef]\n\n80. Ogden, R.; Franz, S.I. On cerebral motor control: The recovery from experimentally produced hemiplegia. Psychobiology 1917,",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 16,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "660fd043c97138221de5cbb6a317c9e0",
+    "text": "1, 33\u201349. [CrossRef] Fritz, S.L.; Butts, R.J.; Wolf, S.L. Constraint-induced movement therapy: From history to plasticity. Expert Rev. Neurother. 2012, 12, 191\u2013198. [CrossRef] [PubMed]\n\n81.\n\n82. Tedla, J.S.; Gular, K.; Reddy, R.S.; Ferreira, A.d.S.; Rodrigues, E.C.; Kakaraparthi, V.N.; Gyer, G.; Sangadala, D.R.; Qasheesh, M.; Kovela, R.K.; et al. Effectiveness of constraint-induced movement therapy (cimt) on balance and functional mobility in the stroke population: A systematic review and meta-analysis. Healthcare 2022, 10, 495. [CrossRef] [PubMed]",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 16,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "506133477f052f919d45e346d10574e1",
+    "text": "16 of 19",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 16,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "1f5d84d055ec6bde2170517bc64c079b",
+    "text": "J. Clin. Med. 2023, 12, 6734\n\n83. Liepert, J.; Miltner, W.; Bauder, H.; Sommer, M.; Dettmers, C.; Taub, E.; Weiller, C. Motor cortex plasticity during constraint- induced movement therapy in stroke patients. Neurosci. Lett. 1998, 250, 5\u20138. [CrossRef] [PubMed]\n\n84. Wittenberg, G.F.; Chen, R.; Ishii, K.; Bushara, K.O.; Taub, E.; Gerber, L.H.; Hallett, M.; Cohen, L.G. Constraint-Induced Therapy in Stroke: Magnetic-Stimulation Motor Maps and Cerebral Activation. Neurorehabilit. Neural Repair 2003, 17, 48\u201357. [CrossRef] Sawaki, L.; Butler, A.J.; Leng, X.; Wassenaar, P.A.; Mohammad, Y.M.; Blanton, S.; Sathian, K.; Nichols-Larsen, D.S.; Wolf, S.L.; Good, D.C.; et al. Constraint-Induced Movement Therapy Results in Increased Motor Map Area in Subjects 3 to 9 Months After Stroke. Neurorehabilit. Neural Repair 2008, 22, 505\u2013513. [CrossRef]",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 17,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "7a967137e1a57f941c2fc7cd770812a1",
+    "text": "86. Takahashi, C.D.; Der-Yeghiaian, L.; Le, V.; Motiwala, R.R.; Cramer, S.C. Robot-based hand motor therapy after stroke. Brain 2014, 131, 425\u2013437. [CrossRef]\n\n87. Lo, A.C.; Guarino, P.D.; Richards, L.G.; Haselkorn, J.K.; Wittenberg, G.F.; Federman, D.G.; Ringer, R.J.; Wagner, T.H.; Krebs, H.I.; Volpe, B.T.; et al. Robot-Assisted Therapy for Long-Term Upper-Limb Impairment after Stroke. N. Engl. J. Med. 2010, 362, 1772\u20131783. [CrossRef]\n\n88. Veerbeek, J.M.; Langbroek-Amersfoort, A.C.; van Wegen, E.; Meskers, C.; Kwakkel, G. Effects of Robot-Assisted Therapy for the Upper Limb After Stroke: A Systematic Review and Meta-analysis. Neurorehabilit. Neural Repair 2017, 31, 107\u2013121. [CrossRef]",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 17,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "edd41f082a7d707d7d93f9aafb05ddee",
+    "text": "89. Dromerick, A.W.; Geed, S.; Barth, J.; Brady, K.; Giannetti, M.L.; Mitchell, A.; Edwardson, M.A.; Tan, M.T.; Zhou, Y.; Newport, E.L.; et al. Critical Period After Stroke Study (CPASS): A phase II clinical trial testing an optimal time for motor recovery after stroke in humans. Proc. Natl. Acad. Sci. USA 2021, 118, e2026676118. [CrossRef]\n\n90. Edwards, D.; Kumar, S.; Brinkman, L.; Ferreira, I.C.; Esquenazi, A.; Nguyen, T.; Su, M.; Stein, S.; May, J.; Hendrix, A.; et al. Telerehabilitation Initiated Early in Post-Stroke Recovery: A Feasibility Study. Neurorehabilit. Neural Repair 2023, 37, 131\u2013141. [CrossRef]",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 17,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "b32bc7f5f060b66354ef7e16a14b250c",
+    "text": "91. Wolpaw, J.R. Brain\u2013computer interfaces. In Handbook of Clinical Neurology; Elsevier: Amsterdam, The Netherlands, 2013; pp. 67\u201374.\n\n92. Chaudhary, U.; Xia, B.; Silvoni, S.; Cohen, L.G.; Birbaumer, N. Brain\u2013computer interface\u2013based communication in the completely\n\nlocked-in state. PLoS Biol. 2017, 15, e1002593. [CrossRef] [PubMed] Sitaram, R.; Ros, T.; Stoeckel, L.; Haller, S.; Scharnowski, F.; Lewis-Peacock, J.; Weiskopf, N.; Blefari, M.L.; Rana, M.; Oblak, E.; et al. Closed-loop brain training: The science of neurofeedback. Nat. Rev. Neurosci. 2016, 18, 86\u2013100. [CrossRef] [PubMed]",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 17,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "baf862fdaf91eac1630bbc5e71058fce",
+    "text": "93.\n\n94. Mane, R.; Wu, Z.; Wang, D. Poststroke motor, cognitive and speech rehabilitation with brain\u2013computer interface: A perspective review. Stroke Vasc. Neurol. 2022, 7, 541. [CrossRef] [PubMed]\n\n95. Cervera, M.A.; Soekadar, S.R.; Ushiba, J.; Mill\u00e1n, J.d.R.; Liu, M.; Birbaumer, N.; Garipelli, G. Brain-computer interfaces for post-stroke motor rehabilitation: A meta-analysis. Ann. Clin. Transl. Neurol. 2018, 5, 651\u2013663. [CrossRef] [PubMed] 96. Bai, Z.; Fong, K.N.K.; Zhang, J.J.; Chan, J.; Ting, K.H. Immediate and long-term effects of BCI-based rehabilitation of the upper",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 17,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "c87f5aea87962fa4cbd8c4ef4abb937f",
+    "text": "extremity after stroke: A systematic review and meta-analysis. J. Neuroeng. Rehabil. 2020, 17, 57. [CrossRef]\n\n97. Lennon, O.; Tonellato, M.; Del Felice, A.; Di Marco, R.; Fingleton, C.; Korik, A.; Guanziroli, E.; Molteni, F.; Guger, C.; Otner, R.; et al. A systematic review establishing the current state-of-the-art, the limitations, and the DESIRED checklist in studies of direct neural interfacing with robotic gait devices in stroke rehabilitation. Front. Neurosci. 2020, 14, 578. [CrossRef] 98. Lim, C.G.; Poh, X.W.W.; Fung, S.S.D.; Guan, C.; Bautista, D.; Cheung, Y.B.; Zhang, H.; Yeo, S.N.; Krishnan, R.; Lee, T.S. A randomized controlled trial of a brain-computer interface based attention training program for ADHD. PLoS ONE 2019, 14, e0216225. [CrossRef] Strehl, U.; Aggensteiner, P.; Wachtlin, D.; Brandeis, D.; Albrecht, B.; Arana, M.; Bach, C.; Banaschewski, T.; Bogen, T.; Flaig-R\u00f6hr, A.; et al. Neurofeedback of slow cortical potentials in children with attention-de\ufb01cit/hyperactivity disorder: A multicenter randomized trial controlling for unspeci\ufb01c effects. Front. Hum. Neurosci. 2017, 11, 135. [CrossRef]",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 17,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "940b62e6bef2196c926f96f60bb62aa0",
+    "text": "100. Lee, T.-S.; Goh, S.J.A.; Quek, S.Y.; Phillips, R.; Guan, C.; Cheung, Y.B.; Feng, L.; Teng, S.S.W.; Wang, C.C.; Chin, Z.Y.; et al. A brain-computer interface based cognitive training system for healthy elderly: A randomized control pilot study for usability and preliminary ef\ufb01cacy. PLoS ONE 2013, 8, e79419. [CrossRef]\n\n101. Chollet, F.; Tardy, J.; Albucher, J.-F.; Thalamas, C.; Berard, E.; Lamy, C.; Bejot, Y.; Deltour, S.; Jaillard, A.; Niclot, P.; et al. Fluoxetine for motor recovery after acute ischaemic stroke (FLAME): A randomised placebo-controlled trial. Lancet Neurol. 2011, 10, 123\u2013130. [CrossRef]",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 17,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "d8dbebe2e5d144d4f004d0b11eff1ccc",
+    "text": "102. Legg, L.A.; Tilney, R.; Hsieh, C.-F.; Wu, S.; Lundstr\u00f6m, E.; Rudberg, A.-S.; Kutlubaev, M.A.; Dennis, M.; Soleimani, B.; Barugh, A.; et al. Selective serotonin reuptake inhibitors (SSRIs) for stroke recovery. Cochrane Database Syst. Rev. 2019, 11, CD009286. [CrossRef] [PubMed]\n\n103. Dennis, M.; Mead, G.; Forbes, J.; Graham, C.; Hackett, M.; Hankey, G.J.; House, A.; Lewis, S.; Lundstr\u00f6m, E.; Sandercock, P.; et al. Effects of \ufb02uoxetine on functional outcomes after acute stroke (FOCUS): A pragmatic, double-blind, randomised, controlled trial. Lancet 2018, 393, 265\u2013274. [CrossRef] [PubMed]",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 17,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "8f7146f4448a4701a0ecd113cd13502d",
+    "text": "104. Lundstr\u00f6m, E.; Isaksson, E.; N\u00e4sman, P.; Wester, P.; M\u00e5rtensson, B.; Norrving, B.; Wall\u00e9n, H.; Borg, J.; Dennis, M.; Mead, G.; et al. Safety and ef\ufb01cacy of \ufb02uoxetine on functional recovery after acute stroke (EFFECTS): A randomised, double-blind, placebo-controlled trial. Lancet Neurol. 2020, 19, 661\u2013669. [CrossRef] [PubMed]\n\n17 of 19",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 17,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "a667069600bf0bf2358ae42c591ca237",
+    "text": "J. Clin. Med. 2023, 12, 6734\n\n105. Hankey, G.J.; Hackett, M.L.; Almeida, O.P.; Flicker, L.; Mead, G.E.; Dennis, M.S.; Etherton-Beer, C.; Ford, A.H.; Billot, L.; Jan, S.; et al. Twelve-Month Outcomes of the AFFINITY Trial of Fluoxetine for Functional Recovery After Acute Stroke: AFFINITY Trial Steering Committee on Behalf of the AFFINITY Trial Collaboration. Stroke 2021, 52, 2502\u20132509. [CrossRef] [PubMed] 106. Stockbridge, M.D.; Fridriksson, J.; Sen, S.; Bonilha, L.; Hillis, A.E. Protocol for Escitalopram and Language Intervention for Subacute Aphasia (ELISA): A randomized, double blind, placebo-controlled trial. PLoS ONE 2021, 16, e0261474. [CrossRef] [PubMed]",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 18,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "774d1c3dfed00857faadab5ea489bf67",
+    "text": "107. Zhou, M.; Greenhill, S.; Huang, S.; Silva, T.K.; Sano, Y.; Wu, S.; Cai, Y.; Nagaoka, Y.; Sehgal, M.; Cai, D.J.; et al. Author response: CCR5 is a suppressor for cortical plasticity and hippocampal learning and memory. eLife 2016, 5, e20985. [CrossRef]\n\n108. Joy, M.T.; Ben Assayag, E.; Shabashov-Stone, D.; Liraz-Zaltsman, S.; Mazzitelli, J.; Arenas, M.; Abduljawad, N.; Kliper, E.; Korczyn, A.D.; Thareja, N.S.; et al. CCR5 Is a Therapeutic Target for Recovery after Stroke and Traumatic Brain Injury. Cell 2019, 176, 1143\u20131157.e13. [CrossRef]",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 18,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "0b70aacf340fc891fe051a4f1d44e8c8",
+    "text": "109. Ben Assayag, E.; Korczyn, A.D.; Giladi, N.; Goldbourt, U.; Berliner, A.S.; Shenhar-Tsarfaty, S.; Kliper, E.; Hallevi, H.; Shopin, L.; Hendler, T.; et al. Predictors for poststroke outcomes: The Tel Aviv brain acute stroke cohort (TABASCO) study protocol. Int. J. Stroke 2011, 7, 341\u2013347. [CrossRef]\n\n110. Mahla, R.S. Stem Cells Applications in Regenerative Medicine and Disease Therapeutics. Int. J. Cell Biol. 2016, 2016, 6940283. [CrossRef]\n\n111. Satani, N.; Cai, C.; Giridhar, K.; McGhiey, D.; George, S.; Parsha, K.; Nghiem, D.M.; Valenzuela, K.S.; Riecke, J.; Vahidy, F.S.; et al. World-Wide Ef\ufb01cacy of Bone Marrow Derived Mesenchymal Stromal Cells in Preclinical Ischemic Stroke Models: Systematic Review and Meta-Analysis. Front. Neurol. 2019, 10, 405. [CrossRef]",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 18,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "c9524fae2fb35d9c3bfd943eb394e9e5",
+    "text": "112. Levy, M.L.; Crawford, J.R.; Dib, N.; Verkh, L.; Tankovich, N.; Cramer, S.C. Phase I/II Study of Safety and Preliminary Ef\ufb01cacy of Intravenous Allogeneic Mesenchymal Stem Cells in Chronic Stroke. Stroke 2019, 50, 2835\u20132841. [CrossRef] [PubMed]\n\n113. Jaillard, A.; Hommel, M.; Moisan, A.; Zef\ufb01ro, T.A.; Favre-Wiki, I.M.; Barbieux-Guillot, M.; Vadot, W.; Marcel, S.; Lamalle, L.; Grand, S.; et al. Autologous Mesenchymal Stem Cells Improve Motor Recovery in Subacute Ischemic Stroke: A Randomized Clinical Trial. Transl. Stroke Res. 2020, 11, 910\u2013923. [CrossRef]",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 18,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "908f9a2839be724070d5f8794c561ff7",
+    "text": "114. Savitz, S.I.; Yavagal, D.; Rappard, G.; Likosky, W.; Rutledge, N.; Graffagnino, C.; Alderazi, Y.; Elder, J.A.; Chen, P.R.; Budzik, R.F., Jr.; et al. A Phase 2 Randomized, Sham-Controlled Trial of Internal Carotid Artery Infusion of Autologous Bone Marrow\u2013Derived ALD-401 Cells in Patients With Recent Stable Ischemic Stroke (RECOVER-Stroke). Circulation 2019, 139, 192\u2013205. [CrossRef] [PubMed]\n\n115. Muir, K.W.; Bulters, D.; Willmot, M.; Sprigg, N.; Dixit, A.; Ward, N.; Tyrrell, P.; Majid, A.; Dunn, L.; Bath, P.; et al. Intracerebral implantation of human neural stem cells and motor recovery after stroke: Multicentre prospective single-arm study (PISCES-2). J. Neurol. Neurosurg. Psychiatry 2020, 91, 396\u2013401. [CrossRef] [PubMed]",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 18,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "231e19b26ad546ee931e6ced704b90aa",
+    "text": "116. Thomas, J.O.; Barrett, A.M. Chapter 5\u2014Right Brain Stroke Syndromes. In Stroke Rehabilitation; Wilson, R., Raghavan, P., Eds.; Elsevier: Amsterdam, The Netherlands, 2019; pp. 71\u201389. [CrossRef]\n\n117. Weinberg, J.; Diller, L.; Gordon, W.A.; Gerstman, L.J.; Lieberman, A.; Lakin, P.; Hodges, G.; Ezrachi, O. Training sensory awareness and spatial organization in people with right brain damage. Arch. Phys. Med. Rehabil. 1979, 60, 491\u2013496.\n\n118. Weinberg, J.; Diller, L.; Gordon, W.A.; Gerstman, L.J.; Lieberman, A.; Lakin, P.; Hodges, G.; Ezrachi, O. Visual scanning training effect on reading-related tasks in acquired right brain damage. Arch. Phys. Med. Rehabil. 1977, 58, 479\u2013486.",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 18,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "7606508aaaf9d3ac7af7d81db87ca782",
+    "text": "119. Garza, J.P.; Eslinger, P.J.; Barrett, A.M. Perceptual\u2013attentional and motor-intentional bias in near and far space. Brain Cogn. 2008, 68, 9\u201314. [CrossRef]\n\n120. Barrett, A.M. Spatial Neglect and Anosognosia After Right Brain Stroke. Contin. Lifelong Learn. Neurol 2021, 27, 1624\u20131645. [CrossRef]\n\n121. Barrett, A.M.; Goedert, K.M.; Basso, J.C. Prism adaptation for spatial neglect after stroke: Translational practice gaps. Nat. Rev. Neurol. 2012, 8, 567\u2013577. [CrossRef]\n\n122. Winstein, C.J.; Stein, J.; Arena, R.; Bates, B.; Cherney, L.R.; Cramer, S.C.; Deruyter, F.; Eng, J.J.; Fisher, B.; Harvey, R.L.; et al. Guidelines for Adult Stroke Rehabilitation and Recovery. Stroke 2016, 47, e98\u2013e169. [CrossRef]",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 18,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "e33c1c60cac4473116b1bed895c7fe9b",
+    "text": "123. Champod, A.S.; Frank, R.C.; Taylor, K.; Eskes, G.A. The effects of prism adaptation on daily life activities in patients with visuospatial neglect: A systematic review. Neuropsychol. Rehabil. 2018, 28, 491\u2013514. [CrossRef] [PubMed]\n\n124. Fortis, P.; Chen, P.; Goedert, K.M.; Barrett, A.M. Effects of prism adaptation on motor-intentional spatial bias in neglect. NeuroReport 2011, 22, 700\u2013705. [CrossRef] [PubMed]\n\n125. Chen, P.; Hreha, K.; Gonzalez-Snyder, C.; Rich, T.J.; Gillen, R.W.; Parrott, D.; Barrett, A.M. Impacts of Prism Adaptation Treatment on Spatial Neglect and Rehabilitation Outcome: Dosage Matters. Neurorehabilit. Neural Repair 2022, 36, 500\u2013513. [CrossRef] [PubMed]",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 18,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "528dcf647e7e4ab0bf1c951554e29fc7",
+    "text": "126. Goedert, K.M.; Chen, P.; Foundas, A.L.; Barrett, A.M. Frontal lesions predict response to prism adaptation treatment in spatial neglect: A randomised controlled study. Neuropsychol. Rehabil. 2020, 30, 32\u201353. [CrossRef] [PubMed]\n\n127. Weiss, P.L.; Rand, D.; Katz, N.; Kizony, R. Video capture virtual reality as a \ufb02exible and effective rehabilitation tool. J. Neuroeng. Rehabil. 2004, 1, 12. [CrossRef]\n\n128. Bani\u00f1a, M.C.; Molad, R.; Solomon, J.M.; Berman, S.; Soroker, N.; Frenkel-Toledo, S.; Liebermann, D.G.; Levin, M.F. Exercise intensity of the upper limb can be enhanced using a virtual rehabilitation system. Disabil. Rehabil. Assist. Technol. 2020, 17, 100\u2013106. [CrossRef]",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 18,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "79ff74d67cc18d15694d3d0b678723f9",
+    "text": "18 of 19",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 18,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "dc74cdf83a4ac9d917282477f9786060",
+    "text": "J. Clin. Med. 2023, 12, 6734\n\n129. Perez-Marcos, D.; Chevalley, O.; Schmidlin, T.; Garipelli, G.; Serino, A.; Vuadens, P.; Tadi, T.; Blanke, O.; Mill\u00e1n, J.D.R. Increasing upper limb training intensity in chronic stroke using embodied virtual reality: A pilot study. J. Neuroeng. Rehabil. 2017, 14, 119. [CrossRef]\n\n130. Wang, Z.; Wang, P.; Xing, L.; Mei, L.; Zhao, J.; Zhang, T. Leap Motion-based virtual reality training for improving motor functional\n\nrecovery of upper limbs and neural reorganization in subacute stroke patients. Neural Regen. Res. 2017, 12, 1823.",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 19,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "eb9c047c14b28d3d48e19aaf149c1471",
+    "text": "131. A\u00b8sk\u0131n, A.; Atar, E.; Ko\u00e7yi \u02d8git, H.; Tosun, A. Effects of Kinect-based virtual reality game training on upper extremity motor recovery in chronic stroke. Somatosens. Mot. Res. 2018, 35, 25\u201332. [CrossRef]\n\n132. Bui, J.; Luaut\u00e9, J.; Farn\u00e8, A. Enhancing Upper Limb Rehabilitation of Stroke Patients With Virtual Reality: A Mini Review. Front. Virtual Real. 2021, 2, 595771. [CrossRef]\n\n133. Hao, J.; He, Z.; Yu, X.; Remis, A. Comparison of immersive and non-immersive virtual reality for upper extremity functional recovery in patients with stroke: A systematic review and network meta-analysis. Neurol. Sci. 2023, 44, 2679\u20132697. [CrossRef] [PubMed]",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 19,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "0102a16706504d47b4b48c5c7d474373",
+    "text": "134. Juliano, J.M.; Spicer, R.P.; Vourvopoulos, A.; Lefebvre, S.; Jann, K.; Ard, T.; Santarnecchi, E.; Krum, D.M.; Liew, S.-L. Embodiment Is Related to Better Performance on a Brain\u2013Computer Interface in Immersive Virtual Reality: A Pilot Study. Sensors 2020, 20, 1204. [CrossRef] [PubMed]\n\n135. Jeannerod, M. Neural Simulation of Action: A Unifying Mechanism for Motor Cognition. NeuroImage 2001, 14, S103\u2013S109. [CrossRef]\n\n136. Decety, J. The neurophysiological basis of motor imagery. Behav. Brain Res. 1996, 77, 45\u201352. [CrossRef] 137. Taube, W.; Mouthon, M.; Leukel, C.; Hoogewoud, H.-M.; Annoni, J.-M.; Keller, M. Brain activity during observation and motor",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 19,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "9ec1549ac815ada0431d06fab2aca025",
+    "text": "imagery of different balance tasks: An fMRI study. Cortex 2015, 64, 102\u2013114. [CrossRef] [PubMed]\n\n138. Page, S.J.; Levine, P.; Leonard, A.C. Effects of mental practice on affected limb use and function in chronic stroke. Arch. Phys. Med. Rehabil. 2005, 86, 399\u2013402. [CrossRef] [PubMed]\n\n139. Dijkerman, H.C.; Ietswaart, M.; Johnston, M.; MacWalter, R.S. Does motor imagery training improve hand function in chronic stroke patients? A pilot study. Clin. Rehabil. 2004, 18, 538\u2013549. [CrossRef]\n\n140. Ietswaart, M.; Johnston, M.; Dijkerman, H.C.; Joice, S.; Scott, C.L.; MacWalter, R.S.; Hamilton, S.J. Mental practice with motor imagery in stroke recovery: Randomized controlled trial of ef\ufb01cacy. Brain 2011, 134, 1373\u20131386. [CrossRef]",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 19,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "6f472b9609f60d3f058b21aca9929b60",
+    "text": "141. Braun, S.M.; Beurskens, A.J.; Kleynen, M.; Oudelaar, B.; Schols, J.M.; Wade, D.T. A Multicenter Randomized Controlled Trial to Compare Subacute \u2018Treatment as Usual\u2019 With and Without Mental Practice Among Persons With Stroke in Dutch Nursing Homes. J. Am. Med. Dir. Assoc. 2012, 13, 85.e1\u201385.e7. [CrossRef]\n\n142. Guerra, Z.F.; Lucchetti, A.L.G.; Lucchetti, G. Motor Imagery Training After Stroke: A Systematic Review and Meta-analysis of Randomized Controlled Trials. J. Neurol. Phys. Ther. 2017, 41, 205\u2013214. [CrossRef]",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 19,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "3713660738f830c01d89b4a380a928cb",
+    "text": "143. Ertelt, D.; Small, S.; Solodkin, A.; Dettmers, C.; McNamara, A.; Binkofski, F.; Buccino, G. Action observation has a positive impact on rehabilitation of motor de\ufb01cits after stroke. NeuroImage 2007, 36, T164\u2013T173. [CrossRef] [PubMed]\n\n144. Franceschini, M.; Ceravolo, M.G.; Agosti, M.; Cavallini, P.; Bonassi, S.; Dall\u2019armi, V.; Massucci, M.; Schi\ufb01ni, F.; Sale, P. Clinical Relevance of Action Observation in Upper-Limb Stroke Rehabilitation: A Possible Role in Recovery of Functional Dexterity. A Randomized Clinical Trial. Neurorehabilit. Neural Repair 2012, 26, 456\u2013462. [CrossRef] [PubMed]",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 19,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "b9a437c376689ebd75cb840f30dec678",
+    "text": "145. Sun, Y.; Wei, W.; Luo, Z.; Gan, H.; Hu, X. Improving motor imagery practice with synchronous action observation in stroke patients. Top. Stroke Rehabil. 2016, 23, 245\u2013253. [CrossRef] [PubMed]\n\n146. Eaves, D.L.; Riach, M.; Holmes, P.S.; Wright, D.J. Motor Imagery during Action Observation: A Brief Review of Evidence, Theory and Future Research Opportunities. Front. Neurosci. 2016, 10, 514. [CrossRef]\n\nDisclaimer/Publisher\u2019s Note: The statements, opinions and data contained in all publications are solely those of the individual author(s) and contributor(s) and not of MDPI and/or the editor(s). MDPI and/or the editor(s) disclaim responsibility for any injury to people or property resulting from any ideas, methods, instructions or products referred to in the content.",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 19,
+      "filename": "jcm-12-06734.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "ba42bb25165b4e0dd72a5ed72d20125d",
+    "text": "19 of 19",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 19,
+      "filename": "jcm-12-06734.pdf"
+    }
+  }
+]

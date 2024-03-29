@@ -1,0 +1,978 @@
+[
+  {
+    "type": "CompositeElement",
+    "element_id": "e0a97475a5d402e63b95065a96280747",
+    "text": "NHS| England\n\nE09/S/d\n\n2013/14 NHS STANDARD CONTRACT FOR PAEDIATRIC NEUROREHABILITATION\n\nSECTION B PART 1 - SERVICE SPECIFICATIONS",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 1,
+      "filename": "Paediatric-Neurorehabilitation.pdf"
+    }
+  },
+  {
+    "type": "Table",
+    "element_id": "751c6a42c91bf44302049738678ece39",
+    "text": "Service Specification No. Service Commissioner Lead Provider Lead Period Date of Review E09/S/d Paediatric Neurorehabilitation 12 months",
+    "metadata": {
+      "text_as_html": "<table><thead><th>Service Specification No.</th><th>E09/S/d</th></thead><thead><th>Service</th><th>Paediatric Neurorehabilitation</th></thead><tr><td colspan=\"2\">Commissioner Lead</td></tr><tr><td colspan=\"2\">Provider Lead</td></tr><tr><td>Period</td><td>12 months</td></tr><tr><td>Date of Review</td><td></td></tr></table>",
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 1,
+      "filename": "Paediatric-Neurorehabilitation.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "fc7fe115a5c74cf3469f3d5dd44bce51",
+    "text": "1. Population Needs\n\n1.1 National/local context and evidence base\n\nRehabilitation has been defined as a goal-based process which reduces the impact of long-term disabling conditions on daily life. Rehabilitation for neurological conditions is applicable following an acute insult to the central nervous system (CNS) and in progressive or static disability.\n\nIt is recognised that the needs of patients who have sustained an acute injury, whether this is an acquired brain injury (ABI) or acquired spinal injury (ASI), differ from those with less acute conditions because of the need to provide intensive input, usually on an in-patient basis, early in the course of the illness.",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 1,
+      "filename": "Paediatric-Neurorehabilitation.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "9da31d52026be455e908dbce54159d71",
+    "text": "A service model designed for children with acquired CNS injury also meets the needs of other groups of patients with other neurological disorders who would benefit from assessment and/or a period of more intensive neurorehabilitation at times of functional deterioration.\n\nSuch children would include those severely affected by acquired polyneuropathy; progressive neurological disorders; congenital neurological disorders, including cerebral palsy; intractable epilepsy; chronic pain; and neurological/neuropsychiatric conditions such as functional disorders.",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 1,
+      "filename": "Paediatric-Neurorehabilitation.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "947593c419e00ba87ffdcf9d5709ebe1",
+    "text": "There is increasing evidence for the effectiveness and cost benefits of neurorehabilitation, especially when the relevant practitioners work together as a co-",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 1,
+      "filename": "Paediatric-Neurorehabilitation.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "3cedf514a7300701c628d4de6705a710",
+    "text": "ordinated interdisciplinary team towards a common set of goals. Recent research suggests patients previously regarded as unsuitable for neurorehabilitation may have intact awareness and potential for recovery. Technical investigations and treatments will become increasingly important, as scientific advances continue, highlighting the role of neuroscience centres.\n\nFailure to provide appropriate early rehabilitation therapy can result in increased long term disability.\n\nThe delayed developmental trajectory of higher cognitive abilities means ABI occurring early in life may not have its main impact until adolescence. Unrealistic expectations may cause difficulties to be perceived as academic or employment \u201cfailure\u201d, rather than a consequence of ABI.",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 2,
+      "filename": "Paediatric-Neurorehabilitation.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "1d19feb66b2a41896385dbf9ee363ee3",
+    "text": "Examples of incidence rates:\n\nThe incidence of hospitalisation for Traumatic Brain Injury (TBI) in England has been reported as ranging from 280-500 per 100,000 children aged < 16 years, implying that the total number of children admitted to hospital for TBI per annum in the UK is at least 35,000. Of these, approximately 2,000 will have sustained severe TBI, 3,000 moderate TBI and 30,000 mild TBI.\n\nThe total number of UK children aged 1 - 16 years who sustain non-traumatic coma associated with severe or moderate encephalopathy per year is of the order of 4,000. In the UK, data from the UK Childhood Cancer Study Group suggests that brain tumours occur in about 5 per 100,000 of children per year, equating to approximately 525 new cases in England.",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 2,
+      "filename": "Paediatric-Neurorehabilitation.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "a9c25e8ab3baccf99f519e44482fd94d",
+    "text": "The overall incidence of childhood stroke has been estimated to be of the order of 2 - 3 per 100,000 children per year, equating to approximately 200-300 cases in England.\n\nThe annual incidence of traumatic paediatric acquired spinal injury (ASI) is 1.99 cases per 100,000 US children. No comparable UK epidemiological data exist, but extrapolation from these figures implies that there are approximately 200 new cases of traumatic ASI per annum in England and Wales among children aged < 15 years.\n\nFew published epidemiological data are available for the incidence of non- traumatic ASI, but these have been estimated overall to be of a similar order of magnitude to cases of traumatic ASI.",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 2,
+      "filename": "Paediatric-Neurorehabilitation.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "53f13eb3ef5960fbc1750cf7e5c04c06",
+    "text": "There is an important link between TBI and social deprivation.\n\nThere are 12 paediatric neuroscience centres outside London and 6 in London. Not all of the neuroscience centres have dedicated neurorehabilitation beds for ongoing in-patient rehabilitation. Co-location with paediatric trauma centres is outlined in the Safe and Sustainable Report \u201cChildren\u2019s Neuroscience Networks (for the neurosurgical child): A Framework for Services in England.\n\nEvidence\n\n2\n\n2\n\nNHS England/E09/S/d",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 2,
+      "filename": "Paediatric-Neurorehabilitation.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "9b6c41480c53241530c7a9e3467ce430",
+    "text": "Access to neurorehabilitation at an early stage is crucial for those who have sustained severe injury and some cases with moderate injury. In accordance with the paediatric neurosciences network pathway most cases will have been transferred to the regional paediatric neuroscience centre for acute care, and therefore early access to neurorehabilitation will take place alongside acute management.\n\nKey drivers for change in paediatric neurorehabilitation services include: National Standards Framework for Long Term Conditions (2004) National Standards Framework (NSF) for Children (2004) National Standards Framework ABI exemplar (2005) - this highlighted the",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 3,
+      "filename": "Paediatric-Neurorehabilitation.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "3b4036424379ad3ae09667b2356f4911",
+    "text": "importance of appropriate management of paediatric ABI\n\nNational Clinical Guidelines for Rehabilitation following Acquired Brain Injury in Adults, produced by the British Society of Rehabilitation Medicine (BSRM) and Royal College of Physicians (RCP) (2005).\n\nBritish Paediatric Neurology Association / British Association of Community Child Health Working Group. Moving forward \u2013 Services for Neuro-rehabilitation following Acquired Brain injury in Children and Young People (2006).\n\nNational Audit Major Trauma in England (2010). National Specialist Commissioning. Specification Standards for centres wishing",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 3,
+      "filename": "Paediatric-Neurorehabilitation.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "03930bfa3b4aa72879d761d134f25272",
+    "text": "to lead a Children\u2019s Neurosurgery Network (2011).\n\nEvidence Base\n\nReports (additional to those listed above)\n\nDepartment of Health: A Hidden Disability (1996). British Paediatric Neurology Association (BPNA). A Guide for Purchasers\n\nof\n\nTertiary Services for Children with Neurological Problems (1998). Department of Health. Disabled Children and Young People and those with\n\nComplex Health Needs (2004).\n\nDepartment of Health. Mental and Psychological Well-Being of Children and Young People (2004).\n\nShort-life Paediatric Neurorehabilitation Working Group. Paediatric Neurorehabilitation: Report of a review of services in the South West region with recommendations for improvement and development (2005).",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 3,
+      "filename": "Paediatric-Neurorehabilitation.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "c771c229bcd976dd82be4da5b28bdb0d",
+    "text": "American Academy of Physical Medicine and Rehabilitation. Standards for assessing medical appropriateness criteria for admitting patients to rehabilitation hospitals or units (2005).\n\nDepartment for Education and Skills (DFES). Aiming High for Disabled Children (2007).\n\nBritish Society of Rehabilitation Medicine (BSRM). Neurological rehabilitation: a briefing paper for Commissioners of Clinical Neurosciences (2008).\n\nBSRM. BSRM Standards for Rehabilitation Services Mapped onto the NSF for Long Terrn Conditions (2009).",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 3,
+      "filename": "Paediatric-Neurorehabilitation.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "a36afebdb31a4a2beb8d1dc0f1bbe5b7",
+    "text": "BSRM. Measurement of outcome in rehabilitation (2009). BSRM / Royal College of Physicians. Medical Rehabilitation in 2011 and\n\nbeyond (2010).\n\n3\n\nNHS England/E09/S/d",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 3,
+      "filename": "Paediatric-Neurorehabilitation.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "1688db9100071bd129b0fa84a72e0fb2",
+    "text": "2. Scope\n\n2.1 Aims and objectives of service\n\nThe overall aim is to deliver high quality tertiary specialist integrated neurorehabilitation to children and adolescents who require this, in a timely manner and in a child and family-centred setting as near as possible to home, in order to reduce disability and improve functionality, quality of life and participation for the patient and to reduce stress and burden on their family.\n\nKey service objectives at all stages are to provide:\n\nPatient and family centred and integrated care. To provide an appropriate level of neurorehabilitation therapy/support, tailored",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 4,
+      "filename": "Paediatric-Neurorehabilitation.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "0081648b0c4b6534603f3fb981895a37",
+    "text": "to need.\n\nSeamless progression between different sections of the service, including hospital and home.\n\nAccess to therapies as well as assessment. Avoidance of secondary complications. To meet the psychological needs of children and families during their hospital stay and after discharge from hospital, particularly in the early post-discharge period.\n\n2.2 Service description/care pathway\n\nTreatments offered include assessment and management of the minimally conscious state; dysautonomia; spasticity, ataxia and dystonia; swallowing difficulties (including video fluroscopy); acquired communication disorders, including disorders of social communication; cognitive deficits resulting from an acquired brain injury , behavioural and emotional disorders resulting from a neurological insult; bladder, bowel and cardiovascular problems related to spinal injury; complex epilepsy associated with acquired neurological disorders, including post-traumatic epilepsy; sensory disturbances; sleep disorders, chronic pain and fatigue associated with neurological disorders; family disturbance resulting from the impact of an acquired neurological disorder.",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 4,
+      "filename": "Paediatric-Neurorehabilitation.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "b8c3a6630212027dea7be2c7890936f1",
+    "text": "A comprehensive specialist paediatric neurorehabilitation service comprises three aspects:\n\nAcute rehabilitation carried out alongside acute neurological or neurosurgical treatment.\n\nTertiary specialist neurorehabilitation, carried out after the acute illness phase has ended.\n\nLong term rehabilitation carried out by the community disability team.\n\nThis service specification will only comprise (2) i.e. in-patient and out- patient/community-based tertiary specialist neurorehabilitation.\n\n4\n\nNHS England/E09/S/d",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 4,
+      "filename": "Paediatric-Neurorehabilitation.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "a3c6b73f5ac66ad9d9974ee5478246a2",
+    "text": "Some aspects of the service will be delivered as an in-patient in the neurorehabilitation unit and some as an outpatient, at the centre or in the community (home, school, local child development centre) setting. Some aspects will require shared care with other specialist services e.g. ophthalmology, ear nose and throat (ENT), wheelchair services, neurosurgery.\n\nChildren who survive severe acquired brain injury or acquired spinal injury have a lifelong condition and their needs will change with age and development. Contact with the specialist neurorehabilitation team may therefore be intermittent but prolonged.",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 5,
+      "filename": "Paediatric-Neurorehabilitation.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "4accdf75be10da783aedbf6fdc8b5b1b",
+    "text": "Tertiary specialist neurohabilitation service\n\nThis service is comprised of the following elements:\n\nAssessment of in-patients with acute neurological or neurosurgical conditions referred for specialist neurorehabilitation by regional paediatric neuroscience centres, paediatric intensive care units and paediatric departments in district hospitals. In-patient assessment and treatment of patients requiring intensive neurorehabilitation.\n\nCommunity or centre based outpatient therapy for patients whose needs can be met on this basis, to prevent hospitalisation or reduce length of stay.",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 5,
+      "filename": "Paediatric-Neurorehabilitation.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "3a8fee524181fec73eada3473a79f86a",
+    "text": "Telephone advice from the consultant and other members of the specialist interdisciplinary team to other professionals, including those from education and social services, about new and known patients.\n\nDirect advice from the specialist consultant and other members of the interdisciplinary team to other professionals about new and known patients. This may involve joint assessment or therapy sessions with community professionals; interdisciplinary outpatient clinics held at the centre; and outreach clinics and interdisciplinary meetings held in the community.",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 5,
+      "filename": "Paediatric-Neurorehabilitation.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "485563b0613335e3d672b26389bdd35f",
+    "text": "Out-patient assessment of new patients with non-acute neurological or neurosurgical conditions referred for specialist neurorehabilitation.\n\nMonitoring of the condition using appropriate assessment measures, delivered by outpatient clinics and telephone consultations. This may need to be continued throughout childhood and adolescence in the case of severe and/or complex conditions.\n\nTelephone advice to families and home visit support from members of the specialist team.\n\nTransition clinics and interdisciplinary meetings with adult neurorehabilitation services",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 5,
+      "filename": "Paediatric-Neurorehabilitation.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "7e21ef40673ee9742eb8df7015e4e04c",
+    "text": "The service will provide the following:\n\nManagement by a co-ordinated interdisciplinary team\n\nInvolvement of patients and parents in setting realistic, achievable and personally meaningful rehabilitation goals.\n\nAccess to therapies at a level appropriate for need.\n\n5\n\n5\n\nNHS England/E09/S/d",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 5,
+      "filename": "Paediatric-Neurorehabilitation.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "bf9827ac8ebf9974ea844f6c29ec780b",
+    "text": "Access to education and socialisation opportunities. Support for the psychological needs of children and families. Detailed planning for discharge from in-patient setting. Access to assistive technology where appropriate. Access to pharmacological or technological interventions where appropriate. Access to child and adolescent psychiatry services where appropriate. Excellent communication with community health, educational and social care\n\nservices.\n\nSpecialist outreach support of patients requiring high-level neurorehabilitation support within the community, for example, those newly discharged from hospital and those with particularly complex needs)",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 6,
+      "filename": "Paediatric-Neurorehabilitation.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "faadde641279863d3d30c719be82edc7",
+    "text": "Provision of specialist advice and support to professionals working within the community neurodisability services and to other relevant agencies e.g. education and social services.\n\nCapacity for re-assessment and further treatment if required, for example, if\n\nfunctional deterioration occurs and at transition points. Effective phased transition to adult rehabilitation services.\n\nThe Interdisciplinary Team\n\nThere is evidence that neurorehabilitation is most effectively delivered by a co- ordinated team of professionals from the relevant disciplines. The interdisciplinary team should be able to offer appropriate expertise, include all the relevant disciplines, and have access to the necessary additional supporting services.\n\nCore specialist neurorehabilitation team: The core members of the interdisciplinary team are:\n\nConsultant neurologist or other consultant with expertise in paediatric",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 6,
+      "filename": "Paediatric-Neurorehabilitation.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "8e3190f1ff36077308fa5e06df8b8f93",
+    "text": "neurorehabilitation Junior medical staff Clinical neuropsychologist / Clinical psychologist Speech and language therapist Physiotherapist Occupational therapist Play therapist Hospital education service Paediatric specialist nurse Dietician\n\nThe lead neurorehabilitation consultant is responsible for convening the correct mix of individuals to provide appropriate interdisciplinary input into the patient\u2019s management.\n\nPhysical environment\n\n6\n\n6\n\nNHS England/E09/S/d",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 6,
+      "filename": "Paediatric-Neurorehabilitation.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "8dd9fdace8bcd9e5b32c3b9863a7972a",
+    "text": "In addition to beds, an in-patient neurorehabilitation facility requires: Therapy space (including facilities for Activities of Daily Living Hospital school Play space Sensory room Communal dining and leisure areas for patients Access to outdoor space Adequate secure equipment storage Meeting room Quiet room for interviews Office space for staff Parental accommodation Access to hydrotherapy is desirable.\n\nCare Pathway\n\nThe care pathways for patients are as follows:\n\nNew referrals from acute neurology or neurosurgery service, secondary care paediatric services, or, occasionally, primary care\n\nAssessment in the in-patient or out-patient setting and active treatment or monitoring of the condition commenced.\n\nActive treatment as an in-patient or in the community, supported by the specialist neurorehabilitation team.\n\nA small number of cases of children with rare conditions (e.g. ASI) might be referred from the regional paediatric neurorehabilitation service to a supra- regional paediatric neurorehabilitation unit or managed on a shared- care basis.",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 7,
+      "filename": "Paediatric-Neurorehabilitation.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "bf987a7610c05189eccc65ef244d815d",
+    "text": "Discharge from in-patient or out-patient support by the specialist\n\nneurorehabilitation service to the local paediatric service and community disability team.\n\nThere are various pathways for long-term care:\n\nCondition resolves \u2013 discharge from primary care Condition stable \u2013 shared management management entirely by secondary care\n\nwith secondary care or\n\nCondition complex and long term \u2013 shared management with secondary care but with tertiary service continuing to play a significant role in an outreach capacity.",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 7,
+      "filename": "Paediatric-Neurorehabilitation.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "ba0c82b4eeaccb31e6ede5f4e03712b1",
+    "text": "Patients discharged to secondary or primary care who later develop problems related to their neurological condition can be re-referred to the tertiary specialist neurorehabilitation service for assessment and possibly further treatment.\n\nCases will be accepted if they meet the acceptance criteria (see below). For those with complex life-long conditions and those still requiring\n\nneurorehabilitation services in adult life, transitional care arrangements will be made appropriate local adult services. Transition to adult services will occur between ages 16-19 years, according to patient and parent preference, local arrangements and the availability of suitable services.",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 7,
+      "filename": "Paediatric-Neurorehabilitation.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "32cf85aa18fc2b78600e91fa9c3dc902",
+    "text": "Packages of care\n\n7\n\n7\n\nNHS England/E09/S/d",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 7,
+      "filename": "Paediatric-Neurorehabilitation.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "661caaf79f069dc8b5c6041d7cdc6e73",
+    "text": "Patients referred to the tertiary specialist service, as an in-patient or out patient, would be assessed and, if appropriate, then offered a package of treatment either as an in-patient or out-patient.\n\nMonitoring and evaluation\n\nAll patients receiving in-patient or intensive out-patient neurorehabilitation, at whatever point on the clinical pathway, will be discussed at a weekly interdisciplinary neurorehabilitation meeting.\n\nDecisions about the level of therapy required in each modality are agreed at these meetings on the basis of each patient\u2019s needs and rate of progress.\n\nGoals for therapy will be set at the meetings, agreed with patient/parents and reviewed weekly.\n\nDischarge from tertiary specialist neurorehabilitation team to community services",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 8,
+      "filename": "Paediatric-Neurorehabilitation.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "7158dd7af3787802e589b45f117f247b",
+    "text": "Effective discharge planning is an essential aspect of neurorehabilitation Regular planning meetings concerning patients receiving in-patient or intensive out-patient neurorehabilitation will be held with the local services to inform them of the patients\u2019 condition and to plan for discharge.\n\nDischarge to local community services will take place as soon as possible, provided appropriate services to support effective ongoing neurorehabilitation have been identified.\n\nRe-assessment will be undertaken if recovery post-discharge does not progress as anticipated and may result in re-involvement of the specialist service.",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 8,
+      "filename": "Paediatric-Neurorehabilitation.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "fe8654f1ab0d87a3e62658b21a210032",
+    "text": "Transition care arrangement\n\nAppropriate transition care arrangements will be made in the case of patients requiring neurorehabilitation services in adult life.\n\nThis should involve the paediatric specialist service undertaking a review and assessment of need prior to transition.\n\nGeneral Paediatric Care\n\nWhen treating children, the Service will additionally follow the standards and criteria outlined in the Specification for Children\u2019s\u2019 Services (attached as Annex 1 to this Specification.\n\n2.3 Population covered\n\nThe service outlined in this specification is for patients ordinarily resident in England*; or otherwise the commissioning responsibility of the NHS in England (as defined in \u2018Who Pays?: Establishing the responsible commissioner\u2019 and other\n\n8\n\nNHS England/E09/S/d",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 8,
+      "filename": "Paediatric-Neurorehabilitation.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "47c7934ee356f744c8f6b74894ff4ee2",
+    "text": "Department of Health guidance relating to patients entitled to NHS care or exempt from charges).\n\n* - Note: for the purposes of commissioning health services, this EXCLUDES patients who, whilst resident in England, are registered with a GP practice in Wales, but INCLUDES patients resident in Wales who are registered with a GP practice in England.\n\nTertiary specialist neurorehabilitation services are mainly required by children who have sustained acquired central nervous system injuries of severe or moderate severity. However, other groups of children and young people may also benefit from the service. Examples are children with apparently mild acquired brain injury who develop complex cognitive or behavioural problems requiring a specialist rehabilitation programme and those with neuropsychiatric problems (e.g. chronic pain, functional disorders) who require specialist multidisciplinary assessment and management, including possible in-patient rehabilitation.",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 9,
+      "filename": "Paediatric-Neurorehabilitation.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "5f40f932c3f4f3be478a0e557792d4ff",
+    "text": "2.4 Any acceptance and exclusion criteria\n\nThe decision to accept a child or young person for specialist neurorehabilitation, either as an in-patient or out-patient, will be related to their need or otherwise for acute medical management as well as their need for a neurorehabilitation programme. Patients will be accepted by neurorehabilitation when they acute illness has stabilised.\n\nIn accordance with the National Service Framework for Children and Young People, young people aged 16-19th birthday will be offered the choice of paediatric or adult neurorehabilitation services.",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 9,
+      "filename": "Paediatric-Neurorehabilitation.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "8af6c51e65e994d8944f9102d3d48922",
+    "text": "Acceptance Criteria\n\nAged < 19 years Significant functional deficit as a result of ABI, ASI or other diagnosed\n\nneurological condition.\n\nRequires inter-disciplinary treatment Medically stable. No longer requiring regular input from acute medical or surgical teams Clear functional goals identified. Likely to benefit from programme of care. Parents/patient consent to participation in programme of neurorehabilitation.\n\nIf there is uncertainty whether or not a patient can benefit from neurorehabilitation, then admission might be offered for a period of assessment.",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 9,
+      "filename": "Paediatric-Neurorehabilitation.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "d6bbe808b608175c509e1ea03aecf8dc",
+    "text": "Exclusion criteria\n\nAge > 19 years\n\n9\n\nNHS England/E09/S/d",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 9,
+      "filename": "Paediatric-Neurorehabilitation.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "313499430ac838c5a8df1a7b2cc5b454",
+    "text": "Ongoing medical and/or surgical needs that cannot be met in the neurorehabilitation setting.\n\nToo medically unstable to benefit from neurorehabilitation therapy. Non- neurological diagnosis.\n\nFailure of parent/patient to consent to participation in neurorehabilitation programme.\n\nAppropriate specialist interdisciplinary assessment indicates that the patient is unable to benefit from a neurorehabilitation programme. This will rarely be the case in the paediatric setting.\n\n2.5 Interdependencies with other services\n\nKey professions that the provider will be expected to develop effective links with include:\n\nRegional consultant paediatricians and community paediatricians. Regional community neurodisability teams. General Practitioners. Local CAMHS Regional neurology and neurosurgery service. Regional Paediatric Intensive Care Unit. Paediatric palliative care services. Adult neurorehabilitation teams. Adult learning disability teams Local Education Authorities. Social services and social care teams. Any other appropriate service, including relevant voluntary organisations.",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 10,
+      "filename": "Paediatric-Neurorehabilitation.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "78c1bce5037c602b67fa93008acbad1d",
+    "text": "Other specialist services required:\n\nTransition care arrangements\n\nThe core in-patient neurorehabilitation team requires access to a range of other specialist services. The need for these services will be condition/patient specific. They do not necessarily have to be provided on site. Such services will include:\n\nOrthopaedics Ophthalmology Neuropsychiatry Specialist seating service Video fluoroscopy service Communication aids service Environmental aids service Social work Visual impairment services Ear nose and throat (ENT)\n\n10\n\nNHS England/E09/S/d",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 10,
+      "filename": "Paediatric-Neurorehabilitation.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "ef0bf1d564e172383f00091f1f99382e",
+    "text": "Audiology Endocrinology Oncology Urology Continence services (bladder and bowel) Microbiology Paediatric surgery Neurophysiology Neuroimaging Gastroenterology Respiratory paediatrics Neurosurgery Paediatric anaesthesia Palliative care services Art and music therapy\n\n3. Applicable Service Standards\n\n3.1 Applicable national standards e.g. NICE, Royal College\n\nRelevant national standards are contained in the documents referenced in section 1.\n\n4. Key Service Outcomes\n\nPatients will demonstrate evidence of improvement in functional capacity over\n\nthe period they are under the care of the in-patient or outreach service. Patients will achieve goals that are meaningful to them and/or their family.\n\nSecondary complications resulting from the neurological impairment will be avoided.\n\nPatients will show evidence of reduction in stress. Patients will show evidence of improvement in quality of life. Families will show\n\nevidence of reduced of burden.",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 11,
+      "filename": "Paediatric-Neurorehabilitation.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "fa7f4d7044a0a33013c3e46ff4ab3e1d",
+    "text": "Patients will be re-integrated into education shortly after discharge. Parents will be aware of disability related benefits to which their child/family may\n\nbe entitled.\n\nParents and patients will be aware of the existence and contact details of appropriate voluntary groups that offer support.\n\nPatients will be securely integrated into the community neurodisability service at the time from discharge from the specialist neurorehabilitation service.\n\nPatients and parents will feel satisfied with the service that they have received. Patients\u2019 in-patient stay in the neurorehabilitation unit will be kept as short as is",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 11,
+      "filename": "Paediatric-Neurorehabilitation.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "56e1e46b265250a4cfed56651fd53815",
+    "text": "compatible with ensuring continuing functional improvement.\n\n11\n\nNHS England/E09/S/d",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 11,
+      "filename": "Paediatric-Neurorehabilitation.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "9128b7d7ba7b05eaaca965c55b3fc87d",
+    "text": "Support as an outpatient by the specialist neurorehabilitation team will be kept as short as is compatible with ensuring continuing functional improvement and appropriate monitoring.\n\nPatients/parents and local clinicians are able to re-access the service as and\n\nwhen required. Improved measurable outcomes, including improvements in physical, psychosocial and \u201creal-world\u201d functioning, including health-related quality of life. Increased social participation, including access to education and socialisation opportunities as an in-patient and support for re-integration into school following discharge.",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 12,
+      "filename": "Paediatric-Neurorehabilitation.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "9f353f5f1969ea940429acbf220117f8",
+    "text": "Education of patients and families, to promote mastery and independence. Close communication between relevant health services within and outside the\n\nnetwork, including paediatric neurology, neurosurgery, paediatric intensive care, other acute paediatric services, palliative care and adult neurorehabilitation providers.\n\nTimely liaison and communication with other relevant agencies e.g. education, social services, housing, including provision of specialist advice.\n\nExcellent experience of care for children and young people and their families. Reduction in family burden. To ensure access to ongoing neurorehabilitation at a level appropriate for need throughout the patient journey, including following discharge from the in-patient unit.",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 12,
+      "filename": "Paediatric-Neurorehabilitation.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "f2c0043375860a4302b512747f82c8c5",
+    "text": "Quality assurance by local and national data collection and bench marking. Appropriate phased transition to adult services. Provision of cost effective services Innovation in service delivery.\n\n                                                                 \n\n12\n\nNHS England/E09/S/d",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 12,
+      "filename": "Paediatric-Neurorehabilitation.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "53d30435d63b1a9ab32673456d7621d7",
+    "text": "ANNEX 1 TO SERVICE SPECIFICATION:\n\nPROVISION OF SERVICES TO CHILDREN\n\nAims and objectives of service\n\nThis specification annex applies to all children\u2019s services and outlines generic standards and outcomes that would fundamental to all services.\n\nThe generic aspects of care: The Care of Children in Hospital (Health Service Circular (HSC) 1998/238) requires that:\n\nChildren are admitted to hospital only if the care they require cannot be as well provided at home, in a day clinic or on a day basis in hospital.\n\nChildren requiring admission to hospital are provided with a high standard of medical, nursing and therapeutic care to facilitate speedy recovery and minimise complications and mortality.",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 13,
+      "filename": "Paediatric-Neurorehabilitation.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "5e0d18eedb1c283e08ea6b0d3f4437f3",
+    "text": "Families with children have easy access to hospital facilities for children without\n\nneeding to travel significantly further than to other similar amenities. Children are discharged from hospital as soon as socially and clinically appropriate and full support provided for subsequent home or day care. Good child health care is shared with parents/carers and they are closely\n\ninvolved in the care of their children at all times unless, exceptionally, this is not in the best interest of the child; Accommodation is provided for them to remain with their children overnight if they so wish.",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 13,
+      "filename": "Paediatric-Neurorehabilitation.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "d9fe5c9f11d594e6f6b6d279568b9f14",
+    "text": "Service description/care pathway\n\nAll paediatric specialised services have a component of primary, secondary, tertiary and even quaternary elements.\n\nThe efficient and effective delivery of services requires children to receive their care as close to home as possible dependent on the phase of their disease.\n\nServices should therefore be organised and delivered through \u201cintegrated pathways of care\u201d (National Service Framework for children, young people and maternity services (Department of Health & Department for Education and Skills, London 2004)",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 13,
+      "filename": "Paediatric-Neurorehabilitation.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "f15cd9e2408dd14d6a970f6595a52bf2",
+    "text": "Interdependencies with other services\n\nAll services will comply with Commissioning Safe and Sustainable Specialised Paediatric Services: A Framework of Critical Inter-Dependencies \u2013 Department of Health\n\nImaging\n\nAll services will be supported by a three-tier imaging network (\u2018Delivering quality\n\n13\n\n13\n\nNHS England/E09/S/d",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 13,
+      "filename": "Paediatric-Neurorehabilitation.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "6c241e135ccd19c6731e409eda672922",
+    "text": "imaging services for children\u2019, Department of Health,13732, March 2010). Within the network:\n\no\n\ne\n\nit will be clearly defined which imaging test or interventional procedure can be performed and reported at each site robust procedures will be in place for image transfer for review by a specialist radiologist, these will be supported by appropriate contractual and information governance arrangements robust arrangements will be in place for patient transfer if more complex imaging or intervention is required\n\ncommon standards, protocols and governance procedures will exist\n\nthroughoutall radiologists, and radiographers will have appropriate training, supervision and access to continuous professional development (CPD) all equipment will be optimised for paediatric use and use specific paediatric",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 14,
+      "filename": "Paediatric-Neurorehabilitation.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "9b20e5a8bd48d9d8d3129f6f7e644cb8",
+    "text": "software\n\nSpecialist Paediatric Anaesthesia\n\nWherever and whenever children undergo anaesthesia and surgery, their particular needs must be recognised and they should be managed in separate facilities, and looked after by staff with appropriate experience and training.1 All UK anaesthetists undergo training which provides them with the competencies to care for older babies and children with relatively straightforward surgical conditions and without major co- morbidity. However those working in specialist centres must have undergone additional (specialist) training2 and should maintain the competencies so acquired3 *. These competencies include the care of very young/premature babies, the care of babies and children undergoing complex surgery and/or those with major/complex co-morbidity (including those already requiring intensive care support).",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 14,
+      "filename": "Paediatric-Neurorehabilitation.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "6c05152fc6a39947bc4663a94ce370c7",
+    "text": "As well as providing an essential co-dependent service for surgery, specialist anaesthesia and sedation services may be required to facilitate radiological procedures and interventions (for example magnetic resonance imaging ( MRI) scans and percutaneous nephrostomy) and medical interventions (for example joint injection and intrathecal chemotherapy), and for assistance with vascular access in babies and children with complex needs such as intravenous feeding.\n\nSpecialist acute pain services for babies and children are organised within existing departments of paediatric anaesthesia and include the provision of agreed (hospital wide) guidance for acute pain, the safe administration of complex analgesia regimes including epidural analgesia, and the daily input of specialist anaesthetists and acute pain nurses with expertise in paediatrics.",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 14,
+      "filename": "Paediatric-Neurorehabilitation.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "4b145139c6b686cedaa4319306201af7",
+    "text": "*The Safe and Sustainable reviews of paediatric cardiac and neuro- sciences in England have noted the need for additional training and maintenance of competencies by specialist anaesthetists in both fields of practice.\n\nReferences\n\n14\n\nNHS England/E09/S/d",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 14,
+      "filename": "Paediatric-Neurorehabilitation.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "635683f4b2cc2e228fd4c51574c7be70",
+    "text": "1. Guidelines in Providing Anaesthetic Services (GPAS) Paediatric anaesthetic services. Royal College of Anaesthetists (RCoA) 2010 www.rcoa.ac.uk\n\n2. Certificate in completed training (CCT) in Anaesthesia 2010 3. CPD matrix level 3\n\nSpecialised Child and Adolescent Mental Health Services (CAMHS)\n\nThe age profile of children and young people admitted to specialised CAMHS day/in-patient settings is different to the age profile for paediatric units in that it is predominantly adolescents who are admitted to specialised CAMHS in-patient settings, including over-16s. The average length of stay is longer for admissions to mental health units. Children and young people in specialised CAMHS day/in- patient settings generally participate in a structured programme of education and therapeutic activities during their admission.",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 15,
+      "filename": "Paediatric-Neurorehabilitation.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "f3b9c32968a073baeae5552a16368465",
+    "text": "Taking account of the differences in patient profiles the principles and standards set out in this specification apply with modifications to the recommendations regarding the following:\n\nFacilities and environment \u2013 essential Quality Network for In-patient CAMHS\n\n(QNIC) standards should apply (http://www.rcpsych.ac.uk/quality/quality,accreditationaudit/qnic1.aspx) Staffing profiles and training - essential QNIC standards should apply. The child/ young person\u2019s family are allowed to visit at any time of day taking",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 15,
+      "filename": "Paediatric-Neurorehabilitation.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "ae60d158247a09d7ed24abf86e916334",
+    "text": "account of the child / young person\u2019s need to participate in therapeutic activities and education as well as any safeguarding concerns.\n\nChildren and young people are offered appropriate education from the point of admission.\n\nParents/carers are involved in the child/young person\u2019s care except where this is not in the best interests of the child / young person and in the case of young people who have the capacity to make their own decisions is subject to their consent.\n\nParents/carers who wish to stay overnight are provided with accessible accommodation unless there are safeguarding concerns or this is not in the best interests of the child/ young person.",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 15,
+      "filename": "Paediatric-Neurorehabilitation.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "a433cd0298d9b8915ede8701be30d305",
+    "text": "Applicable national standards e.g. NICE, Royal Colleges\n\nChildren and young people must receive care, treatment and support by staff registered by the Nursing and Midwifery Council on the parts of their register that permit a nurse to work with children (Outcome 14h Essential Standards of Quality and Safety, Care Quality Commission, London 2010)\n\nThere must be at least two Registered Children\u2019s Nurses (RCNs) on duty 24 hours a day in all hospital children\u2019s departments and wards.\n\nThere must be an Registered Children\u2019s Nurse available 24 hours a day to advise on the nursing of children in other departments (this post is included in the staff establishment of two RCNs in total).",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 15,
+      "filename": "Paediatric-Neurorehabilitation.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "a93a56d718b58980a304641f07d145aa",
+    "text": "Accommodation, facilities and staffing must be appropriate to the needs of children\n\n15\n\n15\n\nNHS England/E09/S/d",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 15,
+      "filename": "Paediatric-Neurorehabilitation.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "221acfc7a16b92cbeccf6fe12847b662",
+    "text": "and separate from those provided for adults. All facilities for children and young people must comply with the Hospital Build Notes HBN 23 Hospital Accommodation for Children and Young People NHS Estates, The Stationary Office 2004.\n\nAll staff who work with children and young people must be appropriately trained to provide care, treatment and support for children, including Children\u2019s Workforce Development Council Induction standards (Outcome 14b Essential Standards of Quality and Safety, Care Quality Commission, London 2010).",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 16,
+      "filename": "Paediatric-Neurorehabilitation.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "2cecf4312216b230db66c3a5e57c2960",
+    "text": "Each hospital who admits inpatients must have appropriate medical cover at all times taking account of guidance from relevant expert or professional bodies (National Minimum Standards for Providers of Independent Healthcare, Department of Health, London 2002).\u201dFacing the Future\u201d Standards, Royal College of Paediatrics and Child Health.\n\nStaff must carry out sufficient levels of activity to maintain their competence in caring for children and young people, including in relation to specific anaesthetic and surgical procedures for children, taking account of guidance from relevant expert or professional bodies (Outcome 14g Essential Standards of Quality and Safety, Care Quality Commission, London 2010).",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 16,
+      "filename": "Paediatric-Neurorehabilitation.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "197d44c60ea1903386913eb976d89f45",
+    "text": "Providers must have systems in place to gain and review consent from people who use services, and act on them (Outcome 2a Essential Standards of Quality and Safety, Care Quality Commission, London 2010). These must include specific arrangements for seeking valid consent from children while respecting their human rights and confidentiality and ensure that where the person using the service lacks capacity, best interest meetings are held with people who know and understand the person using the service. Staff should be able to show that they know how to take appropriate consent from children, young people and those with learning disabilities (Outcome 2b) (Seeking Consent: working with children Department of Health, London 2001).",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 16,
+      "filename": "Paediatric-Neurorehabilitation.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "8b3ce24174497245a772e8a2c206ec1e",
+    "text": "Children and young people must only receive a service from a provider who takes steps to prevent abuse and does not tolerate any abusive practice should it occur (Outcome 7 Essential Standards of Quality and Safety, Care Quality Commission, London 2010 defines the standards and evidence required from providers in this regard). Providers minimise the risk and likelihood of abuse occurring by:\n\nensuring that staff and people who use services understand the aspects of the safeguarding processes that are relevant to them.",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 16,
+      "filename": "Paediatric-Neurorehabilitation.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "c35cdcb3c7452aaed24c624b1c12ebb0",
+    "text": "ensuring that staff understand the signs of abuse and raise this with the right person when those signs are noticed.\n\nensuring that people who use services are aware of how to raise concerns of abuse.\n\nhaving effective means to monitor and review incidents, concerns and complaints that have the potential to become an abuse or safeguarding concern.\n\nhaving effective means of receiving and acting upon feedback from people who use services and any other person.\n\n16\n\n16\n\nNHS England/E09/S/d",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 16,
+      "filename": "Paediatric-Neurorehabilitation.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "203013af23f4bd9f1335a727e9710768",
+    "text": "taking action immediately to ensure that any abuse identified is stopped and suspected abuse is addressed by:\n\nhaving clear procedures followed in practice, monitored and reviewed that\n\ntake account of relevant legislation and guidance for the management of alleged abuse\n\nseparating the alleged abuser from the person who uses services and\n\ne separating the alleged abuser from the person who uses services and others who may be at risk or managing the risk by removing the opportunity for abuse to occur, where this is within the control of the provider",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 17,
+      "filename": "Paediatric-Neurorehabilitation.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "0b11633a7ba0b2ddf720752f9bfdaa17",
+    "text": "others who may be at risk or managing the risk by removing the opportunity for abuse to occur, where this is within the control of the provider reporting the alleged abuse to the appropriate authority reviewing the person\u2019s plan of care to ensure that they are properly supported following the alleged abuse incident.\n\nusing information from safeguarding concerns to identify non-compliance, or any risk of non-compliance, with the regulations and to decide what will be done to return to compliance.\n\nworking collaboratively with other services, teams, individuals and agencies in relation to all safeguarding matters and has safeguarding policies that link with local authority policies.",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 17,
+      "filename": "Paediatric-Neurorehabilitation.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "199df957789caa967640db49cabeb801",
+    "text": "participating in local safeguarding children boards where required and understand their responsibilities and the responsibilities of others in line with the Children Act 2004.\n\nhaving clear procedures followed in practice, monitored and reviewed in place\n\nabout the use of restraint and safeguarding. taking into account relevant guidance set out in the Care Quality Commission\u2019s Schedule of Applicable Publications\n\nensuring that those working with children must wait for a full CRB disclosure\n\nbefore starting work. training and supervising staff in safeguarding to ensure they can demonstrate the competences listed in Outcome 7E of the Essential Standards of Quality and Safety, Care Quality Commission, London 2010",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 17,
+      "filename": "Paediatric-Neurorehabilitation.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "7a4020cf427488e314fc7b43c2176656",
+    "text": "e\n\nAll children and young people who use services must be:\n\nable to take part in decision making to the fullest extent that is possible. asked if they agree for their parents or guardians to be involved in decisions\n\nthey need to make.\n\n(Outcome 4I Essential Standards of Quality and Safety, Care Quality Commission, London 2010)\n\nKey Service Outcomes\n\nEvidence is increasing that implementation of the national Quality Criteria for Young People Friendly Services (Department of Health, London 2011) have the potential to greatly improve patient experience, leading to better health outcomes for young people and increasing socially responsible life-long use of the NHS. Implementation\n\n17\n\nNHS England/E09/S/d",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 17,
+      "filename": "Paediatric-Neurorehabilitation.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "9c94b59e74e0f51b36e2d3dd0325417e",
+    "text": "is also expected to contribute to improvements in health inequalities and public health outcomes e.g. reduced teenage pregnancy and STIs, and increased smoking cessation. All providers delivering services to young people should be implementing the good practice guidance which delivers compliance with the quality criteria.\n\nPoorly planned transition from young people\u2019s to adult-oriented health services can be associated with increased risk of non adherence to treatment and loss to follow- up, which can have serious consequences. There are measurable adverse consequences in terms of morbidity and mortality as well as in social and educational outcomes. When children and young people who use paediatric services are moving to access adult services (for example, during transition for those with long term conditions), these should be organised so that:",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 18,
+      "filename": "Paediatric-Neurorehabilitation.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "844598a3b9b6cd5fb7b5fceae308f7eb",
+    "text": "all those involved in the care, treatment and support cooperate with the planning and provision to ensure that the services provided continue to be appropriate to the age and needs of the person who uses services.\n\nThe National Minimum Standards for Providers of Independent Healthcare, (Department of Health, London 2002) require the following standards:\n\nA16.1 Children are seen in a separate out-patient area, or where the hospital does not have a separate outpatient area for children, they are seen promptly.",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 18,
+      "filename": "Paediatric-Neurorehabilitation.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "2aee8186a469293fff1c215a1a4c357c",
+    "text": "A16.3 Toys and/or books suitable to the child\u2019s age are provided. A16.8 There are segregated areas for the reception of children and adolescents into theatre and for recovery, to screen the children and adolescents from adult patients; the segregated areas contain all necessary equipment for the care of children.\n\nA16.9 A parent is to be actively encouraged to stay at all times, with accommodation made available for the adult in the child\u2019s room or close by.\n\nA16.10 The child\u2019s family is allowed to visit him/her at any time of the day, except where safeguarding procedures do not allow this",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 18,
+      "filename": "Paediatric-Neurorehabilitation.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "427e6187d751b864b99a8e43c1a4709c",
+    "text": "A16.13 When a child is in hospital for more than five days, play is managed and supervised by a qualified Hospital Play Specialist.\n\nA16.14 Children are required to receive education when in hospital for more than five days; the Local Education Authority has an obligation to meet this need and are contacted if necessary.\n\nA18.10 There are written procedures for the assessment of pain in children and the provision of appropriate control.\n\nAll hospital settings should meet the Standards for the Care of Critically Ill Children (Paediatric Intensive Care Society, London 2010).",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 18,
+      "filename": "Paediatric-Neurorehabilitation.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "fe2a4e8d07de0a623b747eb8796fd640",
+    "text": "There should be age specific arrangements for meeting Regulation 14 of the Health and Social Care Act 2008 (Regulated Activities) Regulations 2010. These require:\n\na choice of suitable and nutritious food and hydration, in sufficient quantities to\n\nmeet service users\u2019 needs; food and hydration that meet any reasonable requirements arising from a service user\u2019s religious or cultural background\n\no\n\n18\n\n18\n\nNHS England/E09/S/d",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 18,
+      "filename": "Paediatric-Neurorehabilitation.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "b897e2d8d4db934b1907b1f13931a23a",
+    "text": "support, where necessary, for the purposes of enabling service users to eat and\n\ndrink sufficient amounts for their needs. for the purposes of this regulation, \u201cfood and hydration\u201d includes, where applicable, parenteral nutrition and the administration of dietary supplements\n\nwhere prescribed. providers must have access to facilities for infant feeding, including facilities to support breastfeeding (Outcome 5E, of the Essential Standards of Quality and Safety, Care Quality Commission, London 2010)",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 19,
+      "filename": "Paediatric-Neurorehabilitation.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "74488de165815340ee07d8bb6167e3d6",
+    "text": "All paediatric patients should have access to appropriately trained paediatric trained dieticians, physiotherapists, occupational therapists, speech and language therapy, psychology, social work and CAMHS services within nationally defined access standards.\n\nAll children and young people should have access to a professional who can undertake an assessment using the Common Assessment Framework and access support from social care, housing, education and other agencies as appropriate.\n\nAll registered providers must ensure safe use and management of medicines, by means of the making of appropriate arrangements for the obtaining, recording, handling, using, safe keeping, dispensing, safe administration and disposal of medicines (Outcome 9 Essential Standards of Quality and Safety, Care Quality Commission, London 2010). For children, these should include specific arrangements that:",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 19,
+      "filename": "Paediatric-Neurorehabilitation.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "d8856deb0e06c2c28894aa5b9dfb2c0b",
+    "text": "ensure the medicines given are appropriate and person-centred by taking account of their age, weight and any learning disability\n\nensure that staff handling medicines have the competency and skills needed for children and young people\u2019s medicines management\n\nensure that wherever possible, age specific information is available for people about the medicines they are taking, including the risks, including information about the use of unlicensed medicine in paediatrics.\n\nMany children with long term illnesses have a learning or physical disability. Providers should ensure that:",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 19,
+      "filename": "Paediatric-Neurorehabilitation.pdf"
+    }
+  },
+  {
+    "type": "CompositeElement",
+    "element_id": "b3a4da156e7ae3a91327fa3b2fc94e9e",
+    "text": "o\n\nthey are supported to have a health action plan facilities meet the appropriate requirements of the Disability Discrimination Act 1995 they meet the standards set out in Transition: getting it right for young people. Improving the transition of young people with long-term conditions from children's to adult health services. Department of Health Publications, 2006, London\n\n19\n\nNHS England/E09/S/d",
+    "metadata": {
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "page_number": 19,
+      "filename": "Paediatric-Neurorehabilitation.pdf"
+    }
+  }
+]

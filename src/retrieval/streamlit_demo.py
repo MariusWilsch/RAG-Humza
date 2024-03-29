@@ -1,4 +1,4 @@
-import json, datetime, sys, traceback, os, ast
+import json, datetime, sys, traceback, os, re
 
 sys.path.append("src")
 import streamlit as st
@@ -8,18 +8,33 @@ from utility.load_config import AppConfig, load_config
 from langchain_community.vectorstores import chroma
 from langchain.schema.document import Document
 from langchain_openai import OpenAIEmbeddings
+from ingestion.load_json_into_vectordb import create_vector_db
+from extrating.UnstructuredStrategy import UnstructuredStrategy, PDFType
 
 
 # Load configuration
 config: AppConfig = load_config()
 
+# Globals
+CUR_SYSTEM_PROMPT = config.OPENAI.SYSTEM_PROMPT_LAW
+CUR_PERSIST_DIR = "data/RAG_LAW/try1"
+
 # UI
 st.title("Document Assistant")
 st.subheader("Ask me a question about your documents")
+with st.sidebar:
+    st.title("Instructions")
+    st.markdown(
+        "1. Ask a question about your documents\n"
+        "2. The assistant will retrieve relevant context from your documents and provide an answer.\n"
+        "3. The assistant will also provide annotations to show where the information was found.\n"
+        "4. The retrieved context will be displayed on the right sidebar."
+    )
+
 
 if "vector_store" not in st.session_state:
     st.session_state.vector_store = chroma.Chroma(
-        persist_directory="data/Neurohabiltation/try1/vectordb",
+        persist_directory=CUR_PERSIST_DIR,
         embedding_function=OpenAIEmbeddings(model=config.OPENAI.OPENAI_EMBEDDING_MODEL),
     )
 
@@ -83,10 +98,10 @@ def process_query(userPrompt):
         res = st.session_state.openai_cli.chat.completions.create(
             model=config.OPENAI.OPENAI_CHAT_MODEL,
             messages=[
-                {"role": "system", "content": config.OPENAI.SYSTEM_PROMPT_NEURO},
+                {"role": "system", "content": CUR_SYSTEM_PROMPT},
                 {"role": "user", "content": prompt},
             ],
-            temperature=0.0,
+            temperature=0.5,
         )
 
         # Return the result of the chat completions
@@ -104,34 +119,49 @@ def process_query(userPrompt):
         os.makedirs("manual_verification", exist_ok=True)
         with open(f"manual_verification/{file_name}.json", "w") as f:
             json.dump(data, f, indent=2)
-        return llm_response, annotations
+        return llm_response, annotations, formatted_ctx
     except Exception as e:
         print(f"An error occurred in process_query: {e}")
         traceback.print_exc()
-        return None, None
+        return None, None, None
 
 
 for message in st.session_state.messages:
     with st.chat_message(message["role"]):
-        st.markdown(message["content"])
+        if message["role"] == "user":
+            st.markdown(message["content"])
+        elif message["role"] == "assistant":
+            st.markdown(message["content"])
+    if message["role"] == "assistant":
+        with st.expander("Annotations"):
+            st.write(message["annotations"])
 
 
 if prompt := st.chat_input("Ask me a question about your documents"):
+
     st.session_state.messages.append({"role": "user", "content": prompt})
     # Display user prompt
     with st.chat_message("user"):
         st.markdown(prompt)
+    with st.file_uploader("Upload your document", type=["pdf"]) as file:
+        UnstructuredStrategy(file, PDFType.UPLOAD)
 
     # Show a spinner
     with st.spinner("Thinking..."):
         # Process the user prompt
-        llm_response, annotations = process_query(prompt)
+        llm_response, annotations, ctx = process_query(prompt)
     if llm_response is None:
         st.error("Error while processing your request", icon="🚨")
     else:  # Display response
         with st.chat_message("assistant"):
             st.markdown(llm_response)
-            with st.expander("Annotations"):
-                st.write(annotations)
+        with st.expander("Annotations"):
+            st.write(annotations)
+    with st.sidebar:
+        st.title("Retrieved Context")
+        formatted_ctx = re.sub(r"(In Document[^:]+:)", r"\n\1\n", ctx)
+        st.write(formatted_ctx.replace("\n\n", "\n"))
 
-    st.session_state.messages.append({"role": "assistant", "content": llm_response})
+    st.session_state.messages.append(
+        {"role": "assistant", "content": llm_response, "annotations": annotations}
+    )

@@ -1,4 +1,4 @@
-import os, json, tempfile
+import os, json, tempfile, shutil
 from enum import Enum
 from langchain_openai import OpenAIEmbeddings
 from langchain_community.vectorstores.chroma import Chroma
@@ -119,6 +119,8 @@ def create_vector_db(
                 chunked_docs.extend(load_claude_json(f"{json_dir}/{file}"))
             print(f"Loaded {file}\n")
     print("Loaded all JSON files with a total of", len(chunked_docs), "chunks")
+    if os.path.basename(json_dir) == "uploaded":
+        shutil.rmtree(json_dir)
 
     client = Chroma()
     os.makedirs(persist_directory, exist_ok=True)
@@ -133,10 +135,3 @@ def create_vector_db(
         return None
     print("VectorDB created and saved.")
     print("Num of vectors:", vectordb._collection.count(), "\n")
-
-
-create_vector_db(
-    json_dir="data/Neurohabiltation/try1/unstructured_chunked_json",
-    persist_directory="data/Neurohabiltation/try1/vectordb",
-    loader_type=JSONLoaderType.UNSTRUCTURED,
-)
