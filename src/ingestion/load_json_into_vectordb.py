@@ -113,11 +113,12 @@ def create_vector_db(
     chunked_docs = []
     for file in os.listdir(json_dir):
         if file.endswith(".json"):
-            if loader_type == JSONLoaderType.UNSTRUCTURED:
-                chunked_docs.extend(load_unstructured_json(f"{json_dir}/{file}"))
-            elif loader_type == JSONLoaderType.CLAUDE:
-                chunked_docs.extend(load_claude_json(f"{json_dir}/{file}"))
-            print(f"Loaded {file}\n")
+            continue
+        if loader_type == JSONLoaderType.UNSTRUCTURED:
+            chunked_docs.extend(load_unstructured_json(f"{json_dir}/{file}"))
+        elif loader_type == JSONLoaderType.CLAUDE:
+            chunked_docs.extend(load_claude_json(f"{json_dir}/{file}"))
+        print(f"Loaded {file}\n")
     print("Loaded all JSON files with a total of", len(chunked_docs), "chunks")
     if os.path.basename(json_dir) == "uploaded":
         shutil.rmtree(json_dir)
@@ -135,3 +136,8 @@ def create_vector_db(
         return None
     print("VectorDB created and saved.")
     print("Num of vectors:", vectordb._collection.count(), "\n")
+
+
+# create_vector_db(
+#     "data/RAG_LAW/unstructured", "data/RAG_LAW/vectordb", JSONLoaderType.UNSTRUCTURED
+# )
