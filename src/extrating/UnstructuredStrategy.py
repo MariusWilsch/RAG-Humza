@@ -139,14 +139,14 @@ def UnstructuredStrategy(file: Union[str, IO[bytes]], pdf_type: PDFType):
     file.close()
     print(f"Loading the document {filename}")
     # Fast strategy is for simple documents
-    request = shared.PartitionParameters(
-        files=files,
-        strategy="fast",
-        split_pdf_page=True,
-        max_characters="1750",
-        new_after_n_chars="750",
-        combine_under_n_chars="500",
-    )
+    # request = shared.PartitionParameters(
+    #     files=files,
+    #     strategy="fast",
+    #     split_pdf_page=True,
+    #     max_characters="1750",
+    #     new_after_n_chars="750",
+    #     combine_under_n_chars="500",
+    # )
     # request = shared.PartitionParameters(
     #     files=files,
     #     strategy="ocr_only",
@@ -159,18 +159,18 @@ def UnstructuredStrategy(file: Union[str, IO[bytes]], pdf_type: PDFType):
     # )
     # Hi_res strategy is for complex documents with tables
     # model names, "chipper" or "yolox" or yolox_quantized
-    # request = shared.PartitionParameters(
-    #     files=files,
-    #     strategy="hi_res",
-    #     pdf_infer_table_structure=True,
-    #     split_pdf_page=True,
-    #     languages=["eng, deu"],
-    #     chunking_strategy="by_title",
-    #     max_characters="1750",
-    #     new_after_n_chars="500",
-    #     combine_under_n_chars="500",
-    #     hi_res_model_name="yolox",
-    # )
+    request = shared.PartitionParameters(
+        files=files,
+        strategy="hi_res",
+        pdf_infer_table_structure=True,
+        split_pdf_page=True,
+        languages=["eng, deu"],
+        chunking_strategy="by_title",
+        max_characters="1750",
+        new_after_n_chars="500",
+        combine_under_n_chars="500",
+        hi_res_model_name="yolox",
+    )
 
     try:
         response = unstucturedCli.general.partition(request)

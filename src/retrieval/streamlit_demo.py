@@ -18,7 +18,7 @@ config: AppConfig = load_config()
 
 # Globals
 CUR_SYSTEM_PROMPT = config.OPENAI.SYSTEM_PROMPT_LAW
-CUR_PERSIST_DIR = "data/RAG_LAW/vectordb"
+CUR_PERSIST_DIR = "data/RAG_LAW/store"
 
 
 # UI
@@ -38,25 +38,34 @@ with st.sidebar:
     if uploaded_file := st.file_uploader(
         "Upload a PDF file", type=["pdf"], label_visibility="collapsed"
     ):
-        with st.status("Extracting text from PDF...", state="running") as status:
-            UnstructuredStrategy(uploaded_file, PDFType.UPLOAD)
-            st.write("Text extracted from the PDF file.")
-            status.update(
-                label="Adding the document to the knowledge base...", state="running"
-            )
-            create_vector_db(
-                "unstructured/uploaded", CUR_PERSIST_DIR, JSONLoaderType.UNSTRUCTURED
-            )
-            st.write("Document added to the knowledge base.")
-            status.update(
-                label="Document added to the knowledge base.", state="complete"
-            )
+        if uploaded_file not in st.session_state.processed_file:
+            with st.status("Extracting text from PDF...", state="running") as status:
+                UnstructuredStrategy(uploaded_file, PDFType.UPLOAD)
+                st.write("Text extracted from the PDF file.")
+                status.update(
+                    label="Adding the document to the knowledge base...",
+                    state="running",
+                )
+                create_vector_db(
+                    "unstructured/uploaded",
+                    CUR_PERSIST_DIR,
+                    JSONLoaderType.UNSTRUCTURED,
+                )
+                st.write("Document added to the knowledge base.")
+                status.update(
+                    label="Document added to the knowledge base.", state="complete"
+                )
+                st.session_state.processed_file.append(uploaded_file)
+
+if "processed_file" not in st.session_state:
+    st.session_state.processed_file = []
 
 if "vector_store" not in st.session_state:
     st.session_state.vector_store = chroma.Chroma(
         persist_directory=CUR_PERSIST_DIR,
         embedding_function=OpenAIEmbeddings(model=config.OPENAI.OPENAI_EMBEDDING_MODEL),
     )
+
 
 if "openai_cli" not in st.session_state:
     st.session_state.openai_cli = OpenAI()

@@ -112,7 +112,7 @@ def create_vector_db(
 
     chunked_docs = []
     for file in os.listdir(json_dir):
-        if file.endswith(".json"):
+        if not file.endswith(".json"):
             continue
         if loader_type == JSONLoaderType.UNSTRUCTURED:
             chunked_docs.extend(load_unstructured_json(f"{json_dir}/{file}"))
@@ -123,13 +123,13 @@ def create_vector_db(
     if os.path.basename(json_dir) == "uploaded":
         shutil.rmtree(json_dir)
 
-    client = Chroma()
     os.makedirs(persist_directory, exist_ok=True)
     try:
+        client = Chroma()
         vectordb = client.from_documents(
+            persist_directory=persist_directory,
             documents=chunked_docs,
             embedding=OpenAIEmbeddings(model="text-embedding-3-small"),
-            persist_directory=persist_directory,
         )
     except Exception as e:
         print(f"An error occurred while creating the VectorDB: {e}")
