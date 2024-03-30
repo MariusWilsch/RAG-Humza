@@ -10,6 +10,8 @@ from langchain.schema.document import Document
 from langchain_openai import OpenAIEmbeddings
 from ingestion.load_json_into_vectordb import create_vector_db, JSONLoaderType
 from extrating.UnstructuredStrategy import UnstructuredStrategy, PDFType
+from PyPDF2 import PdfWriter
+from retrieval.utility.upload_file import save_file_to_disk
 import os
 
 
@@ -19,6 +21,11 @@ config: AppConfig = load_config()
 # Globals
 CUR_SYSTEM_PROMPT = config.OPENAI.SYSTEM_PROMPT_LAW
 CUR_PERSIST_DIR = "data/RAG_LAW/store"
+
+
+@st.cache(allow_output_mutation=True)
+def read_file(uploaded_file):
+    return uploaded_file.read()
 
 
 # UI
@@ -35,27 +42,43 @@ with st.sidebar:
         )
 
     st.title("Upload a PDF file")
-    if uploaded_file := st.file_uploader(
+    uploaded_file = st.file_uploader(
         "Upload a PDF file", type=["pdf"], label_visibility="collapsed"
-    ):
-        if uploaded_file not in st.session_state.processed_file:
-            with st.status("Extracting text from PDF...", state="running") as status:
-                UnstructuredStrategy(uploaded_file, PDFType.UPLOAD)
-                st.write("Text extracted from the PDF file.")
-                status.update(
-                    label="Adding the document to the knowledge base...",
-                    state="running",
-                )
-                create_vector_db(
-                    "unstructured/uploaded",
-                    CUR_PERSIST_DIR,
-                    JSONLoaderType.UNSTRUCTURED,
-                )
-                st.write("Document added to the knowledge base.")
-                status.update(
-                    label="Document added to the knowledge base.", state="complete"
-                )
-                st.session_state.processed_file.append(uploaded_file)
+    )
+
+    if st.button("Process uploaded file"):
+        if uploaded_file:
+            if uploaded_file.name in st.session_state.processed_file:
+                st.error("This file has already been processed.")
+            else:
+                with st.status(
+                    "Extracting text from PDF...", state="running"
+                ) as status:
+                    save_file_to_disk(
+                        uploaded_file.read(), CUR_PERSIST_DIR, uploaded_file.name
+                    )
+                    uploaded_file.seek(0)
+                    UnstructuredStrategy(uploaded_file, PDFType.UPLOAD)
+                    st.write("Text extracted from the PDF file.")
+                    status.update(
+                        label="Adding the document to the knowledge base...",
+                        state="running",
+                    )
+                    create_vector_db(
+                        "unstructured/uploaded",
+                        CUR_PERSIST_DIR,
+                        JSONLoaderType.UNSTRUCTURED,
+                    )
+                    st.write("Document added to the knowledge base.")
+                    status.update(
+                        label="Document added to the knowledge base.", state="complete"
+                    )
+                    st.session_state.processed_file.append(uploaded_file.name)
+        else:
+            st.error(
+                "Please upload a file before pressing the 'Process uploaded file' button."
+            )
+
 
 if "processed_file" not in st.session_state:
     st.session_state.processed_file = []
@@ -66,15 +89,20 @@ if "vector_store" not in st.session_state:
         embedding_function=OpenAIEmbeddings(model=config.OPENAI.OPENAI_EMBEDDING_MODEL),
     )
 
-
 if "openai_cli" not in st.session_state:
     st.session_state.openai_cli = OpenAI()
 
 if "messages" not in st.session_state:
     st.session_state.messages = []
 
+if "mostSimilarPDF" not in st.session_state:
+    st.session_state.mostSimilarPDF = ""
 
 # Helper functions
+
+
+def get_pdf():
+    pass
 
 
 def extractContextFromVectorStore(document: Document):
@@ -94,6 +122,11 @@ def extractContextFromVectorStore(document: Document):
             page_ctx.append((doc.page_content, source, page_number))
     except Exception as e:
         print(f"An error occurred while extracting context: {e}")
+    # Set the most similar PDF filename
+    st.session_state.mostSimilarPDF = document[0].metadata.get("filename") or document[
+        0
+    ].metadata.get("source")
+    print(f"Most similar PDF: {st.session_state.mostSimilarPDF}")
     # Create a list of formatted context
     formatted_ctx = [
         f"In Document {source} in page {page}:\n\n{content}"
@@ -193,3 +226,18 @@ if prompt := st.chat_input("Ask me a question about your documents"):
                     "annotations": annotations,
                 }
             )
+
+
+def download_file():
+    with open(f"{CUR_PERSIST_DIR}/PDF/{st.session_state.mostSimilarPDF}", "rb") as f:
+        pdf = f.read()
+    return pdf
+
+
+if st.session_state.mostSimilarPDF != "":
+    st.download_button(
+        label="Download most similar pdf",
+        data=download_file(),
+        file_name=st.session_state.mostSimilarPDF,
+        mime="application/pdf",
+    )
