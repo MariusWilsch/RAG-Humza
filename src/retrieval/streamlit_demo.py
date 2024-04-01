@@ -1,18 +1,28 @@
-import json, datetime, sys, traceback, os, re
+import datetime, sys, traceback, re
 
 sys.path.append("src")
 import streamlit as st
 from openai import OpenAI
-from pprint import pprint
 from utility.load_config import AppConfig, load_config
 from langchain_community.vectorstores import chroma
 from langchain.schema.document import Document
 from langchain_openai import OpenAIEmbeddings
 from ingestion.load_json_into_vectordb import create_vector_db, JSONLoaderType
 from extrating.UnstructuredStrategy import UnstructuredStrategy, PDFType
-from PyPDF2 import PdfWriter
 from retrieval.utility.upload_file import save_file_to_disk
-import os
+
+# Import helper functions
+from retrieval.utility.extractContextHelpers import (
+    extract_page_context,
+    set_most_similar_pdf,
+    format_and_simplify_context,
+)
+from retrieval.utility.processQueryHelpers import (
+    create_prompt,
+    request_chat_completions,
+    generate_annotations,
+    save_json_data,
+)
 
 
 # Load configuration
@@ -22,15 +32,10 @@ config: AppConfig = load_config()
 CUR_SYSTEM_PROMPT = config.OPENAI.SYSTEM_PROMPT_LAW
 CUR_PERSIST_DIR = "data/RAG_LAW/store"
 
-
-@st.cache(allow_output_mutation=True)
-def read_file(uploaded_file):
-    return uploaded_file.read()
-
-
 # UI
 st.title("Document Assistant")
 st.subheader("Ask me a question about your documents")
+# Sidebar
 with st.sidebar:
     st.title("Instructions")
     with st.expander("How to use"):
@@ -79,7 +84,7 @@ with st.sidebar:
                 "Please upload a file before pressing the 'Process uploaded file' button."
             )
 
-
+# Initialize session state
 if "processed_file" not in st.session_state:
     st.session_state.processed_file = []
 
@@ -101,87 +106,29 @@ if "mostSimilarPDF" not in st.session_state:
 # Helper functions
 
 
-def get_pdf():
-    pass
-
-
 def extractContextFromVectorStore(document: Document):
-    # Extract the context from the vector store
-    page_ctx = []
-    pprint(document, indent=2)
-    try:
-        for doc in document:
-            source: str = doc.metadata.get("filename") or doc.metadata.get("source")
-            page_number: str = doc.metadata.get("page_number") or doc.metadata.get(
-                "page"
-            )
-            if page_number is None:
-                raise ValueError(
-                    "Both 'page_number' and 'page' are missing from metadata"
-                )
-            page_ctx.append((doc.page_content, source, page_number))
-    except Exception as e:
-        print(f"An error occurred while extracting context: {e}")
-    # Set the most similar PDF filename
-    st.session_state.mostSimilarPDF = document[0].metadata.get("filename") or document[
-        0
-    ].metadata.get("source")
-    print(f"Most similar PDF: {st.session_state.mostSimilarPDF}")
-    # Create a list of formatted context
-    formatted_ctx = [
-        f"In Document {source} in page {page}:\n\n{content}"
-        for content, source, page in page_ctx
-    ]
-    # Join the formatted context
-    formatted_ctx = "\n\n".join(formatted_ctx)
-    page_ctx = [(source, page) for _, source, page in page_ctx]
+    page_ctx = extract_page_context(document)
+    st.session_state.mostSimilarPDF = set_most_similar_pdf(document)
+    formatted_ctx, page_ctx = format_and_simplify_context(page_ctx)
     return formatted_ctx, page_ctx
 
 
 def process_query(userPrompt):
     print(f"User prompt: {userPrompt}")
     try:
-        # Do similarity search with the user prompt
         result = st.session_state.vector_store.similarity_search(
             userPrompt, k=config.CHROMA.K_RESULTS
         )
-        # Manipulate the result of the similarity search
         formatted_ctx, page_ctx = extractContextFromVectorStore(result)
-        # Append the result to the user prompt
-        prompt = (
-            "Retrieved context:\n\n"
-            + formatted_ctx
-            + "\n\n"
-            + "New user question: "
-            + userPrompt
-            + "\n\n"
+        res = request_chat_completions(
+            create_prompt(formatted_ctx, userPrompt),
+            st.session_state.openai_cli,
+            config.OPENAI.OPENAI_CHAT_MODEL,
+            CUR_SYSTEM_PROMPT,
         )
-        # Request chat completions from the model
-        res = st.session_state.openai_cli.chat.completions.create(
-            model=config.OPENAI.OPENAI_CHAT_MODEL,
-            messages=[
-                {"role": "system", "content": CUR_SYSTEM_PROMPT},
-                {"role": "user", "content": prompt},
-            ],
-            temperature=0.5,
-        )
-
-        # Return the result of the chat completions
-        # llm_response = res.choices[0].message.content.replace("\\\\", "\\")
         llm_response = res.choices[0].message.content
-        annotations = " and ".join(
-            f"Found in source {source} in page {page}" for source, page in page_ctx
-        )
-        # Create a json for manual inspection
-        data = {"prompt": prompt, "llm_response": llm_response}
-
-        # Generate a unique file name using date and time
-        file_name = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
-
-        os.makedirs("manual_verification", exist_ok=True)
-        with open(f"manual_verification/{file_name}.json", "w") as f:
-            json.dump(data, f, indent=2)
-        return llm_response, annotations, formatted_ctx
+        save_json_data({"prompt": prompt, "llm_response": llm_response})
+        return llm_response, generate_annotations(page_ctx), formatted_ctx
     except Exception as e:
         print(f"An error occurred in process_query: {e}")
         traceback.print_exc()
