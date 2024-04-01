@@ -1,28 +1,12 @@
-import datetime, sys, traceback, re
+import sys, re
+import streamlit as st
 
 sys.path.append("src")
-import streamlit as st
-from openai import OpenAI
 from utility.load_config import AppConfig, load_config
-from langchain_community.vectorstores import chroma
-from langchain.schema.document import Document
-from langchain_openai import OpenAIEmbeddings
-from ingestion.load_json_into_vectordb import create_vector_db, JSONLoaderType
-from extrating.UnstructuredStrategy import UnstructuredStrategy, PDFType
-from retrieval.utility.upload_file import save_file_to_disk
-
-# Import helper functions
-from retrieval.utility.extractContextHelpers import (
-    extract_page_context,
-    set_most_similar_pdf,
-    format_and_simplify_context,
-)
-from retrieval.utility.processQueryHelpers import (
-    create_prompt,
-    request_chat_completions,
-    generate_annotations,
-    save_json_data,
-)
+from retrieval.process_query import process_query
+from retrieval.utility.init_session_state import initialize_session_state
+from retrieval.utility.process_uploaded_file import process_uploaded_file
+from retrieval.utility.download_file import process_download
 
 
 # Load configuration
@@ -36,6 +20,8 @@ CUR_PERSIST_DIR = "data/RAG_LAW/store"
 st.title("Document Assistant")
 st.subheader("Ask me a question about your documents")
 # Sidebar
+
+
 with st.sidebar:
     st.title("Instructions")
     with st.expander("How to use"):
@@ -52,89 +38,19 @@ with st.sidebar:
     )
 
     if st.button("Process uploaded file"):
-        if uploaded_file:
-            if uploaded_file.name in st.session_state.processed_file:
-                st.error("This file has already been processed.")
-            else:
-                with st.status(
-                    "Extracting text from PDF...", state="running"
-                ) as status:
-                    save_file_to_disk(
-                        uploaded_file.read(), CUR_PERSIST_DIR, uploaded_file.name
-                    )
-                    uploaded_file.seek(0)
-                    UnstructuredStrategy(uploaded_file, PDFType.UPLOAD)
-                    st.write("Text extracted from the PDF file.")
-                    status.update(
-                        label="Adding the document to the knowledge base...",
-                        state="running",
-                    )
-                    create_vector_db(
-                        "unstructured/uploaded",
-                        CUR_PERSIST_DIR,
-                        JSONLoaderType.UNSTRUCTURED,
-                    )
-                    st.write("Document added to the knowledge base.")
-                    status.update(
-                        label="Document added to the knowledge base.", state="complete"
-                    )
-                    st.session_state.processed_file.append(uploaded_file.name)
-        else:
-            st.error(
-                "Please upload a file before pressing the 'Process uploaded file' button."
-            )
-
-# Initialize session state
-if "processed_file" not in st.session_state:
-    st.session_state.processed_file = []
-
-if "vector_store" not in st.session_state:
-    st.session_state.vector_store = chroma.Chroma(
-        persist_directory=CUR_PERSIST_DIR,
-        embedding_function=OpenAIEmbeddings(model=config.OPENAI.OPENAI_EMBEDDING_MODEL),
-    )
-
-if "openai_cli" not in st.session_state:
-    st.session_state.openai_cli = OpenAI()
-
-if "messages" not in st.session_state:
-    st.session_state.messages = []
-
-if "mostSimilarPDF" not in st.session_state:
-    st.session_state.mostSimilarPDF = ""
-
-# Helper functions
-
-
-def extractContextFromVectorStore(document: Document):
-    page_ctx = extract_page_context(document)
-    st.session_state.mostSimilarPDF = set_most_similar_pdf(document)
-    formatted_ctx, page_ctx = format_and_simplify_context(page_ctx)
-    return formatted_ctx, page_ctx
-
-
-def process_query(userPrompt):
-    print(f"User prompt: {userPrompt}")
-    try:
-        result = st.session_state.vector_store.similarity_search(
-            userPrompt, k=config.CHROMA.K_RESULTS
+        process_uploaded_file(
+            uploaded_file,
+            st,
+            CUR_PERSIST_DIR,
         )
-        formatted_ctx, page_ctx = extractContextFromVectorStore(result)
-        res = request_chat_completions(
-            create_prompt(formatted_ctx, userPrompt),
-            st.session_state.openai_cli,
-            config.OPENAI.OPENAI_CHAT_MODEL,
-            CUR_SYSTEM_PROMPT,
-        )
-        llm_response = res.choices[0].message.content
-        save_json_data({"prompt": prompt, "llm_response": llm_response})
-        return llm_response, generate_annotations(page_ctx), formatted_ctx
-    except Exception as e:
-        print(f"An error occurred in process_query: {e}")
-        traceback.print_exc()
-        return None, None, None
 
 
+# Call the function to initialize session state
+initialize_session_state(
+    st.session_state, CUR_PERSIST_DIR, config.OPENAI.EMBEDDING_MODEL
+)
+
+# Display messages
 for message in st.session_state.messages:
     with st.chat_message(message["role"]):
         if message["role"] == "user":
@@ -145,6 +61,7 @@ for message in st.session_state.messages:
         with st.expander("Annotations"):
             st.write(message["annotations"])
 
+# Main chat loop
 if prompt := st.chat_input("Ask me a question about your documents"):
     st.session_state.messages.append({"role": "user", "content": prompt})
     # Display user prompt
@@ -153,7 +70,13 @@ if prompt := st.chat_input("Ask me a question about your documents"):
     # Show a spinner
     with st.spinner("Thinking..."):
         # Process the user prompt
-        llm_response, annotations, ctx = process_query(prompt)
+        llm_response, annotations, ctx = process_query(
+            prompt,
+            CUR_SYSTEM_PROMPT,
+            config.OPENAI.CHAT_MODEL,
+            config.CHROMA.K_RESULTS,
+            st.session_state,
+        )
         if llm_response is None:
             st.error("Error while processing your request", icon="🚨")
         else:
@@ -162,29 +85,26 @@ if prompt := st.chat_input("Ask me a question about your documents"):
                 st.markdown(llm_response)
             with st.expander("Annotations"):
                 st.write(annotations)
+            if "mostSimilarPDF" in st.session_state:
+                pdf_data = process_download(
+                    st.session_state.mostSimilarPDF, CUR_PERSIST_DIR
+                )
+                if pdf_data:
+                    st.sidebar.download_button(
+                        label="Download most similar PDF",
+                        data=pdf_data,
+                        file_name=st.session_state.mostSimilarPDF,
+                        mime="application/pdf",
+                    )
             with st.sidebar:
                 st.title("Retrieved Context")
-                formatted_ctx = re.sub(r"(In Document\[^:\]+:)", r"\n\1\n", ctx)
-                st.write(formatted_ctx.replace("\n\n", "\n"))
-            st.session_state.messages.append(
-                {
-                    "role": "assistant",
-                    "content": llm_response,
-                    "annotations": annotations,
-                }
-            )
-
-
-def download_file():
-    with open(f"{CUR_PERSIST_DIR}/PDF/{st.session_state.mostSimilarPDF}", "rb") as f:
-        pdf = f.read()
-    return pdf
-
-
-if st.session_state.mostSimilarPDF != "":
-    st.download_button(
-        label="Download most similar pdf",
-        data=download_file(),
-        file_name=st.session_state.mostSimilarPDF,
-        mime="application/pdf",
-    )
+                with st.expander("Show Context"):
+                    formatted_ctx = re.sub(r"(In Document\[^:\]+:)", r"\n\1\n", ctx)
+                    st.write(formatted_ctx.replace("\n\n", "\n"))
+                    st.session_state.messages.append(
+                        {
+                            "role": "assistant",
+                            "content": llm_response,
+                            "annotations": annotations,
+                        }
+                    )

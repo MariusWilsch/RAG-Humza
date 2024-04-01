@@ -144,9 +144,9 @@ OPENAI:
     Never copy the structure of the prompt, you must provide an normal response to the user's question.
     Remember, all responses should be based on the provided context, without incorporating external knowledge.
 
-  OPENAI_CHAT_MODEL: "gpt-3.5-turbo"
+  CHAT_MODEL: "gpt-3.5-turbo"
 
-  OPENAI_EMBEDDING_MODEL: "text-embedding-3-small"
+  EMBEDDING_MODEL: "text-embedding-3-small"
 
 
 CHROMA:

@@ -15,8 +15,8 @@ class OpenAIConfig:
     SYSTEM_PROMPT_FAV: str
     SYSTEM_PROMPT_LAW: str
     SYSTEM_PROMPT_NEURO: str
-    OPENAI_CHAT_MODEL: str
-    OPENAI_EMBEDDING_MODEL: str
+    CHAT_MODEL: str
+    EMBEDDING_MODEL: str
     SYSTEM_PROMPT_CONSULT: str
 
 
