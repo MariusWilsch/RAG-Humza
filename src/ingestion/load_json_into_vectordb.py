@@ -4,6 +4,8 @@ from langchain_openai import OpenAIEmbeddings
 from langchain_community.vectorstores.chroma import Chroma
 from langchain_community.document_loaders.json_loader import JSONLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain.schema import Document
+from typing import Union, List
 
 
 class JSONLoaderType(Enum):
@@ -13,6 +15,7 @@ class JSONLoaderType(Enum):
 
     UNSTRUCTURED = "unstructured"
     CLAUDE = "claude"
+    PYMUPDF = "pymupdf"
 
 
 def load_unstructured_json(json_file: str):
@@ -91,26 +94,20 @@ def load_claude_json(json_file: str):
     return chunked_docs
 
 
-def create_vector_db(
-    json_dir: str,
-    persist_directory: str,
-    loader_type: JSONLoaderType,
-):
+def load_json_files(json_dir: str, loader_type: JSONLoaderType) -> List[Document]:
     """
-    Create a VectorDB from the JSON data
+    Load JSON files from a directory
 
     Args:
     -----
-        json_dir: Path to the directory containing the JSON files
-        loader_type: Type of JSON loader to use (unstructured or claude)
-        persist_directory: Path to the directory to save the VectorDB
+      json_dir: Path to the directory containing the JSON files
+      loader_type: Type of JSON loader to use (unstructured or claude)
 
     Returns:
     --------
-        VectorDB
+      List of loaded documents
     """
-
-    chunked_docs = []
+    chunked_docs: Document = []
     for file in os.listdir(json_dir):
         if not file.endswith(".json"):
             continue
@@ -119,9 +116,35 @@ def create_vector_db(
         elif loader_type == JSONLoaderType.CLAUDE:
             chunked_docs.extend(load_claude_json(f"{json_dir}/{file}"))
         print(f"Loaded {file}\n")
+    return chunked_docs
+
+
+def create_vector_db(
+    docs: Union[str, Document],
+    persist_directory: str,
+    loader_type: JSONLoaderType,
+):
+    """
+    Create a VectorDB from the JSON data
+
+    Args:
+    -----
+        docs: It's either loaded documents or the path to the directory containing the JSON files that need to be loaded
+        loader_type: Type of JSON loader to use (unstructured or claude)
+        persist_directory: Path to the directory to save the VectorDB
+
+    Returns:
+    --------
+        VectorDB
+    """
+
+    chunked_docs: Document = (
+        load_json_files(docs, loader_type) if isinstance(docs, str) else docs
+    )
     print("Loaded all JSON files with a total of", len(chunked_docs), "chunks")
-    if os.path.basename(json_dir) == "uploaded":
-        shutil.rmtree(json_dir)
+    # Remove the upload dir that unstructured strategy creates
+    if os.path.isdir(docs) and os.path.basename(docs) == "uploaded":
+        shutil.rmtree(docs)
 
     os.makedirs(persist_directory, exist_ok=True)
     try:

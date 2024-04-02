@@ -36,7 +36,6 @@ with st.sidebar:
     uploaded_file = st.file_uploader(
         "Upload a PDF file", type=["pdf"], label_visibility="collapsed"
     )
-
     if st.button("Process uploaded file"):
         process_uploaded_file(
             uploaded_file,
