@@ -13,3 +13,4 @@ streamlit-extras
 validators
 streamlit-pdf-viewer
 streamlit-float
+watchdog

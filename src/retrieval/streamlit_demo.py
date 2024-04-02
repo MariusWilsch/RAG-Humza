@@ -27,7 +27,6 @@ CUR_PERSIST_DIR = "data/RAG_LAW/store"
 
 # UI
 st.title("Document Assistant")
-st.subheader("Ask me a question about your documents")
 # Sidebar
 
 
