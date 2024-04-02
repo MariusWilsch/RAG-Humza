@@ -1,12 +1,21 @@
-import sys, re
+import sys
 import streamlit as st
+from dotenv import load_dotenv
+from streamlit_pdf_viewer import pdf_viewer
 
 sys.path.append("src")
 from utility.load_config import AppConfig, load_config
 from retrieval.process_query import process_query
 from retrieval.utility.init_session_state import initialize_session_state
 from retrieval.utility.process_uploaded_file import process_uploaded_file
-from retrieval.utility.download_file import process_download
+from retrieval.display_st import (
+    display_assistant_response,
+    display_retrieved_context,
+    display_download_button,
+)
+
+# Load environment variables
+load_dotenv()
 
 
 # Load configuration
@@ -49,61 +58,67 @@ initialize_session_state(
     st.session_state, CUR_PERSIST_DIR, config.OPENAI.EMBEDDING_MODEL
 )
 
-# Display messages
-for message in st.session_state.messages:
-    with st.chat_message(message["role"]):
-        if message["role"] == "user":
-            st.markdown(message["content"])
-        elif message["role"] == "assistant":
-            st.markdown(message["content"])
-    if message["role"] == "assistant":
-        with st.expander("Annotations"):
-            st.write(message["annotations"])
 
-# Main chat loop
-if prompt := st.chat_input("Ask me a question about your documents"):
-    st.session_state.messages.append({"role": "user", "content": prompt})
-    # Display user prompt
-    with st.chat_message("user"):
-        st.markdown(prompt)
-    # Show a spinner
-    with st.spinner("Thinking..."):
-        # Process the user prompt
-        llm_response, annotations, ctx = process_query(
-            prompt,
-            CUR_SYSTEM_PROMPT,
-            config.OPENAI.CHAT_MODEL,
-            config.CHROMA.K_RESULTS,
-            st.session_state,
-        )
-        if llm_response is None:
-            st.error("Error while processing your request", icon="🚨")
-        else:
-            # Display response
-            with st.chat_message("assistant"):
-                st.markdown(llm_response)
-            with st.expander("Annotations"):
-                st.write(annotations)
-            if "mostSimilarPDF" in st.session_state:
-                pdf_data = process_download(
-                    st.session_state.mostSimilarPDF, CUR_PERSIST_DIR
+# Create tabs
+tab1, tab2 = st.tabs(["Chat", "PDF"])
+with tab1:
+    messages_container = st.container(height=450)
+    # Display messages
+    for message in st.session_state.messages:
+        with messages_container.chat_message(message["role"]):
+            if message["role"] == "user":
+                st.markdown(message["content"])
+            elif message["role"] == "assistant":
+                st.markdown(message["content"])
+        if message["role"] == "assistant":
+            with messages_container.expander("Annotations"):
+                st.write(message["annotations"])
+
+    # Main chat loop
+    if prompt := st.chat_input("Ask me a question about your documents"):
+        st.session_state.messages.append({"role": "user", "content": prompt})
+        messages_container.chat_message("user").markdown(prompt)
+
+        with st.spinner("Thinking..."):
+            llm_response, annotations, formatted_ctx = process_query(
+                prompt,
+                CUR_SYSTEM_PROMPT,
+                config.OPENAI.CHAT_MODEL,
+                config.CHROMA.K_RESULTS,
+                st.session_state,
+            )
+
+            if llm_response is None:
+                st.error("Error while processing your request", icon="🚨")
+            else:
+                display_assistant_response(
+                    messages_container, llm_response, annotations
                 )
-                if pdf_data:
-                    st.sidebar.download_button(
-                        label="Download most similar PDF",
-                        data=pdf_data,
-                        file_name=st.session_state.mostSimilarPDF,
-                        mime="application/pdf",
-                    )
-            with st.sidebar:
-                st.title("Retrieved Context")
-                with st.expander("Show Context"):
-                    formatted_ctx = re.sub(r"(In Document\[^:\]+:)", r"\n\1\n", ctx)
-                    st.write(formatted_ctx.replace("\n\n", "\n"))
-                    st.session_state.messages.append(
-                        {
-                            "role": "assistant",
-                            "content": llm_response,
-                            "annotations": annotations,
-                        }
-                    )
+                display_download_button(st)
+                display_retrieved_context(st, formatted_ctx)
+
+                st.session_state.messages.append(
+                    {
+                        "role": "assistant",
+                        "content": llm_response,
+                        "annotations": annotations,
+                    }
+                )
+
+
+with tab2:
+    # Display PDF in the second tab when the user presses a button
+    pdf_dict = st.session_state.mostSimilarPDF
+    if filename := pdf_dict.get("file_name"):
+        file_path = f"static/LAW/PDF/{filename}"
+
+        with open(file_path, "rb") as f:
+            pdf_data = f.read()
+
+        pdf_viewer(
+            pdf_data,
+            width=800,
+            height=600,
+            pages_to_render=[pdf_dict.get("page")],
+            annotation_outline_size=2,
+        )

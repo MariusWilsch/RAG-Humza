@@ -1,5 +1,6 @@
 from pprint import pprint
 from langchain.schema.document import Document
+from typing import Tuple
 
 
 def extract_page_context(docs: Document):
@@ -21,10 +22,12 @@ def extract_page_context(docs: Document):
     return page_ctx
 
 
-def set_most_similar_pdf(docs: Document):
-    temp = docs[0].metadata.get("filename") or docs[0].metadata.get("source")
-    print(f"Most similar PDF: {temp}")
-    return temp
+def set_most_similar_pdf(pdf_metadata: Tuple):
+    # Extract source and page_number from the tuple
+    source = pdf_metadata[1]
+    page_number = pdf_metadata[2]
+    print(f"Most similar PDF: {source}")
+    return {"file_name": source, "page": page_number}
 
 
 def format_and_simplify_context(page_ctx):

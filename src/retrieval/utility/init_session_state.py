@@ -26,4 +26,4 @@ def initialize_session_state(
         session_state.messages = []
 
     if "mostSimilarPDF" not in session_state:
-        session_state.mostSimilarPDF = ""
+        session_state.mostSimilarPDF = {"file_name": None, "page": None}

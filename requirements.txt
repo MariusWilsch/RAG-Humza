@@ -1,21 +1,15 @@
 PyMuPDF
 langchain
-langchain-pinecone
 langchain-openai
 chromadb
 streamlit
 unstructured-client
 python-dotenv
-anthropic
 pdf2image
 fix-busted-json
 jq
 PyPDF2
-# pdfplumber
-# pypdf
-# camelot
-# nougat-ocr[api]
-# unstructured-client
-# unstructured
-# unstructured_inference
-# unstructured[all-docs]
+streamlit-extras
+validators
+streamlit-pdf-viewer
+streamlit-float

@@ -22,7 +22,7 @@ def extractContextFromVectorStore(
     session_state: dict,
 ):
     page_ctx = extract_page_context(document)
-    session_state.mostSimilarPDF = set_most_similar_pdf(document)
+    session_state.mostSimilarPDF = set_most_similar_pdf(page_ctx[0])
     formatted_ctx, page_ctx = format_and_simplify_context(page_ctx)
     return formatted_ctx, page_ctx
 
