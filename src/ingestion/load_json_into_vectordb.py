@@ -143,7 +143,7 @@ def create_vector_db(
     )
     print("Loaded all JSON files with a total of", len(chunked_docs), "chunks")
     # Remove the upload dir that unstructured strategy creates
-    if os.path.isdir(docs) and os.path.basename(docs) == "uploaded":
+    if isinstance(docs, str) and os.path.basename(docs) == "uploaded":
         shutil.rmtree(docs)
 
     os.makedirs(persist_directory, exist_ok=True)

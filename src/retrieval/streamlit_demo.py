@@ -1,3 +1,4 @@
+from pprint import pprint
 import sys
 import streamlit as st
 from dotenv import load_dotenv
@@ -78,46 +79,45 @@ with tab1:
         st.session_state.messages.append({"role": "user", "content": prompt})
         messages_container.chat_message("user").markdown(prompt)
 
-        with st.spinner("Thinking..."):
-            llm_response, annotations, formatted_ctx = process_query(
-                prompt,
-                CUR_SYSTEM_PROMPT,
-                config.OPENAI.CHAT_MODEL,
-                config.CHROMA.K_RESULTS,
-                st.session_state,
-            )
-
-            if llm_response is None:
-                st.error("Error while processing your request", icon="🚨")
-            else:
-                display_assistant_response(
-                    messages_container, llm_response, annotations
+        with messages_container:
+            with st.spinner("Thinking..."):
+                llm_response, annotations, formatted_ctx = process_query(
+                    prompt,
+                    CUR_SYSTEM_PROMPT,
+                    config.OPENAI.CHAT_MODEL,
+                    config.CHROMA.K_RESULTS,
+                    st.session_state,
                 )
-                display_download_button(st)
-                display_retrieved_context(st, formatted_ctx)
 
-                st.session_state.messages.append(
-                    {
-                        "role": "assistant",
-                        "content": llm_response,
-                        "annotations": annotations,
-                    }
-                )
+                if llm_response is None:
+                    st.error("Error while processing your request", icon="🚨")
+                else:
+                    display_assistant_response(
+                        messages_container, llm_response, annotations
+                    )
+                    display_download_button(st)
+                    display_retrieved_context(st, formatted_ctx)
+
+                    st.session_state.messages.append(
+                        {
+                            "role": "assistant",
+                            "content": llm_response,
+                            "annotations": annotations,
+                        }
+                    )
 
 
 with tab2:
     # Display PDF in the second tab when the user presses a button
     pdf_dict = st.session_state.mostSimilarPDF
+    pprint(pdf_dict)
     if filename := pdf_dict.get("file_name"):
-        file_path = f"static/LAW/PDF/{filename}"
-
-        with open(file_path, "rb") as f:
+        with open(filename, "rb") as f:
             pdf_data = f.read()
-
         pdf_viewer(
             pdf_data,
             width=800,
             height=600,
-            pages_to_render=[pdf_dict.get("page")],
+            pages_to_render=[pdf_dict.get("page") + 1],
             annotation_outline_size=2,
         )

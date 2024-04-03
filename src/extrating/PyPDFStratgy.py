@@ -11,6 +11,7 @@ def call_pyMu_on_folder(folder_path: str):
     return docs
 
 
-def pyMuPDFLoader(file_path: str) -> Document:
-    loader = PyMuPDFLoader(file_path)
-    return loader.load()
+def pyMuPDFLoader(path):
+    loader = PyMuPDFLoader(path)
+    docs = loader.load()
+    return docs
