@@ -1,15 +1,18 @@
 import json, os, datetime
 
 
-def create_prompt(formatted_ctx, userPrompt):
-    return (
+def create_prompt(formatted_ctx, userPrompt, previous_prompts_str):
+    prompt = (
         "Retrieved context:\n\n"
         + formatted_ctx
         + "\n\n"
-        + "New user question: "
+        + "Previous prompts and responses:\n\n"
+        + previous_prompts_str
+        + "New user prompt:\n"
         + userPrompt
         + "\n\n"
     )
+    return prompt
 
 
 def request_chat_completions(
